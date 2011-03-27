@@ -1,0 +1,8 @@
+<!ENTITY osclient.label "Your localized menuitem">
+<!ENTITY osclientContext.label "Your Menuitem">
+<!ENTITY osclientContext.accesskey "Y">
+<!ENTITY osclientToolbarButton.label "Your Toolbar Button">
+<!ENTITY osclientToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY osclientSidebar.label "Your Sidebar">
+<!ENTITY osclientToolbar.name  "example">
+<!ENTITY osclientToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &osclientToolbar.name;">

@@ -1,0 +1,18 @@
+package cn.org.act.internetos;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class IdentifyService{
+    /**
+     * Default constructor. 
+     */
+    public IdentifyService() {
+        // TODO Auto-generated constructor stub
+    }
+
+	public void login(HttpServletRequest request, HttpServletResponse response) {
+		String callback = request.getParameter("callback");
+		response.sendRedirect(callback + "?authtoken=" + "authtoken");
+	}

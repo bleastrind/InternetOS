@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://osclient/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://osclient/locale/overlay.dtd">
+<overlay id="osclient-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+  <script src="cometclient.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="osclient-strings" src="chrome://osclient/locale/overlay.properties"/>
+  </stringbundleset>
+
+
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="osclient-hello" label="&osclient.label;"
+              oncommand="osclient.onMenuItemCommand(event);"/>
+  </menupopup>
+
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-osclient" label="&osclientContext.label;"
+              accesskey="&osclientContext.accesskey;"
+              insertafter="context-stop"
+              oncommand="osclient.onMenuItemCommand(event)"/>
+  </popup>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="osclient-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&osclientToolbarButton.label;" tooltiptext="&osclientToolbarButton.tooltip;"
+    oncommand="osclient.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+
+  <toolbox id="navigator-toolbox">
+    <toolbar class="chromeclass-toolbar" toolbarname="&osclientToolbar.name;" customizable="true" id="osclient-toolbar">
+      <label value="&osclientToolbar.label;"/>
+    </toolbar>
+  </toolbox>
+
+
+
+</overlay>

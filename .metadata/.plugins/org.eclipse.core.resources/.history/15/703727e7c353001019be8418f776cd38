@@ -1,0 +1,5 @@
+package cn.org.act.internetos;
+
+public class Settings {
+	public static String TOKEN = "token";
+}

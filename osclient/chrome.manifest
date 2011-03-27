@@ -1,0 +1,6 @@
+content   osclient                 chrome/content/
+skin      osclient   classic/1.0   chrome/skin/
+locale    osclient   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://osclient/content/ff-overlay.xul
