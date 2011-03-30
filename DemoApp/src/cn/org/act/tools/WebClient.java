@@ -8,7 +8,30 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 public class WebClient {
+	private IHttpModify modifier;
+	
+	public WebClient(){
+		this.modifier = new IHttpModify(){
+
+			@Override
+			public void handle(HttpURLConnection conn) {
+				// TODO Auto-generated method stub
+				
+			}};
+	}
+	public WebClient(IHttpModify modifier){
+		this.modifier = modifier;
+	}
+	
+	public void externalForward(String url,HttpServletRequest req,HttpServletResponse res) throws IOException
+	{
+		if(res != null)
+			res.getWriter().write("Forwarded");
+	}
 
 	public String getWebContentByGet(
 			String urlString, 
@@ -30,6 +53,9 @@ public class WebClient {
 		// 只接受text/html类型，当然也可以接受图片,pdf,*/*任意，就是tomcat/conf/web里面定义那些
 		conn.setRequestProperty("Accept", "*/*");
 		conn.setConnectTimeout(timeout);
+		
+		this.modifier.handle(conn);
+		
 		try {
 			if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
 				return null;
@@ -85,7 +111,12 @@ public class WebClient {
 		// 只接受text/html类型，当然也可以接受图片,pdf,*/*任意
 		connection.setRequestProperty("Accept", "text/xml");// text/html
 		connection.setConnectTimeout(timeout);
+		
+		
+		this.modifier.handle(connection);
 		connection.connect();
+		
+		
 		DataOutputStream out = new DataOutputStream(
 				connection.getOutputStream());
 		// String content = data;//+URLEncoder.encode("中文 ", "utf-8");
