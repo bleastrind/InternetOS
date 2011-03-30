@@ -1,0 +1,5 @@
+package cn.org.act.tools;
+
+public interface IHttpModify {
+	void handle(HttpURLConnection conn);
+}
