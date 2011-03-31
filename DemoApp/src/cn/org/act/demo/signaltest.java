@@ -34,7 +34,7 @@ public class signaltest extends HttpServlet {
 		String accesstoken = (String)request.getSession().getAttribute(Setting.TOKEN);
 		
 		//test synchronous
-		response.getWriter().write(new WebClient().getWebContentByPost(Setting.INTERNETOS+"/signal/send?token="+accesstoken,"signal"));
+		response.getWriter().write(new WebClient().getWebContentByGet(Setting.INTERNETOS+"/signal/send?token="+accesstoken));
 		
 		//test asynchronous
 		new WebClient(new IHttpModify(){
