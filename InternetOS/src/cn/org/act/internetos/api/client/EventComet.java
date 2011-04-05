@@ -2,6 +2,13 @@ package cn.org.act.internetos.api.client;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
 
 import javax.servlet.AsyncContext;
 import javax.servlet.AsyncEvent;
@@ -18,68 +25,130 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns={"/clientevent"},asyncSupported=true)
 public class EventComet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+     
+	private ExecutorService executorService = Executors.newFixedThreadPool(10);
+//	private static final Queue<AsyncContext> asyncContextQueue = new ConcurrentLinkedQueue<AsyncContext>();
+	private static final BlockingQueue<String> messageQueue = new LinkedBlockingQueue<String>();
+	
+//	private Thread notifierThread = null;  
+	
+	public void init(){
+//		Runnable notifierRunnable = new Runnable() {  
+//            public void run() {  
+//                boolean done = false;  
+//                while (!done) {  
+//                    String cMessage = null;  
+//                    try {  
+//                        cMessage = messageQueue.take();  
+//                        for (AsyncContext ac : asyncContextQueue) {  
+//                            try {  
+//                                PrintWriter acWriter = ac.getResponse().getWriter();  
+//                                acWriter.println(cMessage);  
+//                                acWriter.flush();  
+//                            } catch(IOException ex) {  
+//                                System.out.println(ex);  
+//                                asyncContextQueue.remove(ac);  
+//                            }  
+//                        }  
+//                    } catch(InterruptedException iex) {  
+//                        done = true;  
+//                        System.out.println(iex);  
+//                    }  
+//                }  
+//            }  
+//        };  
+//        notifierThread = new Thread(notifierRunnable);  
+//        notifierThread.start();  
+	}
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		final AsyncContext aCtx = request.startAsync(request, response);
 		
+		
+		final Future<?> task = executorService.submit(new AsyncRequest(aCtx,messageQueue));
 		aCtx.addListener(new AsyncListener(){
 
 			@Override
 			public void onComplete(AsyncEvent arg0) throws IOException {
-				// TODO Auto-generated method stub
-				
+//				asyncContextQueue.remove(aCtx);				
 			}
 
 			@Override
 			public void onError(AsyncEvent arg0) throws IOException {
-				// TODO Auto-generated method stub
-				
+//				asyncContextQueue.remove(aCtx);
 			}
 
 			@Override
 			public void onStartAsync(AsyncEvent arg0) throws IOException {
-				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void onTimeout(AsyncEvent arg0) throws IOException {
 				arg0.getAsyncContext().getResponse().getWriter().write("time out");
 				arg0.getAsyncContext().complete();
-				
-			}});
+				task.cancel(true);
+//				asyncContextQueue.remove(aCtx);
+			}
+			});
+	}
+	
+	public static void notify(String cMessage) throws IOException {  
+        try {  
+            messageQueue.put(cMessage);  
+        } catch(Exception ex) {  
+            IOException t = new IOException();  
+            t.initCause(ex);  
+            throw t;  
+        }  
+    }  
+	
+	@Override  
+    public void destroy() {  
+	//	asyncContextQueue.clear();  
+    //    notifierThread.interrupt();  
+    }  
+}
+
+class AsyncRequest implements Runnable{
+
+	private AsyncContext aCtx;
+	private BlockingQueue<String> messageQueue;
+	public AsyncRequest(AsyncContext aCtx,BlockingQueue<String> messageQueue) {
+		this.aCtx = aCtx;
+		this.messageQueue = messageQueue;
 		
-		new Thread( new Runnable(){
-			
-			@Override
-			public void run() {
+	}
+
+	@Override
+	public void run() {
+		
+		String cMessage = null;  
+        try {  
+            cMessage = messageQueue.take();  
+
+            try {  
+                PrintWriter acWriter = aCtx.getResponse().getWriter();  
+                acWriter.println(cMessage);  
+                acWriter.flush();  
+                aCtx.complete();
+            } catch(Exception ex) {  
+                System.out.println(ex);  
+            }  
+
+        } catch(InterruptedException iex) {  
+        	if(null != cMessage)
 				try {
-					Thread.sleep(1000);
-					PrintWriter out = aCtx.getResponse().getWriter();
-					out.write("1");
-					Thread.sleep(1000);
-					out.write("2");
-					aCtx.complete();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					messageQueue.put(cMessage);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-			}
-			
-		}).start();
+            System.out.println(iex);  
+        }  
+		
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
-
+	
 }

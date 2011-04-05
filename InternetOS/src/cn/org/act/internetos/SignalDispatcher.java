@@ -9,6 +9,7 @@ import java.util.HashMap;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.org.act.internetos.api.client.EventComet;
 import cn.org.act.tools.IHttpModify;
 import cn.org.act.tools.WebClient;
 
@@ -21,6 +22,7 @@ public class SignalDispatcher {
 		
 		if(request.getHeader("async") != null)
 		{
+			EventComet.notify(request.getReader().readLine());
 			//new WebClient().externalForward(urlStrings, req, res)
 //			final String callback = request.getHeader("callback");
 //			final HashMap<String,String> headers = new HashMap<String,String>();
