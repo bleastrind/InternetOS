@@ -2,6 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="cn.org.act.tools.WebClient"/>
 <fullyQualifiedTypeName name="cn.org.act.internetos.ModuleConstructor"/>
+<fullyQualifiedTypeName name="cn.org.act.tools.WebClient"/>
 </qualifiedTypeNameHistroy>

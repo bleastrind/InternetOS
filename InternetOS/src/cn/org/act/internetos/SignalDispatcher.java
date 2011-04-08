@@ -5,11 +5,16 @@ import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cn.org.act.internetos.api.client.EventComet;
+import cn.org.act.internetos.signal.HttpSignalListener;
+import cn.org.act.internetos.signal.Signal;
+import cn.org.act.internetos.signal.SignalListener;
+import cn.org.act.internetos.signal.SyncSignal;
 import cn.org.act.tools.IHttpModify;
 import cn.org.act.tools.WebClient;
 
@@ -60,8 +65,31 @@ public class SignalDispatcher {
 //				}}).start();
 			
 		}else{
-			new WebClient().externalForward("http://localhost:8080/DemoApp/listener",request, response);
+			Signal signal = createSignal(request);
+			List<SignalListener> list = new ArrayList<SignalListener>();
+			list.add(new HttpSignalListener("http://localhost:8080/DemoApp/listener"));
+			signal.sendTo(list,response.getOutputStream());
+			
+			//new WebClient().externalForward("http://localhost:8080/DemoApp/listener",request, response);
 		}
 		
 	}
+	
+	private Signal createSignal(HttpServletRequest request) throws IOException{
+		Signal res = new SyncSignal();
+		//data
+		res.setData(request.getInputStream());
+		//headers
+		HashMap<String,String> headers = new HashMap<String,String>();
+		Enumeration<String> enumeration = request.getHeaderNames();
+		while(enumeration.hasMoreElements()){
+			String k = enumeration.nextElement();
+			headers.put(k, request.getHeader(k));
+		}
+		res.setHeaders(headers);
+		//method
+		res.setMethod(request.getMethod());
+		return res;
+	}
+	
 }

@@ -139,13 +139,15 @@ class AsyncRequest implements Runnable{
             }  
 
         } catch(InterruptedException iex) {  
-        	if(null != cMessage)
+        	if(cMessage != null)
+        		while(true){
 				try {
-					messageQueue.put(cMessage);
+					messageQueue.put(cMessage); // Warning: may failed that missing a signal
+					break;
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					
 				}
+        		}
             System.out.println(iex);  
         }  
 		
