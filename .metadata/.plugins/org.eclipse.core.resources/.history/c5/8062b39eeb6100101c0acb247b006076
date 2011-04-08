@@ -1,0 +1,19 @@
+package cn.org.act.internetos.signal;
+
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+
+public abstract class Signal {
+	private int id;
+	
+	protected HashMap<String,String> headers;
+	protected String method;
+	protected InputStream data;
+
+	public abstract void sendTo(List<SignalListener> listener);
+	public abstract void handleResult(InputStream data);
+	public abstract String toString();
+}
+
+

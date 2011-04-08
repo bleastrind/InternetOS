@@ -1,0 +1,87 @@
+package cn.org.act.internetos.signal;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class HttpSignalListener extends SignalListener {
+
+	private String urlString;
+
+	public HttpSignalListener(String url) {
+		urlString = url;
+	}
+
+	@Override
+	public InputStream accept(Signal signal) {
+
+		HttpURLConnection conn = createHttpConnection(urlString);
+
+		// Method
+		setMethod(conn, signal.getMethod());
+
+		// header
+		Map<String,String> headers = signal.getHeaders();
+		for(Entry<String,String> entry:headers.entrySet()){
+			conn.addRequestProperty(entry.getKey(), entry.getValue());
+		}
+				
+			
+
+
+		// get result
+		for (HttpURLConnection conn : conns) {
+			conn.connect();
+		}
+
+		// request data
+		copyStream(req.getInputStream(), getOutputStreams(conns));
+
+		// !!! only first
+		if (res != null)
+			copyStream(conns.get(0).getInputStream(), res.getOutputStream());
+
+		return new ByteArrayInputStream(signal.toString().getBytes());
+	}
+
+	private void setMethod(HttpURLConnection conn, String method) {
+		try {
+			conn.setRequestMethod(method);
+
+			if (method == "POST") {
+				conn.setDoOutput(true);
+				conn.setDoInput(true);
+				conn.setUseCaches(false);
+				conn.setInstanceFollowRedirects(true);
+			} else if (method == "GET") {
+
+			} else if (method == "DELETE") {
+
+			} else if (method == "PUT") {
+
+			}
+		} catch (ProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	private HttpURLConnection createHttpConnection(String urlString)
+			throws IOException {
+		urlString = (urlString.startsWith("http://") || urlString
+				.startsWith("https://")) ? urlString : ("http://" + urlString)
+				.intern();
+		URL url = new URL(urlString);
+		return (HttpURLConnection) url.openConnection();
+	}
+
+}

@@ -1,0 +1,5 @@
+1302102303918	Rename field 'map'
+1302103940690	Rename type 'ClientListener'
+1302272478545	Encapsulate field 'headers'
+1302272489333	Encapsulate field 'method'
+1302272499257	Encapsulate field 'data'

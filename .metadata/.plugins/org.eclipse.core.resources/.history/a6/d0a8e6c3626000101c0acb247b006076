@@ -1,0 +1,8 @@
+package cn.org.act.internetos.signal;
+
+public class SignalListener {
+	public boolean match(Signal signal)
+	{
+		
+	}
+}

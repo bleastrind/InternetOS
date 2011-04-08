@@ -1,0 +1,14 @@
+package cn.org.act.internetos.signal;
+
+public class SignalListener {
+	public boolean match(Signal signal)
+	{
+		return false;
+		
+	}
+
+	public void accept(Signal signal) {
+		// TODO Auto-generated method stub
+		
+	}
+}

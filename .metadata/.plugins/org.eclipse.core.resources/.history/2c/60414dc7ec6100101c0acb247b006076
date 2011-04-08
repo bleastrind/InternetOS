@@ -1,0 +1,14 @@
+package cn.org.act.internetos.signal;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+public class HttpSignalListener extends SignalListener{
+
+	@Override
+	public InputStream accept(Signal signal) {
+		// TODO Auto-generated method stub
+		return new ByteArrayInputStream(signal.toString().getBytes());
+	}
+
+}
