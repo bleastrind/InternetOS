@@ -1,0 +1,59 @@
+package cn.org.act.internetos.signal;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class AsyncSignal extends Signal {
+
+	private String callback;
+
+	@Override
+	public void sendTo(List<SignalListener> listeners, OutputStream result)
+			throws IOException {
+		final List<SignalListener> flisteners = listeners;
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				for (SignalListener listener : flisteners) {
+					try {
+						sendDataToCallback(listener,AsyncSignal.this);
+						
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+
+		}).start();
+
+		new PrintWriter(result).write("success");
+	}
+
+	protected void sendDataToCallback(	SignalListener listener, AsyncSignal asyncSignal) throws IOException {
+		
+		HttpURLConnection conn =(HttpURLConnection)callback.openConnection();
+
+		// Method
+		conn.setRequestMethod("POST");
+		// get result
+		conn.connect();
+
+		// request data		
+		listener.accept(this, conn.getOutputStream());
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

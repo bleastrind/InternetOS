@@ -10,6 +10,7 @@ public class SyncSignal extends Signal{
 	public void sendTo(List<SignalListener> listeners, OutputStream result) throws IOException {
 
 		for(SignalListener listener:listeners){
+			//TODO combine with frames
 			listener.accept(this, result);
 		}
 	}

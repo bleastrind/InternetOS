@@ -26,7 +26,8 @@ public class HttpSignalListener extends SignalListener {
 	}
 
 	@Override
-	public void accept(Signal signal,OutputStream resultStream) throws IOException {
+	public void accept(Signal signal, OutputStream resultStream)
+			throws IOException {
 
 		HttpURLConnection conn = createHttpConnection(urlString);
 
@@ -34,29 +35,28 @@ public class HttpSignalListener extends SignalListener {
 		setMethod(conn, signal.getMethod());
 
 		// header
-		Map<String,String> headers = signal.getHeaders();
-		for(Entry<String,String> entry:headers.entrySet()){
+		Map<String, String> headers = signal.getHeaders();
+		for (Entry<String, String> entry : headers.entrySet()) {
 			conn.addRequestProperty(entry.getKey(), entry.getValue());
 		}
-		
+
 		// get result
 		conn.connect();
 
 		// request data
-		setRequestData(conn,signal);
-		
-		boolean succ = conn.getResponseCode() == HttpURLConnection.HTTP_OK;
-		
+		setRequestData(conn, signal);
+
+
 		// write response
-		if(resultStream != null)
+		if (resultStream != null)
 			copyStream(conn.getInputStream(), resultStream);
 
-		
 		conn.disconnect();
 	}
 
-	private void setRequestData(HttpURLConnection conn, Signal signal) throws IOException {
-		if(signal.getMethod()=="POST" || signal.getMethod()== "PUT")
+	private void setRequestData(HttpURLConnection conn, Signal signal)
+			throws IOException {
+		if (signal.getMethod() == "POST" || signal.getMethod() == "PUT")
 			copyStream(signal.getData(), conn.getOutputStream());
 	}
 
@@ -92,8 +92,8 @@ public class HttpSignalListener extends SignalListener {
 		return (HttpURLConnection) url.openConnection();
 	}
 
-	private String readStream(InputStream stream,String charset) throws IOException
-	{
+	private String readStream(InputStream stream, String charset)
+			throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(
 				stream, charset));
 		String line;
@@ -106,11 +106,17 @@ public class HttpSignalListener extends SignalListener {
 		}
 		return sb.toString();
 	}
-	private void copyStream(InputStream srcStream,OutputStream dstStream) throws IOException{
+
+	private void copyStream(InputStream srcStream, OutputStream dstStream) {
 		byte[] buf = new byte[100];
 		int i = -1;
-		while((i = srcStream.read(buf)) != -1){
-			dstStream.write(buf, 0, i);
+		try {
+			while ((i = srcStream.read(buf)) != -1) {
+				dstStream.write(buf, 0, i);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("The stream is not avaliable!");
 		}
 	}
 }

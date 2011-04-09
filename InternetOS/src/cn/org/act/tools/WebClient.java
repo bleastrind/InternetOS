@@ -161,6 +161,7 @@ public class WebClient {
 		return getWebContentByGet(urlString, "iso-8859-1", 5000);
 	}
 
+	
 	public String getWebContentByPost(String urlString, String data,
 			final String charset, int timeout) throws IOException {
 		if (urlString == null || urlString.length() == 0) {

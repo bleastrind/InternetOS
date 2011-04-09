@@ -34,7 +34,7 @@ public class signaltest extends HttpServlet {
 		String accesstoken = (String)request.getSession().getAttribute(Setting.TOKEN);
 		
 		//test synchronous
-		response.getWriter().write(new WebClient().getWebContentByGet(Setting.INTERNETOS+"/signal/send?token="+accesstoken));
+		//response.getWriter().write(new WebClient().getWebContentByGet(Setting.INTERNETOS+"/signal/send?token="+accesstoken));
 		
 		//test asynchronous
 		new WebClient(new IHttpModify(){
@@ -43,7 +43,7 @@ public class signaltest extends HttpServlet {
 			public void handle(HttpURLConnection conn) {
 				conn.addRequestProperty("async", "true");
 				conn.addRequestProperty("callback", "http://localhost:8080/DemoApp/callback");
-			}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?token="+accesstoken,"event");
+			}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?callback=http://localhost:8080/DemoApp/callback&token="+accesstoken,"event");
 	}
 
 	/**
