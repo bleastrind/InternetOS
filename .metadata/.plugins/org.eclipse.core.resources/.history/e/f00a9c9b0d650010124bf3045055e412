@@ -1,0 +1,33 @@
+package cn.org.act.internetos.identify;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import cn.org.act.internetos.Settings;
+
+public class IdentifyService{
+    /**
+     * Default constructor. 
+     */
+    public IdentifyService() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    private HashMap<String,String> auth2access = new HashMap<String,String>();
+
+    
+    public String getAuthToken(String accessToken){
+    	return accessToken;
+    }
+    
+    public String getAuthToken(String username,String password){
+    	return "token"+username;
+    }
+    
+    public String getAccessToken(String authToken){
+    	return "accesstoken:"+authToken;
+    }
+}

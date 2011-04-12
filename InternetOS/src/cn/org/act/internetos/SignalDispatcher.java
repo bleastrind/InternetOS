@@ -26,28 +26,21 @@ public class SignalDispatcher {
 		String token = request.getParameter(Settings.TOKEN);
 		//final String data = request.getReader().readLine();
 
-		Signal signal = createSignal(request);
-		//if(request.getHeader("async") != null)
-		//{
-			//EventComet.notify(request.getReader().readLine());
+		Signal signal = createSignal(request,token);
 
-			//new WebClient().externalForward(urlStrings, req, res)
+	    UserSpace space =(UserSpace) request.getAttribute(Settings.USERPACE);
 
-			
-		//}else{
-			List<SignalListener> list = new ArrayList<SignalListener>();
-			list.add(new HttpSignalListener("http://localhost:8080/DemoApp/listener"));
-			signal.sendTo(list,response.getOutputStream());
+		List<SignalListener> list = space.getMatchedSignalListener(signal);
+		
+		signal.sendTo(list,response.getOutputStream());
 
-			//new WebClient().externalForward("http://localhost:8080/DemoApp/listener",request, response);
-		//}
 		
 	}
 	
-	private Signal createSignal(HttpServletRequest request) throws IOException{
+	private Signal createSignal(HttpServletRequest request,String userToken) throws IOException{
 		Signal res=  null;
 		if(request.getHeader("async")!=null){
-			res = new AsyncSignal(request.getParameter("callback"));
+			res = new AsyncSignal(request.getParameter("callback"),userToken);
 		}else{		
 			res = new SyncSignal();
 		}

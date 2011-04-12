@@ -12,14 +12,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import cn.org.act.internetos.Settings;
 import cn.org.act.tools.StreamHelper;
 
 public class AsyncSignal extends Signal {
 
 	private String callback;
+	private String usertoken;
 
-	public AsyncSignal(String callbackurl){
+	public AsyncSignal(String callbackurl,String usertoken){
 		this.callback = callbackurl;
+		this.usertoken = usertoken;
 	}
 	
 	@Override
@@ -53,6 +56,7 @@ public class AsyncSignal extends Signal {
 		try {
 
 			HttpURLConnection conn = createHttpConnection(callback);
+			conn.setRequestProperty(Settings.TOKEN, usertoken);
 
 			// Method
 			conn.setRequestMethod("POST");

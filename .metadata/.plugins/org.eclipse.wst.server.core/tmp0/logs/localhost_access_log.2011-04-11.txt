@@ -1,0 +1,7 @@
+127.0.0.1 - - [11/Apr/2011:17:13:23 +0800] "GET / HTTP/1.1" 404 955
+127.0.0.1 - - [11/Apr/2011:17:13:36 +0800] "POST /InternetOS/signal/send?callback=http://localhost:8080/DemoApp/callback&token=null HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Apr/2011:17:13:36 +0800] "GET /DemoApp/signaltest HTTP/1.1" 200 -
+127.0.0.1 - - [11/Apr/2011:17:13:41 +0800] "POST /DemoApp/listener HTTP/1.1" 200 6
+127.0.0.1 - - [11/Apr/2011:17:13:43 +0800] "POST /DemoApp/callback HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Apr/2011:17:14:02 +0800] "GET /DemoApp/signaltest HTTP/1.1" 200 -
+127.0.0.1 - - [11/Apr/2011:17:14:02 +0800] "POST /InternetOS/signal/send?callback=http://localhost:8080/DemoApp/callback&token=null HTTP/1.1" 200 -

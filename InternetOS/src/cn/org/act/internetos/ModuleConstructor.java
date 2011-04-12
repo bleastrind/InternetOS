@@ -1,5 +1,7 @@
 package cn.org.act.internetos;
 
+import cn.org.act.internetos.identify.IdentifyService;
+
 public class ModuleConstructor {
 	
 	public static IdentifyService getIdentifyService(){

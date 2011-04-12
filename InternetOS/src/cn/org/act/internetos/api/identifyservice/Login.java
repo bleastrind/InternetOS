@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cn.org.act.internetos.ModuleConstructor;
+import cn.org.act.internetos.Settings;
 
 /**
  * Servlet implementation class Login
@@ -28,15 +29,34 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		ModuleConstructor.getIdentifyService().login(request,response);
+		//request.setAttribute("callback", request.getParameter("callback"));
+		String sessionAccessToken = (String) request.getSession().getAttribute(Settings.TOKEN);
+		if(sessionAccessToken!= null)
+			returnToCallback(request,response,ModuleConstructor.getIdentifyService().getAuthToken(sessionAccessToken));
+		else
+			getServletContext().getRequestDispatcher("/gettoken.jsp").forward(request,response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
+		String authtoken = ModuleConstructor.getIdentifyService().getAuthToken(
+				request.getParameter("username"),request.getParameter("password")
+		);
+		
+		//login
+		request.getSession().setAttribute(Settings.TOKEN, ModuleConstructor.getIdentifyService().getAccessToken(authtoken));
+		
+		returnToCallback(request,response,authtoken);
+	}
+	
+	private void returnToCallback(HttpServletRequest request, HttpServletResponse response,String authtoken) throws IOException{
+		String callback = request.getParameter("callback");
+
+		response.sendRedirect(callback + "?"+
+				Settings.AUTHTOKEN + "=" + authtoken);
 	}
 
 }

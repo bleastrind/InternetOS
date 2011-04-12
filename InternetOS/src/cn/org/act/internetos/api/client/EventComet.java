@@ -19,6 +19,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.org.act.internetos.Settings;
+import cn.org.act.internetos.UserSpace;
+
 /**
  * Servlet implementation class EventComet
  */
@@ -28,7 +31,7 @@ public class EventComet extends HttpServlet {
      
 	private ExecutorService executorService = Executors.newFixedThreadPool(10);
 //	private static final Queue<AsyncContext> asyncContextQueue = new ConcurrentLinkedQueue<AsyncContext>();
-	private static final BlockingQueue<String> messageQueue = new LinkedBlockingQueue<String>();
+
 	
 //	private Thread notifierThread = null;  
 	
@@ -64,10 +67,11 @@ public class EventComet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		UserSpace space =(UserSpace) request.getAttribute(Settings.USERPACE);
+		
 		final AsyncContext aCtx = request.startAsync(request, response);
-		
-		
-		final Future<?> task = executorService.submit(new AsyncRequest(aCtx,messageQueue));
+
+		final Future<?> task = executorService.submit(new AsyncRequest(aCtx,space.getMessageQueue()));
 		aCtx.addListener(new AsyncListener(){
 
 			@Override
@@ -94,16 +98,6 @@ public class EventComet extends HttpServlet {
 			}
 			});
 	}
-	
-	public static void notify(String cMessage) throws IOException {  
-        try {  
-            messageQueue.put(cMessage);  
-        } catch(Exception ex) {  
-            IOException t = new IOException();  
-            t.initCause(ex);  
-            throw t;  
-        }  
-    }  
 	
 	@Override  
     public void destroy() {  

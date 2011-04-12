@@ -5,6 +5,7 @@ import javax.servlet.ServletRequestListener;
 import javax.servlet.annotation.WebListener;
 
 import cn.org.act.internetos.Settings;
+import cn.org.act.internetos.UserSpace;
 
 /**
  * Application Lifecycle Listener implementation class User
@@ -31,7 +32,11 @@ public class User implements ServletRequestListener {
      * @see ServletRequestListener#requestInitialized(ServletRequestEvent)
      */
     public void requestInitialized(ServletRequestEvent arg0) {
-        arg0.getServletRequest().getParameter(Settings.TOKEN);
+        String token = arg0.getServletRequest().getParameter(Settings.TOKEN);
+        
+        UserSpace space = UserSpace.getUserSpace(token);
+        
+        arg0.getServletRequest().setAttribute(Settings.USERPACE,space);
     }
 	
 }
