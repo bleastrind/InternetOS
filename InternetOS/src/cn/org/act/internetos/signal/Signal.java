@@ -9,6 +9,7 @@ import java.util.List;
 public abstract class Signal {
 	private int id;
 	
+	private String url;
 	private HashMap<String,String> headers;
 	private String method;
 	private InputStream data;
@@ -31,9 +32,15 @@ public abstract class Signal {
 	public InputStream getData() {
 		return data;
 	}
-
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getUrl() {
+		return url;
+	}
 	public abstract void sendTo(List<SignalListener> listener,OutputStream result) throws IOException;
 	public abstract String toString();
+	
 
 }
 

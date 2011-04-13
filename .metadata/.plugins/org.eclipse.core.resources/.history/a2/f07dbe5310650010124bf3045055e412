@@ -1,0 +1,8 @@
+package cn.org.act.internetos.persist;
+
+public class IAppDAO {
+	public int addApp(Application app)
+	{
+		
+	}
+}

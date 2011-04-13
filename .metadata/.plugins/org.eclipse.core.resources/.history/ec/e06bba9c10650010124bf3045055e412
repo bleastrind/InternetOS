@@ -1,0 +1,15 @@
+package cn.org.act.internetos.persist.memory;
+
+import cn.org.act.internetos.persist.Application;
+import cn.org.act.internetos.persist.IAppDAO;
+
+public class AppMemoryDAO implements IAppDAO{
+
+	private static List<Application> data = new ArrayList<Application>();
+	@Override
+	public int addApp(Application app) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

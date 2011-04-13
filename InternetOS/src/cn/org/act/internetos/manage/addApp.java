@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.org.act.internetos.ModuleConstructor;
+import cn.org.act.internetos.Settings;
+import cn.org.act.internetos.persist.Application;
+import cn.org.act.tools.HttpHelper;
+
 /**
  * Servlet implementation class addApp
  */
@@ -26,14 +31,29 @@ public class addApp extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String user = (String) request.getSession().getAttribute(Settings.TOKEN);
+		if(user == null)
+			response.sendRedirect("identifyservice/login?callback="+
+					HttpHelper.getContextPath(request)+"/addApp");
+		else
+			getServletContext().getRequestDispatcher("/appinstall.jsp").forward(request,response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String name = request.getParameter("name");
+		String config = request.getParameter("config");
+		String user = (String) request.getSession().getAttribute(Settings.TOKEN);
+		if(user == null)
+			//should not happen
+			response.sendRedirect("identifyservice/login?callback="+
+					HttpHelper.getContextPath(request)+"/addApp");
+		
+		
+		ModuleConstructor.getAppDAO().addApp(new Application(user,name,config));
+		response.getWriter().print("success");
 	}
 
 }

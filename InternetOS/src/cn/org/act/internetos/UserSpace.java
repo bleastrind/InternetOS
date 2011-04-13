@@ -7,7 +7,10 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import cn.org.act.internetos.persist.Application;
+import cn.org.act.internetos.persist.Pair;
 import cn.org.act.internetos.signal.HttpSignalListener;
+import cn.org.act.internetos.signal.MatchRule;
 import cn.org.act.internetos.signal.Signal;
 import cn.org.act.internetos.signal.SignalListener;
 
@@ -38,20 +41,20 @@ public class UserSpace {
 		}
 	}
 
-	private List<SignalListener> listeners;
-
 	public UserSpace(String token) {
 		usertoken = token;
-		listeners = new ArrayList<SignalListener>();
-		listeners.add(new HttpSignalListener("http://localhost:8080/DemoApp/listener"));
-		
 	}
 
 	public List<SignalListener> getMatchedSignalListener(Signal signal) {
 		List<SignalListener> ans = new ArrayList<SignalListener>();
-		for (SignalListener listener : listeners) {
-			if (listener.match(signal))
-				ans.add(listener);
+
+		ModuleConstructor.getAppDAO().getApps(usertoken);
+		for (Application app : ModuleConstructor.getAppDAO().getApps(usertoken)) {
+			for (Pair<MatchRule, SignalListener> matchlistener : app
+					.getMatchListeners()) {
+				if (matchlistener.getItem1().match(signal))
+					ans.add(matchlistener.getItem2());
+			}
 		}
 		return ans;
 	}

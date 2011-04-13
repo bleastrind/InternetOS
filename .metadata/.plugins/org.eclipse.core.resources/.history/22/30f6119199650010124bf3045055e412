@@ -1,0 +1,29 @@
+package cn.org.act.internetos.persist;
+
+public class Application {
+	private String user;
+	private String name;
+	private String config;
+	
+	public Application(String user,String name, String config) {
+		this.setName(name);
+		this.setConfig(config);
+	}
+
+	private void setName(String name) {
+		this.name = name;
+	}
+
+	private String getName() {
+		return name;
+	}
+
+	private void setConfig(String config) {
+		this.config = config;
+	}
+
+	private String getConfig() {
+		return config;
+	}
+	
+}

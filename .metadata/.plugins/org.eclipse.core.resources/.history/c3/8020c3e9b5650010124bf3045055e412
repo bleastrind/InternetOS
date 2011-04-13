@@ -1,0 +1,7 @@
+package cn.org.act.internetos.signal;
+
+public class ConfigParser {
+	public static void Parse(Application app,String config){
+		
+	}
+}

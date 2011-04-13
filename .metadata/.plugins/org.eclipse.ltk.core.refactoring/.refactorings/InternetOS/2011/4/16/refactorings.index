@@ -1,1 +1,11 @@
 1302611061975	Move compilation unit
+1302617731731	Delete element
+1302618492681	Encapsulate field 'name'
+1302618499256	Encapsulate field 'config'
+1302672631542	Encapsulate field 'url'
+1302678358688	Encapsulate field 'user'
+1302678499874	Encapsulate field 'listeners'
+1302686575659	Encapsulate field 'item1'
+1302686587261	Encapsulate field 'item2'
+1302688682425	Delete element
+1302689000646	Delete element

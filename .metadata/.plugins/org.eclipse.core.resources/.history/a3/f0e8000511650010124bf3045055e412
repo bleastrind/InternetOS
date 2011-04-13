@@ -1,0 +1,6 @@
+package cn.org.act.internetos.persist;
+
+public class Application {
+	String Appname;
+	String AppConfig;
+}

@@ -63,3 +63,6 @@
 0:0:0:0:0:0:0:1 - - [12/Apr/2011:22:07:34 +0800] "GET /InternetOS/identifyservice/login?callback=http://localhost:8080/DemoApp/Init HTTP/1.1" 302 -
 127.0.0.1 - - [12/Apr/2011:22:07:37 +0800] "GET /InternetOS/identifyservice/token?authtoken=tempauthTokenaccesstoken:test HTTP/1.1" 200 16
 0:0:0:0:0:0:0:1 - - [12/Apr/2011:22:07:37 +0800] "GET /DemoApp/Init?authtoken=tempauthTokenaccesstoken:test HTTP/1.1" 200 23
+127.0.0.1 - - [12/Apr/2011:22:49:52 +0800] "GET / HTTP/1.1" 404 955
+0:0:0:0:0:0:0:1 - - [12/Apr/2011:22:49:52 +0800] "GET /InternetOS/addApp HTTP/1.1" 200 432
+0:0:0:0:0:0:0:1 - - [12/Apr/2011:22:49:55 +0800] "POST /InternetOS/addApp HTTP/1.1" 200 -

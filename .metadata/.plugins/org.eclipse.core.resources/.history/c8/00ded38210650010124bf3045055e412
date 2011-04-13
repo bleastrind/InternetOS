@@ -1,0 +1,5 @@
+package cn.org.act.internetos.persist.memory;
+
+public class AppMemoryDAO {
+
+}

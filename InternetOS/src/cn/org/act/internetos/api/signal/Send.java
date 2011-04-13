@@ -12,7 +12,7 @@ import cn.org.act.internetos.ModuleConstructor;
 /**
  * Servlet implementation class Send
  */
-@WebServlet("/signal/send")
+@WebServlet("/signal/*")
 public class Send extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

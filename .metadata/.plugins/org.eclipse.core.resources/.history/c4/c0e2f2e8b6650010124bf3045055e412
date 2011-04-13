@@ -1,0 +1,13 @@
+package cn.org.act.internetos.signal;
+
+import java.util.ArrayList;
+
+import cn.org.act.internetos.persist.Application;
+import cn.org.act.internetos.persist.Pair;
+
+public class ConfigParser {
+	public static void Parse(List<Pair<MatchRule,SignalListener>> matchListeners,String config){
+		app..add(new HttpSignalListener("http://localhost:8080/DemoApp/listener"));
+				
+	}
+}
