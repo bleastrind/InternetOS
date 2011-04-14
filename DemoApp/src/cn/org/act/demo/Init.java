@@ -35,9 +35,11 @@ public class Init extends HttpServlet {
 			WebClient client = new WebClient();
 			String accesstoken = client
 					.getWebContentByGet(Setting.INTERNETOS + "/identifyservice/token?authtoken="+request.getParameter(Setting.AUTHTOKEN));
-			response.getWriter().write("Done "+accesstoken);
+			System.out.println("Done "+accesstoken);
 			
 			request.getSession().setAttribute(Setting.TOKEN, accesstoken);
+			
+			response.sendRedirect("signaltest");
 		}
 		else {
 

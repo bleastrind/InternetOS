@@ -1,0 +1,9 @@
+package cn.org.act.internetos.manage.app;
+
+import org.dom4j.Element;
+
+import cn.org.act.internetos.signal.SignalListener;
+
+public abstract class AbstractListenerFactory {
+	public abstract SignalListener createListenr(Element element);
+}

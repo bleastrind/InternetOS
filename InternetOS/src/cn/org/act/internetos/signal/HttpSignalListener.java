@@ -20,9 +20,10 @@ import cn.org.act.tools.WebClient;
 public class HttpSignalListener extends SignalListener {
 
 	private String urlString;
-
-	public HttpSignalListener(String url) {
+	private MatchRule rule;
+	public HttpSignalListener(String url, MatchRule rule) {
 		urlString = url;
+		this.rule = rule;
 	}
 
 	@Override
@@ -118,5 +119,11 @@ public class HttpSignalListener extends SignalListener {
 			e.printStackTrace();
 			System.out.println("The stream is not avaliable!");
 		}
+	}
+
+	@Override
+	public boolean match(Signal signal) {
+		
+		return rule.match(signal);
 	}
 }

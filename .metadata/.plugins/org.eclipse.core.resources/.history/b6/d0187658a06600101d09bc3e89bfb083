@@ -1,0 +1,12 @@
+package cn.org.act.internetos.manage.app;
+
+import org.dom4j.Element;
+
+import cn.org.act.internetos.signal.MatchRule;
+
+public static class MatchRuleFactory {
+	public MatchRule createMatchRule(Element matchrule)
+	{
+		
+	}
+}

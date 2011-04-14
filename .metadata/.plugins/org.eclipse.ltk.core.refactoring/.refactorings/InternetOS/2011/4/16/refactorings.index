@@ -9,3 +9,10 @@
 1302686587261	Encapsulate field 'item2'
 1302688682425	Delete element
 1302689000646	Delete element
+1302763469342	Delete element
+1302776640687	Move compilation unit
+1302784975133	Delete element
+1302788318070	Rename type 'ListenerFactory'
+1302789243580	Rename type 'AbstractListenerFactory'
+1302789258173	Delete element
+1302789312466	Rename compilation unit 'AbstractMatchRuleFactory.java'

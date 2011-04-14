@@ -1,0 +1,29 @@
+package cn.org.act.internetos.signal;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+import cn.org.act.internetos.UserSpace;
+import cn.org.act.internetos.api.client.EventComet;
+
+public class ClientSignalListener extends SignalListener{
+
+	private UserSpace userSpace;
+	private MatchRule rule;
+	public ClientSignalListener(UserSpace space, MatchRule rule)
+	{
+		this.userSpace =  space;
+		this.rule = rule;
+	}
+	@Override
+	public void accept(Signal signal, OutputStream resultStream)
+			throws IOException {
+		userSpace.notify(signal.toString());
+		
+	}
+	@Override
+	public boolean match(Signal signal) {
+		return rule.match(signal);
+	}
+
+}

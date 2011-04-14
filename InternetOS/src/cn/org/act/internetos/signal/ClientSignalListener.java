@@ -6,9 +6,10 @@ import java.io.OutputStream;
 import cn.org.act.internetos.UserSpace;
 import cn.org.act.internetos.api.client.EventComet;
 
-public class ClientSignalListener extends SignalListener{
+public abstract class ClientSignalListener extends SignalListener{
 
 	private UserSpace userSpace;
+	
 	public ClientSignalListener(UserSpace space)
 	{
 		this.userSpace =  space;

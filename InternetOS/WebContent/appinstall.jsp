@@ -8,8 +8,20 @@
 </head>
 <body>
 	<form action="addApp" method="POST">
-		appname:<input type="text" name="appname"/>
-		install info:<textarea name="install"></textarea>
+		install info:<textarea name="config"><?xml version="1.0" encoding="UTF-8"?>
+		<Application>
+		<Name>Test</Name>
+		<Listeners>
+			<HttpListener>
+					<URL>http://localhost:8080/DemoApp/listener</URL>
+					<MatchRule type="urlregex">
+						.*/signal/send.*
+					</MatchRule>
+			</HttpListener>
+		</Listeners>
+	</Application>
+		
+		</textarea>
 		<input type="submit"/>
 	</form>
 </body>

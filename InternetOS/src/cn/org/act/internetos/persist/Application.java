@@ -3,7 +3,7 @@ package cn.org.act.internetos.persist;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.org.act.internetos.signal.ConfigParser;
+import cn.org.act.internetos.manage.app.ConfigParser;
 import cn.org.act.internetos.signal.MatchRule;
 import cn.org.act.internetos.signal.SignalListener;
 
@@ -11,14 +11,15 @@ public class Application {
 	private String user;
 	private String name;
 	private String config;
-	private ArrayList<Pair<MatchRule,SignalListener>> matchListeners;
+	private ArrayList<SignalListener> listeners;
 	
-	public Application(String user,String name, String config) {
+	
+	public Application(String user, String config) {
 		this.setUser(user);
-		this.setName(name);
-		this.setConfig(config);
-		matchListeners = new ArrayList<Pair<MatchRule,SignalListener>>();
-		ConfigParser.Parse(matchListeners, config);
+		this.setConfig(config.trim());
+		//config = config.replace("\r\n", "");
+		listeners = new ArrayList<SignalListener>();
+		ConfigParser.Parse(this);
 	}
 
 	public void setName(String name) {
@@ -45,8 +46,8 @@ public class Application {
 		return user;
 	}
 
-	public List<Pair<MatchRule,SignalListener>> getMatchListeners() {
-		return matchListeners;
+	public List<SignalListener> getListeners() {
+		return listeners;
 	}
 	
 }

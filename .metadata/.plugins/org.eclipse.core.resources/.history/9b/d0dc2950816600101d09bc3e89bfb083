@@ -1,0 +1,37 @@
+package cn.org.act.internetos.signal;
+
+import java.util.List;
+
+import cn.org.act.internetos.persist.Pair;
+
+public class ConfigParser {
+	public static void Parse(
+			List<SignalListener> matchListeners, String config) {
+		config = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> "+
+		"<Application>"+
+			"<Name>Test</Name>"+
+			"<Listeners>"+
+				"<Listener>"+
+					"<HttpListener>"+
+						"<Url>http://localhost:8080/DemoApp/listener</Url>"+
+						"<MatchRule type=\"urlregex\">"+
+							".*/signal/send.*"+
+						"</MatchRule>"+
+					"</HttpListener>"+
+				"</Listener>"+
+			"</Listeners>"+
+		"</Application>";
+		matchListeners.add(
+				new HttpSignalListener("http://localhost:8080/DemoApp/listener",
+						new MatchRule() {
+
+							@Override
+							public boolean match(Signal signal) {
+								// TODO Auto-generated method stub
+								return true;
+							}
+
+						}));
+
+	}
+}
