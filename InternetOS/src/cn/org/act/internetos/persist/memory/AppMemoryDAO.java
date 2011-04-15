@@ -12,11 +12,11 @@ public class AppMemoryDAO implements IAppDAO{
 
 	private static List<Application> data = new ArrayList<Application>();
 	@Override
-	public int addApp(Application app) {
+	public String addApp(Application app) {
 		// TODO Auto-generated method stub
 		
 		data.add(app);
-		return data.size() - 1;
+		return "";
 	}
 	@Override
 	public List<Application> getApps(String user) {

@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface IAppDAO {
 	public List<Application> getApps(String user);
-	public int addApp(Application app);
+	public String addApp(Application app);
 }

@@ -1,0 +1,49 @@
+package cn.org.act.internetos.persist.cassandra;
+
+import java.util.List;
+
+import cn.org.act.internetos.persist.Application;
+import cn.org.act.internetos.persist.IAppDAO;
+
+import me.prettyprint.cassandra.service.CassandraHostConfigurator;
+import me.prettyprint.hector.api.Cluster;
+import me.prettyprint.hector.api.Keyspace;
+import me.prettyprint.hector.api.factory.HFactory;
+
+import org.apache.cassandra.thrift.Cassandra;  
+import org.apache.cassandra.thrift.Column;  
+import org.apache.cassandra.thrift.ColumnPath;  
+import org.apache.cassandra.thrift.ConsistencyLevel;  
+import org.apache.cassandra.thrift.InvalidRequestException;  
+import org.apache.cassandra.thrift.NotFoundException;  
+import org.apache.cassandra.thrift.TimedOutException;  
+import org.apache.cassandra.thrift.UnavailableException;  
+import org.apache.thrift.TException;  
+import org.apache.thrift.protocol.TBinaryProtocol;  
+import org.apache.thrift.transport.TSocket;  
+import org.apache.thrift.transport.TTransport;  
+import org.apache.thrift.transport.TTransportException;  
+
+public class AppCassandraDAO implements IAppDAO{
+
+	Keyspace keyspace;
+	public AppCassandraDAO(String server,String keyspaceName){
+		Cluster cluster = HFactory.getOrCreateCluster("TestCluster",
+			    new CassandraHostConfigurator(server));
+		keyspace = HFactory.createKeyspace(keyspaceName, cluster);
+		
+	}
+	
+	@Override
+	public List<Application> getApps(String user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int addApp(Application app) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
