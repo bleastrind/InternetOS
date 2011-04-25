@@ -14,9 +14,6 @@ var osclient = {
 	try{
 		
 
-		
-		 
-
 		gCometClient.Begin();
 		
 		window.alert("success");

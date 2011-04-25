@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" title="XSL Formatting" href="/show_new_final.xsl" media="all"?>
+<!--
+SINA Corporation (NASDAQ: SINA) is a leading online media company and value-added information service (VAS) provider for China and for Chinese communities worldwide. With a branded network of localized websites targeting Greater China and overseas Chinese, SINA provides services through five major business lines including SINA.com (online news and content), SINA Mobile (mobile value-added services), SINA Online (community-based services and games), SINA.net (search and enterprise services) and SINA E-commerce (online shopping), offering Internet users and government and business clients an array of services including online media and entertainment, online fee-based VAS/wireless VAS, and e-commerce and enterprise e-solutions.
+With 230 million registered users worldwide, 450 million daily page views and over 60 million active users for a variety of fee-based services, SINA is the most recognized Internet brand name in China and among Chinese communities globally.
+In various surveys and polls, SINA has been recognized as the most valuable brand and the most popular website in China. For 2003 and 2005, SINA was ranked the "Most Preferred Website" in China according to the Chinese Academy of Social Sciences and considered "The Most Respected Chinese Company" for three consecutive years in 2003, 2004 and 2005 by the Economic Observer and the Management Case Study Center of Beijing University. At the same time, South China Weekend in both 2003 and 2004 honored SINA with the prestigious award of the "Chinese Language Medium of the Year."
+****[pid:1,tid:60,did:3,fid:1086]****-->
+<rss version="2.0">
+	<channel>
+		<title>
+			<![CDATA[新闻要闻-新浪新闻]]>
+		</title>
+		<image>
+			<title>
+				<![CDATA[新闻中心]]>
+			</title>
+			<link>http://news.sina.com.cn</link>
+			<url>http://www.sinaimg.cn/home/deco/2009/0330/logo_home_news.gif</url>
+		</image>
+		<description>
+			<![CDATA[新闻中心-新闻要闻]]>
+		</description>
+		<link>http://roll.news.sina.com.cn/s/</link>
+		<language>zh-cn</language>
+		<generator>WWW.SINA.COM.CN</generator>
+		<ttl>5</ttl>
+		<copyright>
+			<![CDATA[Copyright 1996 - 2011 SINA Inc. All Rights Reserved]]>
+		</copyright>
+		<pubDate>Mon, 25 Apr 2011 15:47:02 GMT</pubDate>
+		<category>
+			<![CDATA[]]>
+		</category>
+		<item>
+			<title>
+				<![CDATA[[体育]实德众将怒斥裁判：他主宰了比赛 张辛昕该被罚下(04/25 23:37)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://sports.sina.com.cn/j/2011-04-25/23375550491.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://sports.sina.com.cn/j/2011-04-25/23375550491.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 15:37:00 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　执法北京国安和大连实德队的年轻主裁判周刚，赛后遭到了实德队员的猛烈抨击，“比赛输赢无所谓，但是不能这样吹啊，这不是胡来吗？一个裁判主宰了一场比赛。”一位实德主力球员赛后愤怒地说。
+
+　　今天执法京连之战的周刚，虽然是一名年轻的裁判，但是他的执法不能归为嫩哨....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[体育]中超综述：7场比赛判8粒点球 鲁沪京全胜杭陕受挫(04/25 23:33)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://sports.sina.com.cn/j/2011-04-25/23335550489.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://sports.sina.com.cn/j/2011-04-25/23335550489.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 15:33:26 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　中超第4轮，在已经结束的7场比赛中有5场出现点球判罚，其中最为遗憾的应该是天津泰达队，他们在两球落后的情况下连扳三球实现逆转，但是却在伤停补时阶段遭遇点球绝杀。广州恒大凭借一个点球打破僵局客场取胜，南昌衡源凭借一个点球得分迎来了赛季首胜，不过最疯狂的比赛是建....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[科技]乔布斯：iPhone并未跟踪任何人信息(04/25 22:46)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/t/2011-04-25/22465448089.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/t/2011-04-25/22465448089.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 14:46:29 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[苹果CEO史蒂夫・乔布斯(新浪科技配图)
+
+　　新浪科技讯 北京时间4月25日晚间消息，针对近日曝出的“iPhone手机跟踪用户地理位置信息”的消息，苹果CEO史蒂夫・乔布斯(Steve Jobs)周一表示，iPhone并不跟踪用户信息，反而是基于谷歌Android系统的摩托罗拉Droid手机跟踪用户信息。....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[科技]美股评论：安卓为何成为众矢之的(04/25 22:33)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/it/2011-04-25/22335448073.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/it/2011-04-25/22335448073.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 14:33:57 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　导读：不久前，谷歌因安卓系统Linux内核运算法则涉嫌侵犯专利而在德州被罚款500万美元。与此同时，针对谷歌和安卓的类似攻击还有不少。MarketWatch专栏作家德沃拉克(John C. Dvorak)综合已知消息进行了初步分析，指出了事件的影响，可能的受益者，以及可能的幕后运作者。
+
+....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[国内]普洱茶再掀炒作风潮 大量资金直奔产地收购(04/25 22:12)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/c/sd/2011-04-25/221222355812.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/c/sd/2011-04-25/221222355812.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 14:12:59 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　2011年4月25日央视《经济半小时》播出《普洱茶再掀炒作风》，以下是节目实录：
+
+　　主持人：大家晚上好，欢迎收看《经济半小时》。今天我们继续关注疯狂上涨的投资品价格。今天我们关注普洱茶。说起普洱茶想必观众朋友们并不陌生。早在2007年，普洱茶就经历了一轮价格疯涨....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[国际]伊拉克首次披露伊战以来1.4万人下落不明(04/25 21:34)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2011-04-25/213422355782.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2011-04-25/213422355782.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 13:34:00 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　中新网4月25日电 据外电报道，伊拉克人权部一名官员25日表示，自2003年美军入侵伊拉克以来，伊拉克至少1.4万人下落不明。报道指出，这是伊拉克首次披露近年来其人口失踪状况。
+
+　　据报道，伊拉克人权部官员卡梅尔(Arkan Kamel)在巴格达举行的新闻发布会上宣布，自2003年以....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[国际]俄总统将访切尔诺贝利 吁日本告知福岛电站实情(04/25 21:15)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2011-04-25/211522355781.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2011-04-25/211522355781.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 13:15:00 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　中新网4月25日电 据外电报道，4月26日是乌克兰切尔诺贝利核电站发生严重泄漏事故的25周年纪念日，俄罗斯总统梅德韦杰夫25日表示，计划在26日当天到访切尔诺贝利，同时呼吁日本当局披露福岛核电站事故的实情。
+
+　　据报道，梅德韦杰夫25日在克里姆林宫一次会议上表示，他明....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[国内]澳大利亚总理吉拉德抵京开始访华(04/25 21:10)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/c/2011-04-25/211022355656.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/c/2011-04-25/211022355656.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 13:10:16 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　新华网北京4月25日电(记者田栋栋)应国务院总理温家宝邀请，澳大利亚联邦政府总理朱莉娅・吉拉德25日晚抵达北京，开始对中国进行为期4天的正式访问。
+
+　　访问期间，国家主席胡锦涛将会见吉拉德。温家宝将同吉拉德举行会谈。国务院副总理李克强将与她共同出席中澳经贸合作论....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[科技]奢侈品折扣网站尊酷网今上线 获千万元投资(04/25 20:51)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/chuangye/r/2011-04-25/20515447980.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://tech.sina.com.cn/chuangye/r/2011-04-25/20515447980.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 12:51:26 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　新浪创业讯 4月25日消息，据业内人士今日透露，奢侈品折扣一站式购物平台――尊酷网(www.vipku.com)于今日正式上线，该网站自成立伊始即获得了盛世巨龙创始人严治风千万元天使投资。
+
+　　该业内人士称，尊酷网开创了奢侈品开放网购新模式，目前已有国际一线时尚买手加盟尊....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[股市]双汇发展股价日挫约7% 逼近要约收购价56元(04/25 18:32)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/stock/s/20110425/18329747513.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/stock/s/20110425/18329747513.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 10:32:00 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　受到销售业绩不确定因素影响，双汇周一跌幅达6.96%；由于要约收购价格56.00元附近有支撑，尾盘回升
+
+　　【财新网】(记者 张冰)由于要约收购价格支撑，“瘦肉精”事件之后又受到销售数据注水事件影响的双汇发展(000895.SZ)，4月25日仍然没有跌破56.00元的要约收购价。
+
+　....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[股市]大盘跳水 调整压力加大 八大机构看后市(04/25 18:25)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/stock/y/20110425/18259747486.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/stock/y/20110425/18259747486.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 10:25:44 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　新浪财经讯 &nbsp;今日上证指数报收2964.95点，跌45.57点，跌幅1.51%，成交1422亿元；深成指报收12508.01点，跌200.41点，跌幅1.58%，成交1033亿元；中小板指报收6262.98点，跌108.29点，跌幅1.7%。创业板指报收975.18点，跌29.47点，跌幅2.93%。大盘将何去何从，看八大机构分....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[财经]财政部副部长：要让人民知道政府花钱效果(04/25 18:15)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/g/20110425/18159747454.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/g/20110425/18159747454.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 10:15:28 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[财政部党组副书记、副部长廖晓军
+
+　　人民网北京4月25日电 (记者 王欲然)今日，记者从中华人民共和国财政部官方网站上获悉，财政部第一次全国预算绩效管理工作会议4月21日至22日在广州举行，财政部党组副书记、副部长廖晓军为全面推进预算绩效管理工作提出目标：建立覆盖所有财....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[财经]许小年：加息利大于弊 不能因负作用无所作为(04/25 17:54)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/economist/jingjiguancha/20110425/17549747393.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/economist/jingjiguancha/20110425/17549747393.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 09:54:15 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　新浪财经讯&nbsp;4月25日消息，中欧国际工商学院经济学与金融学教授许小年今天做客新浪财经《微访谈》，在谈及央行设立外储投资基金时表示，这并非应对全球通胀和美元贬值的治本之策，调汇率和加息还是利大于弊，不能因负面作用而无所作为。
+
+　　政府投资效率低下 应放开汇....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[财经]樊纲：中日韩应寻求外储多元化 减少美元依赖(04/25 17:51)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/economist/jingjiguancha/20110425/17519747382.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://finance.sina.com.cn/economist/jingjiguancha/20110425/17519747382.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 09:51:02 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　【《财经》综合报道】 经济学家樊纲25日在杭州举行的东北亚名人会上表示，包括中国、韩国、日本等在内的东北亚各国应考虑建立区域债券市场，相互持有对方国家主权债券，以推动储备货币多元化，减少对美元的依赖。
+
+　　“实现单一世界货币是很遥远的理想，要使金融市场更为....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[社会]笔记本电脑托运中丢失 火车站按公斤赔60元(04/25 15:02)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/s/2011-04-25/150222354308.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/s/2011-04-25/150222354308.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 07:02:35 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　日前，盘县消费者陈先生在红果火车站行李房托运一台笔记本电脑，电脑被承运方弄丢。承运方提出按铁路运输规程15元／公斤赔付，四公斤左右的电脑只赔60元。陈先生不同意，投诉到工商部门。受理此案后，工商执法人员表示，这一赔偿标准不合理、不公平。
+
+　　电脑托运途中不翼....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[社会]女青年练歌房内被电击倒 家属质疑话筒漏电(04/25 15:02)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/s/2011-04-25/150222354301.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/s/2011-04-25/150222354301.shtml</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate>Mon, 25 Apr 2011 07:02:20 GMT</pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[　　双手抱着话筒坐在练歌房里深情歌唱，24岁的女青年小雯(化名)突然间身体僵硬，歌声也停了下来，坐在身边的家人以为她突发疾病，立即给她按人中，没想到却感觉手指有触电感，家人立即拽掉了小雯手里话筒的插头。昨天下午4时50分左右，120急救人员闻讯赶到青岛重庆南路与人民路交....]]>
+			</description>
+		</item>
+		<item>
+			<title>
+				<![CDATA[[播客]独家实拍：我那永远跪着的母亲(11/07 22:10)]]>
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://you.video.sina.com.cn/b/16972162-1239095354.html</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://you.video.sina.com.cn/b/16972162-1239095354.html</guid>
+			<category>
+				<![CDATA[]]>
+			</category>
+			<pubDate></pubDate>
+			<comments></comments>
+			<description>
+				<![CDATA[独家实拍：我那永远跪着的母亲]]>
+			</description>
+		</item>
+	</channel>
+</rss>

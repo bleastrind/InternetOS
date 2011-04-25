@@ -9,6 +9,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import cn.org.act.internetos.persist.Application;
 import cn.org.act.internetos.persist.Pair;
+import cn.org.act.internetos.signal.ClientSignalListener;
 import cn.org.act.internetos.signal.HttpSignalListener;
 import cn.org.act.internetos.signal.MatchRule;
 import cn.org.act.internetos.signal.Signal;
@@ -56,6 +57,14 @@ public class UserSpace {
 					ans.add(listener);
 			}
 		}
+		
+		//system listeners
+		ans.add(getClientListener());
+		
 		return ans;
+	}
+	
+	private SignalListener getClientListener(){
+		return new ClientSignalListener(this);
 	}
 }

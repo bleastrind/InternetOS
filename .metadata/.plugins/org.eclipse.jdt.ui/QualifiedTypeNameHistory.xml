@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="cn.org.act.internetos.signal.AsyncSignal"/>
 <fullyQualifiedTypeName name="cn.org.act.internetos.api.client.EventComet"/>
+<fullyQualifiedTypeName name="cn.org.act.internetos.signal.ClientSignalListener"/>
+<fullyQualifiedTypeName name="cn.org.act.internetos.Settings"/>
 </qualifiedTypeNameHistroy>

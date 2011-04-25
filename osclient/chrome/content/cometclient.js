@@ -1,8 +1,8 @@
-var myURLString="http://localhost:8080/InternetOS/clientevent";
-var callbackFunc=function(d){window.alert(d)};
+var myURLString = gConfig.baseurl + "/clientevent?token="+gIdentifyHelper.accessToken;
+alert(myURLString);
+var callbackFunc=gListeners.onSignalRecieved;//function(d){window.alert(d)};
 
-
-
+alert("Initializing comet");
 
 function CometClient(url,callback){
 	
@@ -97,5 +97,8 @@ function CometClient(url,callback){
 		this.getNewChannel().asyncOpen(this.listener, null);
 	}
 }
-
-var gCometClient = new CometClient(myURLString,callbackFunc);
+try{
+	var gCometClient = new CometClient(myURLString,callbackFunc);
+}catch(err){
+	alert(err);
+}

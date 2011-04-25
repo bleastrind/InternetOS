@@ -1,5 +1,0 @@
-package cn.org.act.tools.collection;
-
-public class Predicate<T> {
-
-}

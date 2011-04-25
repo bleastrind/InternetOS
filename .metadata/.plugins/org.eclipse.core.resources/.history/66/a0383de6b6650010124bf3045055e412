@@ -1,9 +1,0 @@
-package cn.org.act.internetos.signal;
-
-import cn.org.act.internetos.persist.Application;
-
-public class ConfigParser {
-	public static void Parse(Application app,String config){
-		
-	}
-}

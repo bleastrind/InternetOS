@@ -41,6 +41,8 @@ public class signaltest extends HttpServlet {
 
 			@Override
 			public void handle(HttpURLConnection conn) {
+				conn.addRequestProperty("client-signal", "");
+				conn.addRequestProperty("clienttype","cn.org.act.internetos.clientsignal.alert");
 				conn.addRequestProperty("async", "true");
 				conn.addRequestProperty("callback", "http://localhost:8080/DemoApp/callback");
 			}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?callback=http://localhost:8080/DemoApp/callback&token="+accesstoken,"event");

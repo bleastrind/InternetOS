@@ -14,11 +14,4 @@ public class SyncSignal extends Signal{
 			listener.accept(this, result);
 		}
 	}
-
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "SyncSignal";
-	}
-
 }

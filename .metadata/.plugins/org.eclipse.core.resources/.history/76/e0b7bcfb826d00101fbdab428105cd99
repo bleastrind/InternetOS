@@ -1,0 +1,15 @@
+package cn.org.act.internetos.signal;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+public abstract class SignalListener {
+
+	public void recieve(Signal signal,OutputStream resultStream) throws IOException{
+		if(match( signal) )
+			accept(signal, resultStream);
+	}
+	protected abstract void accept(Signal signal,OutputStream resultStream) throws IOException;
+	
+	protected abstract boolean match(Signal signal);
+}

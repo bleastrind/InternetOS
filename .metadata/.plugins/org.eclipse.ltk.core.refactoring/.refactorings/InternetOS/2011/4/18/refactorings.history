@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;cn.org.act.internetos.api.identifyservice.UserIdentifier.java&apos; to &apos;UserIdentifiedServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;InternetOS&apos;&#x0D;&#x0A;- Original element: &apos;cn.org.act.internetos.api.identifyservice.UserIdentifier.java&apos;&#x0D;&#x0A;- Renamed element: &apos;cn.org.act.internetos.api.identifyservice.UserIdentifiedServlet.java&apos;" description="Rename compilation unit &apos;UserIdentifier.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;cn.org.act.internetos.api.identifyservice{UserIdentifier.java" name="UserIdentifiedServlet.java" references="false" stamp="1303717149044" version="1.0"/>
+</session>

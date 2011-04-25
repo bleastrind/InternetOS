@@ -12,9 +12,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import cn.org.act.internetos.Settings;
 import cn.org.act.tools.StreamHelper;
 
+@XStreamAlias("asyncsignal")
 public class AsyncSignal extends Signal {
 
 	private String callback;
@@ -100,12 +103,6 @@ public class AsyncSignal extends Signal {
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 		StreamHelper.copyStream(stream, bout);
 		super.setData(new ByteArrayInputStream(bout.toByteArray()));
-	}
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "AsyncSignal";
 	}
 
 }

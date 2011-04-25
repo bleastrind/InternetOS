@@ -2,9 +2,13 @@
 <?xml-stylesheet href="chrome://osclient/skin/overlay.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://osclient/locale/overlay.dtd">
 <overlay id="osclient-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="config.js"/>
+  <script src="identifyhelper.js"/>
+  <script src="listeners.js"/>
+  <script src="cometclient.js"/>
   <script src="overlay.js"/>
   <script src="ff-overlay.js"/>
-  <script src="cometclient.js"/>
+  
 
   <stringbundleset id="stringbundleset">
     <stringbundle id="osclient-strings" src="chrome://osclient/locale/overlay.properties"/>

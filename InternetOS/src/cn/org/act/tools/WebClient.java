@@ -209,7 +209,7 @@ public class WebClient {
 			return null;
 		}
 		
-		String result = readStream(connection.getInputStream(),charset);
+		String result = StreamHelper.readStream(connection.getInputStream(),charset);
 		
 		if (connection != null) {
 			connection.disconnect();
@@ -223,20 +223,6 @@ public class WebClient {
 		return getWebContentByPost(urlString, data, "UTF-8", 5000);// iso-8859-1
 	}
 	
-	private String readStream(InputStream stream,String charset) throws IOException
-	{
-		BufferedReader reader = new BufferedReader(new InputStreamReader(
-				stream, charset));
-		String line;
-		StringBuffer sb = new StringBuffer();
-		while ((line = reader.readLine()) != null) {
-			sb.append(line).append("\r\n");
-		}
-		if (reader != null) {
-			reader.close();
-		}
-		return sb.toString();
-	}
 	
 	private HttpURLConnection createHttpConnection(String urlString) throws IOException{
 		urlString = (urlString.startsWith("http://") || urlString
