@@ -1,12 +1,13 @@
 
 function Listeners(){
-	this.listeners = [];
+	this.allListeners = [];
 	this.onSignalRecieved = function(signalstring){
 		alert(signalstring);
 		try{
 			var signal = eval("("+signalstring+")");
-			for(var l in this.listeners){
-				l.recieve(signal);
+
+			for(var i in this.allListeners){
+				this.allListeners[i].recieve(signal);
 			}
 		}catch(err){
 			alert(err);
@@ -17,8 +18,9 @@ function Listeners(){
 function AlertListener(){}
 
 AlertListener.prototype.recieve = function(signal){
-	if(signal.headers.clienttype == "cn.org.act.internetos.clientsignal.alert")
-		alert(siganl.data);
+	alert(signal.headers[0].clienttype);
+	if(signal.headers[0].clienttype == "cn.org.act.internetos.clientsignal.alert")
+		alert(signal.data);
 }
 
 function ScriptLoadListener(){}
@@ -30,7 +32,7 @@ ScriptLoadListener.prototype.recieve = function(signal){
 
 
 var gListeners = new Listeners();
-gListeners.listeners.push(new AlertListener());
-gListeners.listeners.push(new ScriptLoadListener());
+gListeners.allListeners.push(new AlertListener());
+gListeners.allListeners.push(new ScriptLoadListener());
 
 alert("Listeners registered!");

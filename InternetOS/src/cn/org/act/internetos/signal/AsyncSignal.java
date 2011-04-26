@@ -17,7 +17,6 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import cn.org.act.internetos.Settings;
 import cn.org.act.tools.StreamHelper;
 
-@XStreamAlias("asyncsignal")
 public class AsyncSignal extends Signal {
 
 	private String callback;

@@ -10,11 +10,11 @@
  */
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1303711730);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1303711970);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1303711850);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1303798130);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1303798370);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1303798250);
 user_pref("app.update.lastUpdateTime.microsummary-generator-update-timer", 1303713798);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1303733210);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1303817972);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
 user_pref("browser.cache.disk.capacity", 1048576);
 user_pref("browser.cache.disk.smart_size.first_run", false);
@@ -45,8 +45,8 @@ user_pref("extensions.addon-notification@mozillaonline.com.install-event-fired",
 user_pref("extensions.addoninstaller.installation.completedtime", "30140908886470586");
 user_pref("extensions.addoninstaller.personas@christopher.beard", false);
 user_pref("extensions.addonnotification.default_rules_version", "0.3");
-user_pref("extensions.blocklist.pingCountTotal", 5);
-user_pref("extensions.blocklist.pingCountVersion", 5);
+user_pref("extensions.blocklist.pingCountTotal", 6);
+user_pref("extensions.blocklist.pingCountVersion", 6);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.cehomepage.homeSetToProfile", true);
 user_pref("extensions.cehomepage@mozillaonline.com.install-event-fired", true);
@@ -65,7 +65,7 @@ user_pref("extensions.fontsetter@mozillaonline.com.firstrun", false);
 user_pref("extensions.fontsetter@mozillaonline.com.install-event-fired", true);
 user_pref("extensions.fontsetter@mozillaonline.com.lastUIChange", "0.3");
 user_pref("extensions.fontsetter@mozillaonline.com.use_default_menu_font", false);
-user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"C:\\\\Program Files (x86)\\\\Mozilla Firefox\\\\extensions\\\\{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1300949128082}}},{\"name\":\"app-profile\",\"addons\":{\"zhangzhe@buaa.edu.cn\":{\"descriptor\":\"C:\\\\Users\\\\Bleastrind\\\\j2eeworkspace\\\\osclient\",\"mtime\":1303747136689}}}]");
+user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"C:\\\\Program Files (x86)\\\\Mozilla Firefox\\\\extensions\\\\{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1300949128082}}},{\"name\":\"app-profile\",\"addons\":{\"zhangzhe@buaa.edu.cn\":{\"descriptor\":\"C:\\\\Users\\\\Bleastrind\\\\j2eeworkspace\\\\osclient\",\"mtime\":1303833805167}}}]");
 user_pref("extensions.installedDistroAddon.addon-notification@mozillaonline.com", true);
 user_pref("extensions.installedDistroAddon.cehomepage@mozillaonline.com", true);
 user_pref("extensions.installedDistroAddon.cpmanager@mozillaonline.com", true);
@@ -118,7 +118,7 @@ user_pref("font.name.serif.zh-CN", "微软雅黑");
 user_pref("font.name.serif.zh-HK", "微软雅黑");
 user_pref("font.name.serif.zh-TW", "微软雅黑");
 user_pref("idle.lastDailyNotification", 1303734868);
-user_pref("intl.charsetmenu.browser.cache", "GB2312, UTF-8");
+user_pref("intl.charsetmenu.browser.cache", "ISO-8859-1, GB2312, UTF-8");
 user_pref("javascript.options.strict", true);
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("places.database.lastMaintenance", 1303734868);

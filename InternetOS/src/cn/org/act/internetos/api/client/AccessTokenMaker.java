@@ -32,8 +32,9 @@ public class AccessTokenMaker extends HttpServlet {
 		String authtoken = ModuleConstructor.getIdentifyService().getAuthToken(
 				request.getParameter("username"),request.getParameter("password")
 		);
+		String accessToken = ModuleConstructor.getIdentifyService().getAccessToken(authtoken);
 		
-		response.getWriter().write(authtoken);
+		response.getWriter().write(accessToken);
 	}
 
 
