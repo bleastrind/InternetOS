@@ -38,8 +38,38 @@ public abstract class Signal {
 	private String url;
 	
 	private String method;
-	
 
+	@XStreamConverter(HeadersConvertor.class)
+	private JsonMap headers;
+
+	@XStreamConverter(StreamConvertor.class)
+	private InputStream data;
+
+	public void setHeaders(Map<String,String> headers) {
+		this.headers = new JsonMap(headers);
+	}
+	
+	public Map<String,String> getHeaders() {
+		return headers;
+	}
+	public void setMethod(String method) {
+		this.method = method;
+	}
+	public String getMethod() {
+		return method;
+	}
+	public void setData(InputStream data) throws IOException {
+		this.data = data;
+	}
+	public InputStream getData() {
+		return data;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getUrl() {
+		return url;
+	}
 	public static class HeadersConvertor implements Converter{
 
 		@Override
@@ -70,17 +100,12 @@ public abstract class Signal {
 		}
 		
 	}
-	
 	private static class JsonMap extends HashMap<String,String>{
 		public JsonMap(Map<String,String> map)
 		{
 			super(map);
 		}
 	}
-
-	@XStreamConverter(HeadersConvertor.class)
-	private JsonMap headers;
-	
 	public static class StreamConvertor implements Converter {
 
 		@Override
@@ -102,36 +127,8 @@ public abstract class Signal {
 			return null;
 		}
 		
-	}
+	}	
 	
-	@XStreamConverter(StreamConvertor.class)
-	private InputStream data;
-	
-	public void setHeaders(Map<String,String> headers) {
-		this.headers = new JsonMap(headers);
-	}
-	
-	public Map<String,String> getHeaders() {
-		return headers;
-	}
-	public void setMethod(String method) {
-		this.method = method;
-	}
-	public String getMethod() {
-		return method;
-	}
-	public void setData(InputStream data) throws IOException {
-		this.data = data;
-	}
-	public InputStream getData() {
-		return data;
-	}
-	public void setUrl(String url) {
-		this.url = url;
-	}
-	public String getUrl() {
-		return url;
-	}
 	public abstract void sendTo(List<SignalListener> listener,OutputStream result) throws IOException;
 	
 	public String toString(){

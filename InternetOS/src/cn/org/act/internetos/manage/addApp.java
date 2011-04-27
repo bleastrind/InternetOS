@@ -49,11 +49,12 @@ public class addApp extends HttpServlet {
 			//should not happen
 			response.sendRedirect("identifyservice/login?callback="+
 					HttpHelper.getContextPath(request)+"/addApp");
+		else{
 		
-		
-		ModuleConstructor.getAppDAO().addApp(new Application(user,config));
-		System.out.println("Register success,goto demo");
-		response.sendRedirect("http://localhost:8080/DemoApp/Init");
+			ModuleConstructor.getAppDAO().addApp(new Application(user,config));
+			System.out.println("Register success,goto demo");
+			response.sendRedirect("http://localhost:8080/DemoApp/Init");
+		}
 	}
 
 }

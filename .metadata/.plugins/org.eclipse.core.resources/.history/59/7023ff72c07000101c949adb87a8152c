@@ -1,0 +1,12 @@
+package cn.org.act.internetos.signal;
+
+
+public class ContainsHeaderMatchRule extends MatchRule {
+
+	@Override
+	public boolean match(Signal signal) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

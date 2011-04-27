@@ -49,8 +49,13 @@ public class UserSpace {
 	public List<SignalListener> getMatchedSignalListener(Signal signal) {
 		List<SignalListener> ans = new ArrayList<SignalListener>();
 
-		ModuleConstructor.getAppDAO().getApps(usertoken);
-		for (Application app : ModuleConstructor.getAppDAO().getApps(usertoken)) {
+		List<Application> apps = ModuleConstructor.getAppDAO().getApps(usertoken);
+		
+		for (Application app : apps) {
+			
+			if(!app.isInited())
+				app.init(this);
+			
 			for (SignalListener listener : app
 					.getListeners()) {
 				if (listener.match(signal))
@@ -58,13 +63,8 @@ public class UserSpace {
 			}
 		}
 		
-		//system listeners
-		ans.add(getClientListener());
 		
 		return ans;
 	}
 	
-	private SignalListener getClientListener(){
-		return new ClientSignalListener(this);
-	}
 }

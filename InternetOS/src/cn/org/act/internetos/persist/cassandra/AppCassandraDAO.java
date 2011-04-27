@@ -69,9 +69,10 @@ public class AppCassandraDAO implements IAppDAO{
 			
 			for(HColumn<String, String> attr: app.getColumns()){
 
-				if( attr.getName().equals("name") )
-					name = attr.getValue();
-				else if( attr.getName().equals("config") )
+				//if( attr.getName().equals("name") )
+				//	name = attr.getValue();
+				//else 
+				if( attr.getName().equals("config") )
 					config = attr.getValue();
 			}
 			
@@ -87,7 +88,7 @@ public class AppCassandraDAO implements IAppDAO{
 		
 		ArrayList<HColumn<String,String>> columns = new ArrayList<HColumn<String,String>>();
 		
-		columns.add(HFactory.createStringColumn("name", app.getName()));
+		//columns.add(HFactory.createStringColumn("name", app.getName()));
 		columns.add(HFactory.createStringColumn("config",app.getConfig()));
 		String appID = UUID.randomUUID().toString();
 		mutator.insert(app.getUser(), CF, HFactory.createSuperColumn(

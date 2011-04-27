@@ -20,10 +20,10 @@ import cn.org.act.tools.WebClient;
 public class HttpSignalListener extends SignalListener {
 
 	private String urlString;
-	private MatchRule rule;
 	public HttpSignalListener(String url, MatchRule rule) {
+		super(rule);
+		
 		urlString = url;
-		this.rule = rule;
 	}
 
 	@Override
@@ -121,9 +121,4 @@ public class HttpSignalListener extends SignalListener {
 		}
 	}
 
-	@Override
-	public boolean match(Signal signal) {
-		
-		return rule.match(signal);
-	}
 }

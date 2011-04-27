@@ -14,6 +14,7 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 
 
+import cn.org.act.internetos.UserSpace;
 import cn.org.act.internetos.persist.Application;
 
 public class ConfigParser {
@@ -34,7 +35,8 @@ public class ConfigParser {
 //		new Application("a",config);
 //	}
 	public static void Parse(
-			Application app) {
+			Application app,
+			UserSpace userspace) {
 
 		try {
 			
@@ -49,8 +51,10 @@ public class ConfigParser {
 			@SuppressWarnings("unchecked")
 			List<Element> listeners = application.element("Listeners").elements();
 			
+			ListenerFactory factory = new ListenerFactory(userspace);
+			
 			for(Element node : listeners){
-				app.getListeners().add(ListenerFactory.createListener(node));
+				app.getListeners().add(factory.createListener(node));
 			}
 		} catch (DocumentException e) {
 			// TODO Auto-generated catch block
