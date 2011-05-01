@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [02/May/2011:00:00:07 +0800] "GET /InternetOS/loginfortoken?username=user&password=a HTTP/1.1" 200 16
+0:0:0:0:0:0:0:1 - - [02/May/2011:00:00:16 +0800] "PUT /InternetOS/signal/clientsignal/pageload HTTP/1.1" 200 -

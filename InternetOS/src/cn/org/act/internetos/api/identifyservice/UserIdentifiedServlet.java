@@ -10,6 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 
 import cn.org.act.internetos.Settings;
 import cn.org.act.internetos.UserSpace;
@@ -21,11 +22,17 @@ import cn.org.act.internetos.UserSpace;
 //				DispatcherType.REQUEST, 
 //		}
 //					, urlPatterns = { "/*" })
-public class UserIdentifiedServlet extends HttpServlet {
+public abstract class UserIdentifiedServlet extends HttpServlet {
 
-	public String getAcessToken(ServletRequest request){
-		String token = request.getParameter(Settings.TOKEN);
-		
+
+	public UserSpace getUserSpace(HttpServletRequest request){
+		return UserSpace.getUserSpace(getAccessToken(request));
+	}
+	
+	public String getAccessToken(HttpServletRequest request){
+		String token = request.getHeader(Settings.TOKEN);
+
+		token = null == token ? request.getParameter(Settings.TOKEN) : token;
 		return token;
 	}
 }

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cn.org.act.internetos.api.client.EventComet;
+import cn.org.act.internetos.api.identifyservice.UserIdentifiedServlet;
 import cn.org.act.internetos.signal.AsyncSignal;
 import cn.org.act.internetos.signal.HttpSignalListener;
 import cn.org.act.internetos.signal.Signal;
@@ -19,7 +20,7 @@ import cn.org.act.internetos.signal.SyncSignal;
 import cn.org.act.tools.IHttpModify;
 import cn.org.act.tools.WebClient;
 
-public class SignalDispatcher {
+public class SignalDispatcher extends UserIdentifiedServlet{
 
 	public void sendSignal(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
@@ -28,8 +29,10 @@ public class SignalDispatcher {
 
 		Signal signal = createSignal(request,token);
 
-	    UserSpace space =(UserSpace) request.getAttribute(Settings.USERPACE);
+	    UserSpace space = getUserSpace(request);
 
+	    System.out.println(signal);
+	    
 		List<SignalListener> list = space.getMatchedSignalListener(signal);
 		
 		signal.sendTo(list,response.getOutputStream());

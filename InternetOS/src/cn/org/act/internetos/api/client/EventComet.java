@@ -21,12 +21,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import cn.org.act.internetos.Settings;
 import cn.org.act.internetos.UserSpace;
+import cn.org.act.internetos.api.identifyservice.UserIdentifiedServlet;
 
 /**
  * Servlet implementation class EventComet
  */
 @WebServlet(urlPatterns={"/clientevent"},asyncSupported=true)
-public class EventComet extends HttpServlet {
+public class EventComet extends UserIdentifiedServlet {
 	private static final long serialVersionUID = 1L;
      
 	private ExecutorService executorService = Executors.newFixedThreadPool(10);
@@ -67,7 +68,7 @@ public class EventComet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		UserSpace space =(UserSpace) request.getAttribute(Settings.USERPACE);
+		UserSpace space = getUserSpace(request);
 		
 		final AsyncContext aCtx = request.startAsync(request, response);
 

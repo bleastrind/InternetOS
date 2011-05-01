@@ -61,7 +61,7 @@ public abstract class Signal {
 	public void setData(InputStream data) throws IOException {
 		this.data = data;
 	}
-	public InputStream getData() {
+	public InputStream getData() throws IOException {
 		return data;
 	}
 	public void setUrl(String url) {

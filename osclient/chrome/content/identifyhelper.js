@@ -23,3 +23,33 @@ function IdentifyHelper(username,password,baseurl){
 var gIdentifyHelper = new IdentifyHelper(gConfig.username,gConfig.password,gConfig.baseurl);
 
 alert("get accessToken:" + gIdentifyHelper.accessToken);
+
+var accessTokenAppender =
+{
+  observe: function(subject, topic, data)
+  {
+    if (topic == "http-on-modify-request") {
+      var httpChannel = subject.QueryInterface(Components.interfaces.nsIHttpChannel);
+	  httpChannel.setRequestHeader("token",gIdentifyHelper.accessToken,false);
+    }
+  },
+
+  get observerService() {
+    return Components.classes["@mozilla.org/observer-service;1"]
+                     .getService(Components.interfaces.nsIObserverService);
+  },
+
+  register: function()
+  {
+    this.observerService.addObserver(this, "http-on-modify-request", false);
+  },
+
+  unregister: function()
+  {
+    this.observerService.removeObserver(this, "http-on-modify-request");
+  }
+};
+accessTokenAppender.register();
+alert("accessTokenAppender added");
+
+alert(gChannel);

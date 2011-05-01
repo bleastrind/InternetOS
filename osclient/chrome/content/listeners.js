@@ -26,13 +26,25 @@ AlertListener.prototype.recieve = function(signal){
 function ScriptLoadListener(){}
 
 ScriptLoadListener.prototype.recieve = function(signal){
-	if(signal.headers.clienttype == "cn.org.act.internetos.clientsignal.scriptloader")
+	if(signal.headers.clienttype == "osclient://internetos/clientsignal/scriptloader")
 		eval(siganl.data);
 }
 
+function TabControlListener(){}
+
+TabControlListener.prototype.recieve = function(signal){
+	if(signal.headers.clienttype == "osclient://internetos/clientsignal/tabcontrol"){
+		var data = eval("("+signal.data+")");
+		if(data.type == "openTab"){
+			var tab = gBrowser.addTab(data.taburl);
+			gBroswer.selectedTab = tab;
+		}
+	}
+}
 
 var gListeners = new Listeners();
 gListeners.allListeners.push(new AlertListener());
 gListeners.allListeners.push(new ScriptLoadListener());
+gListeners.allListeners.push(new TabControlListener());
 
 alert("Listeners registered!");

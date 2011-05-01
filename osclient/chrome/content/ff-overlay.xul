@@ -2,12 +2,14 @@
 <?xml-stylesheet href="chrome://osclient/skin/overlay.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://osclient/locale/overlay.dtd">
 <overlay id="osclient-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="tool.js"/>
   <script src="config.js"/>
   <script src="identifyhelper.js"/>
   <script src="listeners.js"/>
   <script src="cometclient.js"/>
   <script src="overlay.js"/>
   <script src="ff-overlay.js"/>
+  <script src="eventTrigger.js"/>
   
 
   <stringbundleset id="stringbundleset">

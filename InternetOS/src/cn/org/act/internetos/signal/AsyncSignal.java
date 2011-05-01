@@ -37,6 +37,8 @@ public class AsyncSignal extends Signal {
 			public void run() {
 				for (SignalListener listener : flisteners) {
 					try {
+						
+						AsyncSignal.this.getData().reset();
 						sendDataToCallback(listener, AsyncSignal.this);
 
 					} catch (IOException e) {
