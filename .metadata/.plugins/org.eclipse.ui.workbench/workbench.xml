@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="56" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="1473" y="-9">
+<window height="768" maximized="true" width="1024" x="340" y="954">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -67,13 +67,17 @@
 <part id="31"/>
 <part id="32"/>
 <part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SignalDispatcher.java" partName="SignalDispatcher.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/SignalDispatcher.java" title="SignalDispatcher.java" tooltip="InternetOS/src/cn/org/act/internetos/SignalDispatcher.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/SignalDispatcher.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="900" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1052" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Setting.java" partName="Setting.java" path="C:/Users/Bleastrind/j2eeworkspace/DemoApp/src/cn/org/act/demo/Setting.java" title="Setting.java" tooltip="DemoApp/src/cn/org/act/demo/Setting.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoApp/src/cn/org/act/demo/Setting.java"/>
@@ -91,9 +95,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/IdentifyService.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="169" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="signaltest.java" partName="signaltest.java" path="C:/Users/Bleastrind/j2eeworkspace/DemoApp/src/cn/org/act/demo/signaltest.java" title="signaltest.java" tooltip="DemoApp/src/cn/org/act/demo/signaltest.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="signaltest.java" partName="signaltest.java" path="C:/Users/Bleastrind/j2eeworkspace/DemoApp/src/cn/org/act/demo/signaltest.java" title="signaltest.java" tooltip="DemoApp/src/cn/org/act/demo/signaltest.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoApp/src/cn/org/act/demo/signaltest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1254" selectionTopPixel="125"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1268" selectionTopPixel="125"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Init.java" partName="Init.java" path="C:/Users/Bleastrind/j2eeworkspace/DemoApp/src/cn/org/act/demo/Init.java" title="Init.java" tooltip="DemoApp/src/cn/org/act/demo/Init.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoApp/src/cn/org/act/demo/Init.java"/>
@@ -131,10 +135,6 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/signal/HttpSignalListener.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1444" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AsyncSignal.java" partName="AsyncSignal.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java" title="AsyncSignal.java" tooltip="InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1740" selectionTopPixel="629"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientSignalListener.java" partName="ClientSignalListener.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/signal/ClientSignalListener.java" title="ClientSignalListener.java" tooltip="InternetOS/src/cn/org/act/internetos/signal/ClientSignalListener.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/signal/ClientSignalListener.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="562" selectionTopPixel="0"/>
@@ -145,7 +145,7 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserSpace.java" partName="UserSpace.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/UserSpace.java" title="UserSpace.java" tooltip="InternetOS/src/cn/org/act/internetos/UserSpace.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/UserSpace.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1806" selectionTopPixel="210"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1562" selectionTopPixel="102"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppCassandraDAO.java" partName="AppCassandraDAO.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/persist/cassandra/AppCassandraDAO.java" title="AppCassandraDAO.java" tooltip="InternetOS/src/cn/org/act/internetos/persist/cassandra/AppCassandraDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/persist/cassandra/AppCassandraDAO.java"/>
@@ -185,7 +185,7 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserIdentifiedServlet.java" partName="UserIdentifiedServlet.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/api/identifyservice/UserIdentifiedServlet.java" title="UserIdentifiedServlet.java" tooltip="InternetOS/src/cn/org/act/internetos/api/identifyservice/UserIdentifiedServlet.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/api/identifyservice/UserIdentifiedServlet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="794" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.ClassFileEditor" name="StandardWrapperValve.class" partName="StandardWrapperValve.class" title="StandardWrapperValve.class" tooltip="org.apache.catalina.core.StandardWrapperValve" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=DemoApp/D:\/TOMCAT\/apache-tomcat-7.0.11\/lib\/catalina.jar&lt;org.apache.catalina.core(StandardWrapperValve.class"/>
@@ -202,6 +202,22 @@
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccessTokenMaker.java" partName="AccessTokenMaker.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java" title="AccessTokenMaker.java" tooltip="InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="461" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActivityManager.java" partName="ActivityManager.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java" title="ActivityManager.java" tooltip="InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java"/>
+<editorState selectionHorizontalPixel="24" selectionLength="0" selectionOffset="581" selectionTopPixel="23"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AsyncSignal.java" partName="AsyncSignal.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java" title="AsyncSignal.java" tooltip="InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1271" selectionTopPixel="663"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryActivities.java" partName="QueryActivities.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java" title="QueryActivities.java" tooltip="InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1964" selectionTopPixel="255"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activity.java" partName="Activity.java" path="C:/Users/Bleastrind/j2eeworkspace/InternetOS/src/cn/org/act/internetos/activities/Activity.java" title="Activity.java" tooltip="InternetOS/src/cn/org/act/internetos/activities/Activity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/InternetOS/src/cn/org/act/internetos/activities/Activity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="295" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -334,7 +350,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2608353" ratioLeft="331" ratioRight="938" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.69860893" ratioLeft="452" ratioRight="195" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
@@ -468,61 +484,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/SignalDispatcher.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoApp/src/cn/org/act/demo/Init.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/signal/Send.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/identifyservice/Login.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/client/EventComet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DemoApp/src/cn/org/act/demo/signaltest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/identifyservice/UserIdentifiedServlet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/UserSpace.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/InternetOS/src/cn/org/act/internetos/activities/Activity.java"/>
 </editors>
-<item historyLabel="SignalDispatcher.java" index="0">
-<position info="not_deleted" x="915" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
-<item historyLabel="Init.java" index="1">
-<position info="not_deleted" x="907" y="0"/>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="929" y="18"/>
 </item>
-<item historyLabel="Init.java" index="1">
-<position info="not_deleted" x="907" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
-<item historyLabel="SignalDispatcher.java" index="0">
-<position info="not_deleted" x="915" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1494" y="0"/>
 </item>
-<item historyLabel="SignalDispatcher.java" index="0">
-<position info="not_deleted" x="915" y="0"/>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1002" y="0"/>
 </item>
-<item historyLabel="Send.java" index="2">
-<position info="not_deleted" x="974" y="2"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="2465" y="0"/>
 </item>
-<item historyLabel="Login.java" index="3">
-<position info="not_deleted" x="837" y="0"/>
+<item historyLabel="UserIdentifiedServlet.java" index="2">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="EventComet.java" index="4">
-<position info="not_deleted" x="2776" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
-<item historyLabel="AccessTokenMaker.java" index="5">
-<position info="not_deleted" x="878" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="2459" y="6"/>
 </item>
-<item historyLabel="Login.java" index="3">
-<position info="not_deleted" x="1595" y="336"/>
+<item historyLabel="UserIdentifiedServlet.java" index="2">
+<position info="not_deleted" x="985" y="0"/>
 </item>
-<item historyLabel="AccessTokenMaker.java" index="5">
-<position info="not_deleted" x="878" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1093" y="0"/>
 </item>
-<item historyLabel="AccessTokenMaker.java" index="5">
-<position info="not_deleted" x="461" y="13"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1341" y="0"/>
 </item>
-<item historyLabel="Login.java" index="3">
-<position info="not_deleted" x="1595" y="336"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="2184" y="0"/>
 </item>
-<item historyLabel="Send.java" index="2">
-<position info="not_deleted" x="797" y="0"/>
+<item historyLabel="UserIdentifiedServlet.java" index="2">
+<position info="not_deleted" x="794" y="0"/>
 </item>
-<item historyLabel="SignalDispatcher.java" index="0">
-<position info="not_deleted" x="900" y="0"/>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1271" y="0"/>
 </item>
-<item active="true" historyLabel="signaltest.java" index="6">
-<position info="not_deleted" x="1502" y="0"/>
+<item historyLabel="QueryActivities.java" index="4">
+<position info="not_deleted" x="1964" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1002" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="860" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="859" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="927" y="0"/>
+</item>
+<item historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="598" y="0"/>
+</item>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1271" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="2303" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="2155" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="2290" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1278" y="0"/>
+</item>
+<item historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="196" y="6"/>
+</item>
+<item historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="355" y="0"/>
+</item>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1271" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1278" y="0"/>
+</item>
+<item historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="355" y="0"/>
+</item>
+<item historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="AsyncSignal.java" index="1">
+<position info="not_deleted" x="1271" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1278" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1378" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="1374" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="540" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="506" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="2290" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="1630" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="1710" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="1954" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="734" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="726" y="0"/>
+</item>
+<item historyLabel="ActivityManager.java" index="0">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="UserSpace.java" index="3">
+<position info="not_deleted" x="1562" y="0"/>
+</item>
+<item active="true" historyLabel="Activity.java" index="5">
+<position info="not_deleted" x="295" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -541,6 +658,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activity.java" tooltip="InternetOS/src/cn/org/act/internetos/activities/Activity.java">
+<persistable path="/InternetOS/src/cn/org/act/internetos/activities/Activity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QueryActivities.java" tooltip="InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java">
+<persistable path="/InternetOS/src/cn/org/act/internetos/api/activities/QueryActivities.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AsyncSignal.java" tooltip="InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java">
+<persistable path="/InternetOS/src/cn/org/act/internetos/signal/AsyncSignal.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActivityManager.java" tooltip="InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java">
+<persistable path="/InternetOS/src/cn/org/act/internetos/activities/ActivityManager.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccessTokenMaker.java" tooltip="InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java">
 <persistable path="/InternetOS/src/cn/org/act/internetos/api/client/AccessTokenMaker.java"/>
 </file>
@@ -567,18 +696,6 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Request.class" tooltip="org.apache.catalina.connector.Request">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DemoApp/D:\/TOMCAT\/apache-tomcat-7.0.11\/lib\/catalina.jar&lt;org.apache.catalina.connector(Request.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StreamHelper.java" tooltip="InternetOS/src/cn/org/act/tools/StreamHelper.java">
-<persistable path="/InternetOS/src/cn/org/act/tools/StreamHelper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WebClient.java" tooltip="DemoApp/src/cn/org/act/tools/WebClient.java">
-<persistable path="/DemoApp/src/cn/org/act/tools/WebClient.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListenerFactory.java" tooltip="InternetOS/src/cn/org/act/internetos/manage/app/ListenerFactory.java">
-<persistable path="/InternetOS/src/cn/org/act/internetos/manage/app/ListenerFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConfigParser.java" tooltip="InternetOS/src/cn/org/act/internetos/manage/app/ConfigParser.java">
-<persistable path="/InternetOS/src/cn/org/act/internetos/manage/app/ConfigParser.java"/>
 </file>
 </mruList>
 </workbench>

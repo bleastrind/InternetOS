@@ -27,8 +27,8 @@ public class UserSpace {
 	}
 
 	private String usertoken;
-
-	private BlockingQueue<String> messageQueue = new LinkedBlockingQueue<String>();
+	private ActivityManager activityManager;
+	private BlockingQueue<String> messageQueue;
 
 	public BlockingQueue<String> getMessageQueue() {
 		return messageQueue;
@@ -46,17 +46,27 @@ public class UserSpace {
 
 	public UserSpace(String token) {
 		usertoken = token;
+		activityManager = new ActivityManager(this);
+		messageQueue = new LinkedBlockingQueue<String>();
 	}
 
+	public List<Application> getApps(){
+		 return ModuleConstructor.getAppDAO().getApps(usertoken);			
+	}
+	
+	//TODO this function did to irrelevant work
 	public List<SignalListener> getMatchedSignalListener(Signal signal) {
+		//TODO  system signal
 		List<SignalListener> ans = getSystemSignalListener();
 
-		List<Application> apps = ModuleConstructor.getAppDAO().getApps(usertoken);
-		
+		List<Application> apps = getApps();
 		for (Application app : apps) {
 			
 			if(!app.isInited())
-				app.init(this);
+				app.init(this); //TODO  init a app
+			
+			//TODO activeListeners
+			this.activityManager.createActivity(app.getName(), "listener");
 			
 			for (SignalListener listener : app
 					.getListeners()) {
@@ -76,7 +86,6 @@ public class UserSpace {
 		return ans;
 	}
 	
-	private ActivityManager activityManager = new ActivityManager();
 
 	public ActivityManager getActivityManager() {
 

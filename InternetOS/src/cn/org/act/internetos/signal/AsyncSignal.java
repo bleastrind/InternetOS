@@ -56,8 +56,10 @@ public class AsyncSignal extends Signal {
 	protected void sendDataToCallback(SignalListener listener,
 			AsyncSignal asyncSignal) throws IOException {
 
-		if(callback == null)
+		if(callback == null){
+			listener.accept(this, null);
 			return;
+		}
 		
 		OutputStream output = null;
 		try {
@@ -107,6 +109,23 @@ public class AsyncSignal extends Signal {
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 		StreamHelper.copyStream(stream, bout);
 		super.setData(new ByteArrayInputStream(bout.toByteArray()));
+	}
+	
+	@Override
+	public InputStream getData() throws IOException{
+		super.getData().reset();
+		return super.getData();
+	}
+	
+	@Override
+	public String toString(){
+		try {
+			getData();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return super.toString();
 	}
 
 }

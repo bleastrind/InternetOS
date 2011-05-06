@@ -30,7 +30,8 @@ public class SignalDispatcher extends UserIdentifiedServlet{
 		Signal signal = createSignal(request,token);
 
 	    UserSpace space = getUserSpace(request);
-
+	    
+	    //signal.getData().reset();
 	    System.out.println(signal);
 	    
 		List<SignalListener> list = space.getMatchedSignalListener(signal);
