@@ -10,11 +10,11 @@
  */
 
 user_pref("accessibility.typeaheadfind.flashBar", 0);
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1304248994);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1304249234);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1304249114);
-user_pref("app.update.lastUpdateTime.microsummary-generator-update-timer", 1303713798);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1304248874);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1304661312);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1304661552);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1304661432);
+user_pref("app.update.lastUpdateTime.microsummary-generator-update-timer", 1304661192);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1304661072);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
 user_pref("browser.cache.disk.capacity", 1048576);
 user_pref("browser.cache.disk.smart_size.first_run", false);
@@ -46,8 +46,8 @@ user_pref("extensions.addon-notification@mozillaonline.com.install-event-fired",
 user_pref("extensions.addoninstaller.installation.completedtime", "30140908886470586");
 user_pref("extensions.addoninstaller.personas@christopher.beard", false);
 user_pref("extensions.addonnotification.default_rules_version", "0.3");
-user_pref("extensions.blocklist.pingCountTotal", 7);
-user_pref("extensions.blocklist.pingCountVersion", 7);
+user_pref("extensions.blocklist.pingCountTotal", 8);
+user_pref("extensions.blocklist.pingCountVersion", 8);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.cehomepage.homeSetToProfile", true);
 user_pref("extensions.cehomepage@mozillaonline.com.install-event-fired", true);

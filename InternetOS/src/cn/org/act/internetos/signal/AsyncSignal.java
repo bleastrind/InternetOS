@@ -56,6 +56,9 @@ public class AsyncSignal extends Signal {
 	protected void sendDataToCallback(SignalListener listener,
 			AsyncSignal asyncSignal) throws IOException {
 
+		if(callback == null)
+			return;
+		
 		OutputStream output = null;
 		try {
 

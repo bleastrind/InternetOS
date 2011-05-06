@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import cn.org.act.internetos.activities.ActivityManager;
+import cn.org.act.internetos.activities.ClientPageListener;
 import cn.org.act.internetos.persist.Application;
 import cn.org.act.internetos.persist.Pair;
 import cn.org.act.internetos.signal.ClientSignalListener;
@@ -47,7 +49,7 @@ public class UserSpace {
 	}
 
 	public List<SignalListener> getMatchedSignalListener(Signal signal) {
-		List<SignalListener> ans = new ArrayList<SignalListener>();
+		List<SignalListener> ans = getSystemSignalListener();
 
 		List<Application> apps = ModuleConstructor.getAppDAO().getApps(usertoken);
 		
@@ -65,6 +67,21 @@ public class UserSpace {
 		
 		
 		return ans;
+	}
+	
+	private List<SignalListener> getSystemSignalListener(){
+		List<SignalListener> ans = new ArrayList<SignalListener>();
+		ans.add(new ClientPageListener(this));
+		
+		return ans;
+	}
+	
+	private ActivityManager activityManager = new ActivityManager();
+
+	public ActivityManager getActivityManager() {
+
+		return activityManager;
+		
 	}
 	
 }
