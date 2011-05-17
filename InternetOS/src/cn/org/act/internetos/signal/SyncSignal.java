@@ -34,11 +34,17 @@ public class SyncSignal extends Signal{
 		return data;
 		
 	}
-	public void makeDataRereadable() throws IOException{
+	public void makeDataRereadable(){
 		hasMultiListeners = true;
 		
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
-		StreamHelper.copyStream(this.getData(), bout);
+		
+		try {
+			StreamHelper.copyStream(this.getData(), bout);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		super.setData(new ByteArrayInputStream(bout.toByteArray()));
 	}
 }

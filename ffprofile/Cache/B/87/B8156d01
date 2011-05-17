@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>天空软件站：提供国内外最新免费软件、共享软件下载！</title>
+<meta name="keywords" content="软件下载,软件,下载,共享,共享软件,免费,免费软件,汉化,汉化补丁,游戏,游戏下载,软件教程,软件新闻,软件资讯,操作系统,邮件,服务器,压缩,文件管理,组网,局域网,宽带,网络安全,杀毒,杀毒软件,病毒,黑客,病毒档案,音频,视频,数据库,设计,平面设计,网页制作,网页浏览,上传,联络,聊天,动画,网络软件,系统工具,应用软件,联络聊天,图像处理,多媒体,媒体工具,行业管理,游戏娱乐,编程开发,安全,教育教学,网站源码,数码软件,中国共享软件注册中心,注册码,软件注册,注册软件,购买软件,软件购买">
+<link type="text/css" rel="stylesheet" media="screen" href="css/skycn.css">
+<link type="text/css" rel="stylesheet" media="screen" href="css/index.css">
+<script type='text/javascript' src='http://cbjs.baidu.com/js/m.js'></script>
+<script type='text/javascript'>
+BAIDU_CLB_addSlot('16706');
+BAIDU_CLB_addSlot('17652');
+BAIDU_CLB_addSlot('17894');
+BAIDU_CLB_addSlot('17864');
+BAIDU_CLB_addSlot('17866');
+BAIDU_CLB_addSlot('16365');
+BAIDU_CLB_addSlot('16364');
+BAIDU_CLB_addSlot('24229');
+BAIDU_CLB_enableAllSlots();
+</script>
+<script type="text/javascript">
+function G(id){return document.getElementById(id);}
+function changeTab(tabUL, n, cntID){
+	var ul = G(tabUL);
+	var lis = ul.getElementsByTagName('li');
+	for(var i=0; i<lis.length; i++){
+		lis[i].className = lis[i].className.replace(/\s*focus/, '');
+		G(cntID + '_' + i).style.display = 'none';
+	}
+	lis[n].className = lis[n].className ? lis[n].className + ' focus' : 'focus';
+	G(cntID + '_' + n).style.display = '';
+}
+</script>
+</head>
+<body>
+<!-- 通用头（hd） -->
+<div id="hd" class="mass">
+	<div class="start">
+		<span>请选择入口： <a href="http://www.skycn.com/index.html" target="_blank">主站</a><i>|</i><a href="http://tele.skycn.com/index.html" target="_blank">电信</a><i>|</i><a href="http://cnc.skycn.com/index.html" target="_blank">网通</a><i>|</i><a href="http://www.regsky.com/" target="_blank" class="spec">域名主机</a></span>
+		下载，从天空开始！
+	</div>
+	<div class="nav">
+		<div id="logo"><a href="http://www.skycn.com/" target="_blank"><img src="img/logo.gif" alt="天空软件站"></a></div>
+		<div id="navAd"><script type="text/javascript">BAIDU_CLB_fillSlot("24229");</script></div>
+		<div id="nav">
+			<a href="index.html" target="_blank">首　页</a><i>|</i><a href="sort/soft_sort.html" target="_blank">分　类</a><i>|</i><a href="top/top_000000_a.html" target="_blank">排行榜</a><i>|</i><a href="new/all.html" target="_blank">最近更新</a><i>|</i><a href="cy.htm" target="_blank">装机必备</a><i>|</i><a href="http://news.skycn.com/" target="_blank">软件资讯</a><i>|</i><a href="http://shareware.skycn.com/" target="_blank">软件商城</a><i>|</i><a href="http://game.skycn.com/" target="_blank">网页游戏</a>
+			<form action="search.php" name="sForm">
+				<input type="hidden" name="sf" value="index">
+				<input name="ss_name" type="text" maxlength="100" class="txt" autocomplete="off">
+				<input type="submit" value="软件搜索" class="sbm">
+			</form>
+		</div>
+	</div>
+	<ul id="category">
+		<li><a href="sort/sort010000_indate_DESC_1.html" target="_blank">网络软件</a></li>
+		<li><a href="sort/sort020000_indate_DESC_1.html" target="_blank">系统工具</a></li>
+		<li><a href="sort/sort030000_indate_DESC_1.html" target="_blank">应用软件</a></li>
+		<li><a href="sort/sort040000_indate_DESC_1.html" target="_blank">联络聊天</a></li>
+		<li><a href="sort/sort050000_indate_DESC_1.html" target="_blank">图形图像</a></li>
+		<li><a href="sort/sort060000_indate_DESC_1.html" target="_blank">多媒体类</a></li>
+		<li><a href="sort/sort070000_indate_DESC_1.html" target="_blank">行业软件</a></li>
+		<li><a href="sort/sort080000_indate_DESC_1.html" target="_blank">游戏娱乐</a></li>
+		<li><a href="sort/sort090000_indate_DESC_1.html" target="_blank">编程开发</a></li>
+		<li><a href="sort/sort100000_indate_DESC_1.html" target="_blank">杀毒安全</a></li>
+		<li><a href="sort/sort110000_indate_DESC_1.html" target="_blank">教育教学</a></li>
+	</ul>
+</div>
+<script language="javascript">document.sForm.ss_name.focus();</script>
+<script language="javascript" src="js/ac.js"></script>
+<script language="javascript">InstallAC(document.sForm,document.sForm.ss_name,"","search","zh-CN");</script>
+
+<!-- 通栏广告 -->
+<div class="ad1 mass"><script type='text/javascript'>BAIDU_CLB_fillSlot('16364');</script></div>
+
+<!-- 通栏分列广告 -->
+<div class="ad2 mass">
+	<div style="float:left"><script type='text/javascript'>BAIDU_CLB_fillSlot('17864');</script></div>
+	<div style="float:right"><script type='text/javascript'>BAIDU_CLB_fillSlot('17894');</script></div>
+</div>
+
+<!-- 第一屏 -->
+<div id="s1" class="mass">
+	<div class="col3">
+
+		<!-- 最新专题 -->
+		<div id="subject" class="mod3">
+			<h2>最新专题<!--<p><a href="zt/zthz/index.html" target="_blank">更多&gt;&gt;</a></p>--></h2>
+			<div class="boxBody">
+				<ul>
+					<li><a href="http://www.uucall.hk/__ck_307_1336.html" target="_blank">UUCall-让你打电话不掏钱的绝招</a></li><li><a href="http://windows.microsoft.com/ie9" target="_blank">最新IE9正式版免费官方下载</a></li><li><a href="http://www.skycn.com/zt/freesoft/" target="_blank">摈弃收费软件，用免费软件代替</a></li><li><a href="http://www.bdsirui.com/avg/" target="_blank">AVG 2011 SP1专业防护永久免费</a></li><li><a href="http://www.skycn.com/zt/msn2009/index/" target="_blank">增强版MSN功能强大好玩又好用</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 个人软件 -->
+		<div id="personal" class="imgTxt mod2">
+			<h2>个人软件</h2>
+			<div class="boxBody">
+					<script language="javascript" src="js/index_a_3_v4.js"></script>
+			</div>
+		</div>
+
+		<!-- 软件推荐 -->
+		<div id="corp" class="imgTxt mod2">
+			<h2>软件推荐</h2>
+			<div class="boxBody">
+					<script language="javascript" src="js/index_a_4_v4.js"></script>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col12">
+		<!-- 第一列 -->
+		<div class="col1">
+
+			<div class="js-swf"><script type="text/javascript" src="js/js-swf.js"></script></div>
+
+			<!-- 本周推荐 -->
+			<div id="weekSpec" class="mod">
+				<h2><span>本周推荐</span></h2>
+				<div class="boxBody">
+					<div class="l">
+						<a href="http://www.skycn.com/soft/61185.html" target="_blank"><img src="http://www.skycn.com/img12090/61185.gif" width="100" height="75"></a><br><a href="http://www.skycn.com/soft/61185.html" target="_blank">百度输入法 1.0.16.35</a><br><a href="http://www.skycn.com/soft/28200.html" target="_blank"><img src="http://www.skycn.com/img12090/28200.gif" width="100" height="75"></a><br><a href="http://www.skycn.com/soft/28200.html" target="_blank">飞信Fetion 2011 Beta 春露版</a>
+					</div>
+					<ul class="r">
+						<li><a href="http://www.skycn.com/soft/26521.html" target="_blank">Windows Live Messenger</a></li><li><a href="http://www.skycn.com/soft/66763.html" target="_blank">Adobe PhotoShop CS5</a></li><li><a href="http://www.skycn.com/soft/14786.html" target="_blank">酷狗音乐(KuGoo) 2011</a></li><li><a href="http://www.skycn.com/soft/458.html" target="_blank">Dreamweaver 8 简体中文版</a></li><li><a href="http://www.skycn.com/soft/4934.html" target="_blank">腾讯QQ 2010 SP3.1 正式版</a></li><li><a href="http://www.skycn.com/soft/2345.html" target="_blank">精灵虚拟光驱Daemon Tool</a></li><li><a href="http://www.skycn.com/soft/5671.html" target="_blank">Adobe Flash Player</a></li><li><a href="http://www.skycn.com/soft/33219.html" target="_blank">快播(QvodPlayer) 标准版</a></li><li><a href="http://www.skycn.com/soft/58802.html" target="_blank">逗游游戏宝库 1.2.2</a></li><li><a href="http://www.skycn.com/soft/21668.html" target="_blank">Vagaa哇嘎画时代版</a></li><li><a href="http://www.skycn.com/soft/65462.html" target="_blank">读览天下电子阅读器</a></li><li><a href="http://www.skycn.com/soft/27515.html" target="_blank">NETPAS网络游戏加速器</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ad -->
+			<div><script type='text/javascript'>BAIDU_CLB_fillSlot('16365');</script></div>
+
+		</div>
+
+		<!-- 第二列 -->
+		<div class="col2">
+
+			<!-- 近期热点 -->
+			<div id="recentHot" class="mod2">
+				<h2>近期热点<p class="more"><script language="javascript" src="js/index_a_6_v4.js"></script></p></h2>
+				<div class="boxBody">
+					<h3 class="bright"><a href="http://news.skycn.com/article/31814.html" target="_blank">苹果发布升级版iOS 4.3.3 消除位置跟踪瑕疵</a></h3>
+					<p>[<a href="http://news.skycn.com/article/31785.html" target="_blank">百度输入法新版发布</a>]&nbsp;[<a href="http://news.skycn.com/article/31765.html" target="_blank">WPS Office校园版推出</a>]&nbsp;[<a href="http://news.skycn.com/article/31754.html" target="_blank">迅雷看看网页版新功能</a>]</p>
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tr><th width="42">[<a href="http://news.skycn.com/sort/sort0100wz_indate_DESC_1.html" target="_blank">新闻</a>]</th><td width="176"><a href="http://news.skycn.com/article/31809.html" target="_blank">4399游戏盒抗日游戏登场</a></td><td><a href="http://news.skycn.com/article/31800.html" target="_blank">离开模式让迅雷7低碳下载</a></td></tr><tr><th width="42">[<a href="http://news.skycn.com/sort/sort0102wz_indate_DESC_1.html" target="_blank">安全</a>]</th><td width="176"><a href="http://news.skycn.com/article/31796.html" target="_blank">移动互联网已成病毒新目标</a></td><td><a href="http://news.skycn.com/article/31738.html" target="_blank">微软收集WP手机位置数据</a></td></tr><tr><th width="42">[<a href="http://news.skycn.com/sort/sort0200wz_indate_DESC_1.html" target="_blank">教程</a>]</th><td width="176"><a href="http://news.skycn.com/article/31807.html" target="_blank">驱动精灵让游戏畅通无阻</a></td><td><a href="http://news.skycn.com/article/31819.html" target="_blank">NETPAS移动与铁通加速攻略</a></td></tr><tr><th width="42">[<a href="http://news.skycn.com/sort/sort0300wz_indate_DESC_1.html" target="_blank">设计</a>]</th><td width="176"><a href="http://news.skycn.com/article/31790.html" target="_blank">母亲节网购让商品图更惊艳</a></td><td><a href="http://news.skycn.com/article/31225.html" target="_blank">PS图片合成滑稽松鼠战士</a></td></tr><tr><th width="42">[<a href="http://www.skycn.com/new/01.html" target="_blank">软件</a>]</th><td width="176"><a href="http://www.skycn.com/soft/48836.html" target="_blank">美图秀秀 2.6.8 正式版</a></td><td><a href="http://www.skycn.com/soft/32264.html" target="_blank">WPS Office 2011 校园版</a></td></tr><tr><th width="42">[<a href="http://www.skycn.com/new/01.html" target="_blank">软件</a>]</th><td width="176"><a href="http://www.skycn.com/soft/16468.html" target="_blank">iTunes 10.2.2.14多语言版</a></td><td><a href="http://www.skycn.com/soft/59064.html" target="_blank">益盟操盘手 L2手机主力版</a></td></tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- 标签切换1 -->
+			<div id="tabs1" class="mod2">
+				<ul class="tabs" id="tabs1Tit">
+					<li class="focus"><a href="javascript:changeTab('tabs1Tit', 0, 'tabs1');void(0);" onfocus="this.blur()">最新软件</a></li>
+					<li class="spec"><a href="javascript:changeTab('tabs1Tit', 1, 'tabs1');void(0);" onfocus="this.blur()">软件资讯</a></li>
+					<li><a href="javascript:changeTab('tabs1Tit', 2, 'tabs1');void(0);" onfocus="this.blur()">软件教程</a></li>
+				</ul>
+				<div class="boxBody">
+
+					<div id="tabs1_0">
+						<a href="http://www.skycn.com/soft/65257.html" target="_blank"><img src="http://www.skycn.com/img12090/65257.gif" width="120" height="90"></a><div class="relTxt"><a href="http://www.skycn.com/soft/65257.html" target="_blank">百度影音 1.0.14.0 beta 4</a><p>百度影音支持主流媒体格式的视频、音频文件，实现本地播放和在线点播。让它成为您休闲娱乐的伙伴，让您的工作与生活充满乐趣，为您提供</p></div>
+						<ul>
+							<li><a href="soft/31767.html" target="_blank">QQ电脑管家(原QQ医生) 4.7 正式版</a><p>05-06</p></li><li><a href="soft/15092.html" target="_blank">瑞星杀毒软件 2011 23.00.24.98 天空软件专版(永</a><p>05-06</p></li><li><a href="soft/23851.html" target="_blank">MP4/RM转换专家 26.5 Build 8210 白金版</a><p>05-06</p></li><li><a href="soft/34524.html" target="_blank">银冬瓜个人理财软件/家庭理财软件 2011 2.1 </a><p>05-06</p></li><li><a href="soft/7834.html" target="_blank">导线测量平差 5.0 </a><p>05-06</p></li><li><a href="soft/14344.html" target="_blank">QQ IP数据库 20110505 纯真版 </a><p>05-06</p></li>
+						</ul>
+						<div class="dotLine"></div>
+						<ul>
+							<li><a href="soft/27455.html" target="_blank">凌云好用剪切板 15.2 </a><p>05-06</p></li><li><a href="soft/7581.html" target="_blank">数码大师2010 27.4 Build 7250 完美白金版 </a><p>05-06</p></li><li><a href="soft/52535.html" target="_blank">word文档批量处理大师 5.1.6 </a><p>05-06</p></li><li><a href="soft/1857.html" target="_blank">卡巴斯基(KAV) 每日病毒库 2011.05.06 </a><p>05-06</p></li><li><a href="soft/17339.html" target="_blank">Avira AntiVir 病毒库 2011.05.06 </a><p>05-06</p></li>
+							<li class="more"><a href="new/all.html" target="_blank">更多&gt;&gt;</a></li>
+						</ul>
+					</div>
+
+					<div id="tabs1_1" style="display:none;">
+						<a href="http://news.skycn.com/article/31272.html" target="_blank"><img src="http://news.skycn.com/newspic/20110318-1.jpg" width="120" height="90"></a><div class="relTxt"><a href="http://news.skycn.com/article/31272.html" target="_blank">金山之后 瑞星宣布杀毒软件永久免费</a><p>3月18日，国内最大信息安全厂商瑞星公司宣布，从即日起其个人安全软件产品全面、永久免费——今后价格将不再成为阻碍广大用户使用顶级</p></div>
+						<ul>
+							<li><a href="http://news.skycn.com/article/31826.html" target="_blank">U-Mail邮件服务器：商务安全一切尽在掌握</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31820.html" target="_blank">五月苹果家族巨奖来袭，读览天下带你一起“充”</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31814.html" target="_blank">苹果发布升级版iOS 4.3.3 消除位置跟踪瑕疵</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31775.html" target="_blank">如何强化知识产权建设</a><p>05-04</p></li><li><a href="http://news.skycn.com/article/31791.html" target="_blank">十周年庆典　按键精灵大型征文设奖超150个</a><p>05-03</p></li><li><a href="http://news.skycn.com/article/31786.html" target="_blank">新增时尚梦幻特效 美图秀秀2.6.8华丽登场！</a><p>04-29</p></li>
+						</ul>
+						<div class="dotLine"></div>
+						<ul>
+							<li><a href="http://news.skycn.com/article/31776.html" target="_blank">傲游百度携手 共创完美移动浏览解决方案</a><p>04-29</p></li><li><a href="http://news.skycn.com/article/31750.html" target="_blank">QQ电脑管家：携知识产权亮剑，领跑行业发展</a><p>04-27</p></li><li><a href="http://news.skycn.com/article/31743.html" target="_blank">企业为何要强化知识产权保护</a><p>04-27</p></li><li><a href="http://news.skycn.com/article/31740.html" target="_blank">苹果谷歌突陷泄密门 智能手机信息安全引关注</a><p>04-27</p></li><li><a href="http://news.skycn.com/article/31738.html" target="_blank">微软也收集Windows Phone手机用户位置数据</a><p>04-27</p></li>
+							<li class="more"><a href="http://news.skycn.com/" target="_blank">更多&gt;&gt;</a></li>
+						</ul>
+					</div>
+
+					<div id="tabs1_2" style="display:none">
+						<a href="http://www.skycn.com/soft/65462.html" target="_blank"><img src="http://news.skycn.com/newspic/20110420-1.jpg" width="120" height="90"></a><div class="relTxt"><a href="http://www.skycn.com/soft/65462.html" target="_blank">中国领先:读览天下数字阅读平台</a><p></p></div>
+						<ul>
+							<li><a href="http://news.skycn.com/article/31832.html" target="_blank">手机炒股使用有感之同花顺篇</a><p>05-06</p></li><li><a href="http://news.skycn.com/article/31831.html" target="_blank">多米音乐，给你史无前例的视听觉体验</a><p>05-06</p></li><li><a href="http://news.skycn.com/article/31830.html" target="_blank">《弹弹堂》风靡 4399游戏盒页游一号通</a><p>05-06</p></li><li><a href="http://news.skycn.com/article/31829.html" target="_blank">有道词典4.2版正式发布 新增迷你窗口</a><p>05-06</p></li><li><a href="http://news.skycn.com/article/31828.html" target="_blank">群雄逐鹿主流远程控制软件盘点</a><p>05-06</p></li><li><a href="http://news.skycn.com/article/31827.html" target="_blank">快快游戏：母亲节的小创意，和妈妈一起游戏</a><p>05-05</p></li>
+						</ul>
+						<div class="dotLine"></div>
+						<ul>
+							<li><a href="http://news.skycn.com/article/31825.html" target="_blank">AVG提醒：节后回归工作谨防新闻中的黑手</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31824.html" target="_blank">电子商务陷阱重重 互联网安全月普及网购安全知识</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31823.html" target="_blank">省钱才是硬道理 傲游MM2.0省流模式解析</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31817.html" target="_blank">财付通彩票全新上线 打造安全购彩平台</a><p>05-05</p></li><li><a href="http://news.skycn.com/article/31822.html" target="_blank">瑞星：从拉登电脑的安全问题看防护技巧</a><p>05-05</p></li>
+							<li class="more"><a href="http://news.skycn.com/" target="_blank">更多&gt;&gt;</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div><div class="clear"></div>
+
+		<div><script type='text/javascript'>BAIDU_CLB_fillSlot('17866');</script></div>
+	</div>
+
+</div>
+
+<!-- 第二屏 -->
+<div id="s2" class="mass">
+	<div class="col3">
+
+		<!-- 酷软推荐 -->
+		<div id="coolSoft" class="mod2">
+			<h2>酷软推荐</h2>
+			<div class="boxBody">
+				<script language="javascript" src="js/index_a_8_v4.js"></script>
+			</div>
+		</div>
+
+		<!-- 标签切换2 -->
+		<div id="tabs2" class="mod3">
+			<ul class="tabs" id="tabs2Tit">
+				<li class="focus"><a href="javascript:changeTab('tabs2Tit', 0, 'tabs2');void(0);" onfocus="this.blur();">下载周排行榜</a></li>
+				<li class="last"><a href="javascript:changeTab('tabs2Tit', 1, 'tabs2');void(0);" onfocus="this.blur();">下载总排行榜</a></li>
+			</ul>
+			<div class="boxBody">
+				<ul id="tabs2_0">
+					<li class="top"><span>1</span><a href="soft/5671.html" target="_blank">Adobe Flash Player for IE</a></li><li class="top"><span>2</span><a href="soft/27159.html" target="_blank">搜狗拼音输入法 5.2 正式版</a></li><li class="top"><span>3</span><a href="soft/3475.html" target="_blank">WinRAR 3.93 简体中文版</a></li><li><span>4</span><a href="soft/21730.html" target="_blank">360安全卫士 7.7.0.2001 正</a></li><li><span>5</span><a href="soft/4934.html" target="_blank">腾讯QQ 2010 SP3.1 正式版</a></li><li><span>6</span><a href="soft/37757.html" target="_blank">Adobe Photoshop CS4 简体中</a></li><li><span>7</span><a href="soft/14857.html" target="_blank">迅雷(Thunder) 7.1.8.2298</a></li><li><span>8</span><a href="soft/24476.html" target="_blank">商品销售管理软件 免费版</a></li><li><span>9</span><a href="soft/57400.html" target="_blank">会员消费积分管理系统 5.6.</a></li><li><span>10</span><a href="soft/2345.html" target="_blank">精灵虚拟光驱(Daemon Tools</a></li><li><span>11</span><a href="soft/3076.html" target="_blank">Adobe Reader X 10.0.0 简体</a></li><li><span>12</span><a href="soft/33219.html" target="_blank">快播(QvodPlayer) 3.5.0 bu</a></li><li><span>13</span><a href="soft/2064.html" target="_blank">同花顺免费炒股软件 2011 7</a></li><li><span>14</span><a href="soft/27740.html" target="_blank">商店超市收银系统（进销存财</a></li><li><span>15</span><a href="soft/49846.html" target="_blank">鲁大师(原:Z武器) 2.78 Bui</a></li>
+				</ul>
+				<ul id="tabs2_1" style="display:none;">
+					<li class="top"><span>1</span><a href="soft/14857.html" target="_blank">迅雷(Thunder) 7.1.8.2298</a></li><li class="top"><span>2</span><a href="soft/4934.html" target="_blank">腾讯QQ 2010 SP3.1 正式版</a></li><li class="top"><span>3</span><a href="soft/15092.html" target="_blank">瑞星杀毒软件 2011 23.00.2</a></li><li><span>4</span><a href="soft/27159.html" target="_blank">搜狗拼音输入法 5.2 正式版</a></li><li><span>5</span><a href="soft/3475.html" target="_blank">WinRAR 3.93 简体中文版</a></li><li><span>6</span><a href="soft/879.html" target="_blank">网际快车(FlashGet) 3.7.0.</a></li><li><span>7</span><a href="soft/21730.html" target="_blank">360安全卫士 7.7.0.2001 正</a></li><li><span>8</span><a href="soft/98.html" target="_blank">暴风影音 2011 3.11.04.12</a></li><li><span>9</span><a href="soft/14786.html" target="_blank">酷狗音乐(KuGoo) 2011 6.2.</a></li><li><span>10</span><a href="soft/1760.html" target="_blank">RealPlayer 2011 14.0.2.63</a></li><li><span>11</span><a href="soft/2988.html" target="_blank">Windows优化大师 7.99 Buil</a></li><li><span>12</span><a href="soft/2436.html" target="_blank">PP点点通 2008 12.16 正式版</a></li><li><span>13</span><a href="soft/14094.html" target="_blank">腾讯QQ 2008 正式版</a></li><li><span>14</span><a href="soft/5671.html" target="_blank">Adobe Flash Player for IE</a></li><li><span>15</span><a href="soft/2993.html" target="_blank">超级兔子 2011.0.16.0 正式</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div class="col12">
+
+		<!-- 常用软件 -->
+		<div id="commonUse" class="mod">
+			<h2><a href="cy.htm" target="_blank">常用软件</a><p><a href="cy.htm" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<script language="javascript" src="js/index_cy_1_v4.js"></script>
+				</table>
+			</div>
+		</div>
+
+		<!-- recommend -->
+		<div id="recommend" class="mod">
+			<div class="boxBody">
+				<div id="titBar">图<br>文<br>推<br>荐</div>
+				<div id="scrollRow">
+					<a href="javascript:void(0);" class="goLeft" id="slide_left"><img src="img/goLeft.gif"></a>
+					<a href="javascript:void(0);" class="goRight" id="slide_right"><img src="img/goRight.gif"></a>
+					<div id="gscroll"><div id="gsub">
+						<ul id="holder1">
+							<li><a href="http://news.skycn.com/article/29719.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101210-5.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29719.html" target="_blank">PhotoShop基础教程：照片贴片胶布</a></p></li><li><a href="http://news.skycn.com/article/29718.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101210-4.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29718.html" target="_blank">PS制作可爱的白色云朵文字效果</a></p></li><li><a href="http://news.skycn.com/article/29717.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101210-3.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29717.html" target="_blank">PhotoShop基础教程：杂志封面女郎</a></p></li><li><a href="http://news.skycn.com/article/29716.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101210-2.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29716.html" target="_blank">PS基础教程：为卡通照添加闪电背</a></p></li><li><a href="http://news.skycn.com/article/29715.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101210-1.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29715.html" target="_blank">PhotoShop教程：高光黄调人物照片</a></p></li><li><a href="http://news.skycn.com/article/29656.html" target="_blank"><img src="http://news.skycn.com/newsimg/2010/20101207-1.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29656.html" target="_blank">PS教程：合成废墟中的没落城市风</a></p></li><li><a href="http://news.skycn.com/article/29352.html" target="_blank"><img src="http://news.skycn.com/newsimg/toutiao/20101115-1.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29352.html" target="_blank">Photoshop合成逼真效果的美女机器</a></p></li><li><a href="http://news.skycn.com/article/29039.html" target="_blank"><img src="http://news.skycn.com/newsimg/toutiao/20101025-4.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29039.html" target="_blank">PhotoShop合成魔幻世界里的美女</a></p></li><li><a href="http://news.skycn.com/article/29037.html" target="_blank"><img src="http://news.skycn.com/newsimg/toutiao/20101025-2.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29037.html" target="_blank">PS鼠绘教程：鼠绘奇幻的仙女插画</a></p></li><li><a href="http://news.skycn.com/article/29036.html" target="_blank"><img src="http://news.skycn.com/newsimg/toutiao/20101025-1.jpg" width="120" height="90"></a><p><a href="http://news.skycn.com/article/29036.html" target="_blank">Photoshop教程：合成黑暗的女巫</a></p></li>
+						</ul>
+						<ul id="holder2"></ul>
+					</div></div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+var Slider=(function() {
+var speed = 12;
+var space = 12;
+var slideWidth = 134;
+var moveLock = false;
+var moveTimer;
+var dist = 0;
+var slideTimer=null;
+var isScroll = false;
+var holder1 = G("holder1");
+var slidePic = G("gscroll");
+G("holder2").innerHTML = holder1.innerHTML;
+slidePic.scrollLeft = holder1.scrollWidth;
+function slidePlay(){
+clearInterval(slideTimer);
+slideTimer = setInterval(function(){slideDown();slideStopDown();},3000);
+}
+function slideStop(){
+clearInterval(slideTimer);
+}
+function slideUp(){
+if(moveLock) return;
+clearInterval(slideTimer);
+moveLock = true;
+moveTimer = setInterval(function(){scrollUp();},speed);
+}
+function slideStopUp(){
+if(isScroll);
+clearInterval(moveTimer);
+if(slidePic.scrollLeft % slideWidth != 0){
+dist = -(slidePic.scrollLeft % slideWidth);
+setDist();
+}else{
+moveLock = false;
+}
+slidePlay();
+}
+function scrollUp(){
+if(slidePic.scrollLeft <= 0){slidePic.scrollLeft = holder1.offsetWidth}
+slidePic.scrollLeft -= space;
+}
+function slideDown(){
+clearInterval(moveTimer);
+if(moveLock) return;
+clearInterval(slideTimer);
+moveLock = true;
+scrollDown();
+moveTimer = setInterval(function(){scrollDown();},speed);
+}
+function slideStopDown(){
+if(isScroll);
+clearInterval(moveTimer);
+if(slidePic.scrollLeft % slideWidth != 0 ){
+dist = slideWidth - slidePic.scrollLeft % slideWidth;
+setDist();
+}else{
+moveLock = false;
+}
+slidePlay();
+}
+function scrollDown(){
+if(slidePic.scrollLeft >= holder1.scrollWidth){slidePic.scrollLeft = 0;}
+slidePic.scrollLeft += space ;
+}
+function setDist(){
+if(dist == 0){
+moveLock = false;
+isScroll = false;
+return;
+}
+var num;
+var tempSpeed = speed,tempDist = space;
+if(Math.abs(dist)<slideWidth/5){
+tempDist =  Math.round(Math.abs(dist/5));
+if(tempDist<1){tempDist=1};
+}
+if(dist < 0){
+if(dist < -tempDist){
+dist += tempDist;
+num = tempDist;
+}else{
+num = -dist;
+dist = 0;
+}
+slidePic.scrollLeft -= num;
+setTimeout(function(){setDist();},tempSpeed);
+}else{
+if(dist > tempDist){
+dist -= tempDist;
+num = tempDist;
+}else{
+num = dist;
+dist = 0;
+}
+slidePic.scrollLeft += num;
+setTimeout(function(){setDist();},tempSpeed);
+}
+}
+function init() {
+var p=G('gscroll');
+p.onmouseover=function(){Slider.stop();};
+p.onmouseout=function(){Slider.play();};
+var l = G('slide_left'), r = G('slide_right');
+l.onmousedown = function(){Slider.up();}
+r.onmousedown = function(){Slider.down();}
+l.onmouseup = l.onmouseout = function(){Slider.stopUp();}
+r.onmouseup = r.onmouseout = function(){Slider.stopDown();}
+slidePlay();
+}
+return {
+init:init,
+play:slidePlay,
+stop:slideStop,
+up:slideUp,
+stopUp:slideStopUp,
+down:slideDown,
+stopDown:slideStopDown
+}
+})();
+Slider.init();
+
+</script>
+		<!-- 软件分类 -->
+		<div id="softCls" class="mod">
+			<h2><a href="sort/soft_sort.html" target="_blank">软件分类</a><p><a href="sort/soft_sort.html" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBodyNoBreak">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<th><a href="sort/sort010000_indate_DESC_1.html" target="_blank">网络软件</a></th>
+						<th class="alter"><a href="sort/sort020000_indate_DESC_1.html" target="_blank">系统工具</a></th>
+						<th><a href="sort/sort030000_indate_DESC_1.html" target="_blank">应用工具</a></th>
+						<th class="alter"><a href="sort/sort040000_indate_DESC_1.html" target="_blank">联络聊天</a></th>
+					</tr>
+					<tr>
+						<td>
+							<a href="sort/sort2010100_indate_DESC_1.html" target="_blank">浏览工具</a>
+							<a href="sort/sort2010200_indate_DESC_1.html" target="_blank">浏览辅助</a>
+							<a href="sort/sort2010500_indate_DESC_1.html" target="_blank">网络优化</a>
+							<a href="sort/sort2010700_indate_DESC_1.html" target="_blank">邮件处理</a>
+							<a href="sort/sort2010800_indate_DESC_1.html" target="_blank">网页制作</a>
+							<a href="sort/sort2011100_indate_DESC_1.html" target="_blank">FTP/Telnet</a>
+							<a href="sort/sort2011200_indate_DESC_1.html" target="_blank">下载工具</a>
+							<a href="sort/sort2011500_indate_DESC_1.html" target="_blank">搜索工具</a>
+							<a href="sort/sort2011600_indate_DESC_1.html" target="_blank">检测监控</a>
+							<a href="sort/sort2011700_indate_DESC_1.html" target="_blank">新闻阅读</a>
+							<a href="sort/sort2011900_indate_DESC_1.html" target="_blank">服务器类</a>
+							<a href="sort/sort2012100_indate_DESC_1.html" target="_blank">站长工具</a>
+							<a href="sort/sort2012400_indate_DESC_1.html" target="_blank">邮件群发</a>
+							</td>
+						<td class="alter">
+							<a href="sort/sort2020100_indate_DESC_1.html" target="_blank">系统优化</a>
+							<a href="sort/sort2020300_indate_DESC_1.html" target="_blank">备份工具</a>
+							<a href="sort/sort2020400_indate_DESC_1.html" target="_blank">美化增强</a>
+							<a href="sort/sort2020600_indate_DESC_1.html" target="_blank">开关定时</a>
+							<a href="sort/sort2020700_indate_DESC_1.html" target="_blank">硬件工具</a>
+							<a href="sort/sort2021100_indate_DESC_1.html" target="_blank">卸载清理</a>
+							<a href="sort/sort2021400_indate_DESC_1.html" target="_blank">系统其它</a>
+							<a href="sort/sort2021500_indate_DESC_1.html" target="_blank">常用驱动</a>
+						</td>
+						<td>
+							<a href="sort/sort2030100_indate_DESC_1.html" target="_blank">压缩解压</a>
+							<a href="sort/sort2030200_indate_DESC_1.html" target="_blank">文件处理</a>
+							<a href="sort/sort2030500_indate_DESC_1.html" target="_blank">时钟日历</a>
+							<a href="sort/sort2030600_indate_DESC_1.html" target="_blank">键盘鼠标</a>
+							<a href="sort/sort2030800_indate_DESC_1.html" target="_blank">输 入 法</a>
+							<a href="sort/sort2031200_indate_DESC_1.html" target="_blank">光盘工具</a>
+							<a href="sort/sort2031300_indate_DESC_1.html" target="_blank">翻译软件</a>
+							<a href="sort/sort2031400_indate_DESC_1.html" target="_blank">信息管理</a>
+							<a href="sort/sort2031500_indate_DESC_1.html" target="_blank">其他工具</a>
+							<a href="sort/sort2031800_indate_DESC_1.html" target="_blank">办公应用</a>
+						</td>
+						<td class="alter">
+							<a href="sort/sort2040100_indate_DESC_1.html" target="_blank">聊天工具</a>
+							<a href="sort/sort2040200_indate_DESC_1.html" target="_blank">QQ软件区</a>
+							<a href="sort/sort2040600_indate_DESC_1.html" target="_blank">短信电话</a>
+						</td>
+					</tr>
+					<tr>
+						<th><a href="sort/sort050000_indate_DESC_1.html" target="_blank">图形图像</a></th>
+						<th class="alter"><a href="sort/sort060000_indate_DESC_1.html" target="_blank">多媒体类</a></th>
+						<th><a href="sort/sort080000_indate_DESC_1.html" target="_blank">游戏娱乐</a></th>
+						<th class="alter"><a href="sort/sort100000_indate_DESC_1.html" target="_blank">杀毒安全</a></th>
+					</tr>
+					<tr>
+						<td>
+							<a href="sort/sort2050100_indate_DESC_1.html" target="_blank">图像处理</a>
+							<a href="sort/sort2050300_indate_DESC_1.html" target="_blank">图像捕捉</a>
+							<a href="sort/sort2050600_indate_DESC_1.html" target="_blank">图像浏览</a>
+							<a href="sort/sort2050700_indate_DESC_1.html" target="_blank">图标工具</a>
+							<a href="sort/sort2050800_indate_DESC_1.html" target="_blank">图像管理</a>
+							<a href="sort/sort2050900_indate_DESC_1.html" target="_blank">3D制作类</a>
+							<a href="sort/sort2051000_indate_DESC_1.html" target="_blank">图像其它</a>
+						</td>
+						<td class="alter">
+							<a href="sort/sort2060100_indate_DESC_1.html" target="_blank">视频播放</a>
+							<a href="sort/sort2060900_indate_DESC_1.html" target="_blank">音频播放</a>
+							<a href="sort/sort2060300_indate_DESC_1.html" target="_blank">视频处理</a>
+							<a href="sort/sort2060200_indate_DESC_1.html" target="_blank">音频处理</a>
+							<a href="sort/sort2060500_indate_DESC_1.html" target="_blank">视频转换</a>
+							<a href="sort/sort2060400_indate_DESC_1.html" target="_blank">音频转换</a>
+							<a href="sort/sort2060700_indate_DESC_1.html" target="_blank">媒体管理</a>
+							<a href="sort/sort2061000_indate_DESC_1.html" target="_blank">媒体制作</a>
+							<a href="sort/sort2061100_indate_DESC_1.html" target="_blank">媒体其它</a>
+							<a href="sort/sort2061200_indate_DESC_1.html" target="_blank">在线视听</a>
+							<a href="sort/sort2061400_indate_DESC_1.html" target="_blank">解码器类</a>
+							<a href="sort/sort2061500_indate_DESC_1.html" target="_blank">电子阅读</a>
+						</td>
+						<td>
+							<a href="sort/sort2081100_indate_DESC_1.html" target="_blank">游戏平台</a>
+							<a href="sort/sort2080200_indate_DESC_1.html" target="_blank">测字算命</a>
+							<a href="sort/sort2080300_indate_DESC_1.html" target="_blank">游戏工具</a>
+							<a href="sort/sort2080400_indate_DESC_1.html" target="_blank">模拟器类</a>
+							<a href="sort/sort2080500_indate_DESC_1.html" target="_blank">棋牌游戏</a>
+							<a href="sort/sort2080600_indate_DESC_1.html" target="_blank">益智游戏</a>
+							<a href="sort/sort2080700_indate_DESC_1.html" target="_blank">动作射击</a>
+							<a href="sort/sort2080800_indate_DESC_1.html" target="_blank">体育竞技</a>
+							<a href="sort/sort2080900_indate_DESC_1.html" target="_blank">网络游戏</a>
+							<a href="sort/sort2081000_indate_DESC_1.html" target="_blank">其它游戏</a>
+						</td>
+						<td class="alter">
+							<a href="sort/sort2100100_indate_DESC_1.html" target="_blank">杀毒软件</a>
+							<a href="sort/sort2100200_indate_DESC_1.html" target="_blank">安全辅助</a>
+							<a href="sort/sort2100300_indate_DESC_1.html" target="_blank">系统监控</a>
+							<a href="sort/sort2100500_indate_DESC_1.html" target="_blank">防火墙类</a>
+							<a href="sort/sort2100800_indate_DESC_1.html" target="_blank">密码工具</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- 通栏分列广告 -->
+<div class="ad3 mass">
+    <div style="float:left"><script type='text/javascript'>BAIDU_CLB_fillSlot('16706');</script></div>
+	<div style="float:right"><script type='text/javascript'>BAIDU_CLB_fillSlot('17652');</script></div>
+</div>
+
+<!-- 第三屏 -->
+<div id="s3" class="mass">
+	<div class="col3">
+		<!-- 设计专区 -->
+		<div id="design" class="mod2">
+			<h2><a href="http://news.skycn.com/sort/sort0300wz_indate_DESC_1.html" target="_blank">设计专区</a><p><a href="http://news.skycn.com/sort/sort0300wz_indate_DESC_1.html" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<ul>
+					<li><a href="http://news.skycn.com/article/31816.html" target="_blank"><img src="http://news.skycn.com/newspic/20110505-1.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31816.html" target="_blank">真实场景巧渲染 打造唯</a></p></li><li><a href="http://news.skycn.com/article/31090.html" target="_blank"><img src="http://news.skycn.com/newspic/20110309-1.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31090.html" target="_blank">Photoshop调色:漂亮女</a></p></li><li><a href="http://news.skycn.com/article/31225.html" target="_blank"><img src="http://news.skycn.com/newspic/20110316-1.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31225.html" target="_blank">Photoshop图片合成:滑</a></p></li><li><a href="http://news.skycn.com/article/31226.html" target="_blank"><img src="http://news.skycn.com/newspic/20110316-2.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31226.html" target="_blank">Photoshop图片合成:人</a></p></li><li><a href="http://news.skycn.com/article/31227.html" target="_blank"><img src="http://news.skycn.com/newspic/20110316-3.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31227.html" target="_blank">Photoshop合成镂空的蛋</a></p></li><li><a href="http://news.skycn.com/article/31230.html" target="_blank"><img src="http://news.skycn.com/newspic/20110316-5.jpg" width="80" height="60"></a><p><a href="http://news.skycn.com/article/31230.html" target="_blank">Photoshop调出专业的青</a></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col1">
+		<!-- 软件教程 -->
+		<div id="course" class="mod2">
+			<h2><a href="http://news.skycn.com/" target="_blank">软件教程</a><p><a href="http://news.skycn.com/" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<a href="http://news.skycn.com/article/30707.html" target="_blank"><img src="http://news.skycn.com/newspic/20110215-7.jpg" width="120" height="90"></a><div class="relTxt"><h3><a href="http://news.skycn.com/article/30707.html" target="_blank">IE9浏览器必须知道</a></h3><p>很多Vista和Windows7系统的朋友们用上了IE9 RC 版本了吧，很快，几周后IE9 </p></div><div class="clear"></div>
+				<ul>
+					<li><a href="http://news.skycn.com/article/31819.html" target="_blank">非电信也流畅！NETPAS移动与铁通宽带加</a></li><li><a href="http://news.skycn.com/article/31818.html" target="_blank">QQ钱包“眼镜导购”小秘书  让你的世界</a></li><li><a href="http://news.skycn.com/article/31815.html" target="_blank">批量离线下载 让迅雷7实现特快专递</a></li><li><a href="http://news.skycn.com/article/31813.html" target="_blank">细节优化体验提升 百度影音BETA 4版发</a></li><li><a href="http://news.skycn.com/article/31812.html" target="_blank">快快游戏盘点游戏控族：你是下列哪种“</a></li><li><a href="http://news.skycn.com/article/31810.html" target="_blank">踏青百花俏 美图看看一键分享精彩瞬间</a></li><li><a href="http://news.skycn.com/article/31806.html" target="_blank">指纹识别歌曲信息 手机酷我听听有绝招</a></li><li><a href="http://news.skycn.com/article/31809.html" target="_blank">《抗日奇侠》热播 4399游戏盒抗日游戏</a></li><li><a href="http://news.skycn.com/article/31807.html" target="_blank">妙用驱动精灵 让游戏畅通无阻</a></li><li><a href="http://news.skycn.com/article/31804.html" target="_blank">劳动最光荣 利用傲游3高效工作技巧五则</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col2">
+		<!-- 软件资讯 -->
+		<div id="news" class="mod2">
+			<h2><a href="http://news.skycn.com/" target="_blank">软件资讯</a><p><a href="http://news.skycn.com/" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<a href="http://news.skycn.com/article/30283.html" target="_blank"><img src="http://news.skycn.com/newspic/20110120-1.jpg" width="120" height="90"></a><div class="relTxt"><h3><a href="http://news.skycn.com/article/30283.html" target="_blank">苹果CEO乔布斯鲜为人知的15个小秘密</a></h3><p>苹果CEO斯蒂夫-乔布斯通常位列最受尊敬的CEO之列一点都不让人奇怪。乔布斯同时还被《财富》杂志选为“十年最佳首席执行官”，《财富》杂志认为，</p></div><div class="clear"></div>
+				<ul>
+					<li><a href="http://news.skycn.com/article/31737.html" target="_blank">腾讯诉奇虎360一审胜出 获赔偿40万元</a><p>04-27</p></li><li><a href="http://news.skycn.com/article/31732.html" target="_blank">安全第一，傲游携手赛门铁克打造第一安全浏览器</a><p>04-27</p></li><li><a href="http://news.skycn.com/article/31727.html" target="_blank">设计未来 浩辰CAD以知识产权领跑行业发展</a><p>04-26</p></li><li><a href="http://news.skycn.com/article/31722.html" target="_blank">微软称Windows Phone 7不会存储用户位置数据</a><p>04-26</p></li><li><a href="http://news.skycn.com/article/31713.html" target="_blank">益盟操盘手盯盘先锋，3大实用设计曝光</a><p>04-25</p></li><li><a href="http://news.skycn.com/article/31701.html" target="_blank">莫斯科警方解救卡巴斯基创始人之子</a><p>04-25</p></li><li><a href="http://news.skycn.com/article/31700.html" target="_blank">报告称移动软件市场增长 2017年将近800亿美元</a><p>04-25</p></li><li><a href="http://news.skycn.com/article/31695.html" target="_blank">腾讯金山发起互联网安全月 安全教育提倡“授人以</a><p>04-25</p></li><li><a href="http://news.skycn.com/article/31689.html" target="_blank">可及Windows应用商场正式公测</a><p>04-22</p></li><li><a href="http://news.skycn.com/article/31688.html" target="_blank">俄罗斯软件大亨卡巴斯基儿子失踪 或已遭绑架</a><p>04-22</p></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- 第四屏 -->
+<div id="s4" class="mass">
+	<div class="col3">
+		<!-- 推荐软件 -->
+		<div id="softReco" class="mod2">
+			<h2>推荐软件</h2>
+			<div class="boxBody">
+				<script language="javascript" src="js/index_a_10_v4.js"></script>
+			</div>
+		</div>
+	</div>
+	<div class="col12">
+		<div id="share" class="mod">
+			<h2><a href="http://shareware.skycn.com/" target="_blank">共享软件区</a><p><a href="http://shareware.skycn.com/" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<ul>
+					<li class="alter"><a href="http://shareware.skycn.com/soft/15411.htm" target="_blank">电子书制作利器</a><p>30.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/26400.htm" target="_blank">QQ聊天记录监视器 3.9.0.2 110505 远程发送</a><p>68.00元</p></li><li><a href="http://shareware.skycn.com/soft/16207.htm" target="_blank">文档管理利器-友益文书软件</a><p>93.00元</p></li><li><a href="http://shareware.skycn.com/soft/3715.htm" target="_blank">MP4/RM转换专家 26.5 Build 8210 白金版</a><p>38.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/116.htm" target="_blank">英语八哥--同步中小学教材！</a><p>180.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/3394.htm" target="_blank">英语小精灵(English Elf) 7.00 </a><p>39.00元</p></li><li><a href="http://shareware.skycn.com/soft/4001.htm" target="_blank">QQ聊天记录器-监控QQ聊天</a><p>30.00元</p></li><li><a href="http://shareware.skycn.com/soft/27540.htm" target="_blank">智动博客助手 2.4 </a><p>220.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/1343.htm" target="_blank">最好彩票软件《双色球霸主》</a><p>298.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/31986.htm" target="_blank">新友财务软件 2.87 </a><p>860.00元</p></li><li><a href="http://shareware.skycn.com/soft/5823.htm" target="_blank">免费语音输入法2011</a><p>60.00元</p></li><li><a href="http://shareware.skycn.com/soft/1464.htm" target="_blank">命中双色球 3.09 Build20110223 </a><p>98.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/29793.htm" target="_blank">QQ远程聊天记录察看器2011版</a><p>59.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/16879.htm" target="_blank">一路发木材经营管理系统 V1.0.0 </a><p>300.00元</p></li><li><a href="http://shareware.skycn.com/soft/4121.htm" target="_blank">简单易学的C语言实验系统</a><p>35.00元</p></li><li><a href="http://shareware.skycn.com/soft/30632.htm" target="_blank">合同管理系统 2.09.0521 SQL网络版 </a><p>200.00元</p></li><li class="alter"><a href="http://shareware.skycn.com/soft/27660.htm" target="_blank">学校教务人员的得力助手</a><p>200.00元</p></li><li class="alter">&nbsp;</li><li><a href="http://shareware.skycn.com/soft/69.htm" target="_blank">视频转换大师---万能转换</a><p>78.00元</p></li><li class="alter">&nbsp;</li><li class="alter"><a href="http://shareware.skycn.com/soft/6981.htm" target="_blank">思必达车辆软件持续热销中</a><p>3500.00元</p></li><li class="alter">&nbsp;</li><li><a href="http://shareware.skycn.com/soft/7002.htm" target="_blank">英语单词全能记忆王</a><p>80.00元</p></li><li class="alter">&nbsp;</li><li class="alter"><a href="http://shareware.skycn.com/soft/5132.htm" target="_blank">英语学习王-学生白领必备</a><p>238.00元</p></li><li class="alter">&nbsp;</li><li><a href="http://shareware.skycn.com/soft/18293.htm" target="_blank">混凝土回弹</a><p>300.00元</p></li><li class="alter">&nbsp;</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 第五屏 -->
+<div id="s5" class="mass">
+	<div class="col3">
+		<!-- 合作软件 -->
+		<div id="corp" class="imgTxt2 mod2">
+			<h2>合作软件</h2>
+			<div class="boxBody">
+			    <ul>
+					<li><a href="http://www.skycn.com/soft/39416.html" target="_blank"><img src="http://www.skycn.com/images/39416.gif"></a><p><a href="http://www.skycn.com/soft/39416.html" target="_blank">迅游加速器--让网游从此畅爽无比！</a></p></li><li><a href="http://www.skycn.com/soft/49846.html" target="_blank"><img src="http://www.skycn.com/iconimg/49846.gif"></a><p><a href="http://www.skycn.com/soft/49846.html" target="_blank">专业而易用的硬件检测，让你的电脑配置一目了然</a></p></li><li><a href="http://www.skycn.com/soft/24106.html" target="_blank"><img src="http://www.skycn.com/images/24106.gif"></a><p><a href="http://www.skycn.com/soft/24106.html" target="_blank">全球安装量最大的P2P网络电视软件</a></p></li><li><a href="http://www.skycn.com/soft/36276.html" target="_blank"><img src="http://www.skycn.com/iconimg/pp_30x30.gif"></a><p><a href="http://www.skycn.com/soft/36276.html" target="_blank">皮皮高清影视播放器，下载即可欣赏万部大片爽片。</a></p></li><li><a href="http://www.skycn.com/soft/33447.html" target="_blank"><img src="http://www.skycn.com/iconimg/33447.gif"></a><p><a href="http://www.skycn.com/soft/33447.html" target="_blank">《双色球大赢家》通过多种高级过滤,节省资金90%以上</a></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col1">
+		<!-- 手机软件 -->
+		<div id="mobile" class="mod2">
+			<h2><a href="http://sj.skycn.com/" target="_blank">手机软件</a><p><a href="http://sj.skycn.com/" target="_blank">更多&gt;&gt;</a></p></h2>
+			<div class="boxBody">
+				<a href="http://www.skycn.com/soft/62366.html" target="_blank"><img src="http://www.skycn.com/img12090/62366.gif"></a><div class="relTxt"><h3><a href="http://www.skycn.com/soft/62366.html" target="_blank">百度手机地图 for S60V3</a></h3><p>百度手机地图S60版本客户端是专为使用Symbian 60操作系统V3和V5版本的手机打造</a></p></div><div class="clear"></div>
+				<ul>
+					<li><a href="http://www.skycn.com/search.php?sf=soft&ss_name=UCWEB" target="_blank">UCWEB浏览器 最新版</a></li><li><a href="http://www.skycn.com/search.php?sf=soft&ss_name=%CA%D6%BB%FAQQ" target="_blank">手机QQ 各版本下载</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%B0%D9%B6%C8%CA%D6%BB%FA&aq=t" target="_blank">百度手机输入法</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=SmartSetting&aq=t" target="_blank">SmartSetting智能助手</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=A4%CA%E4%C8%EB%B7%A8" target="_blank">A4输入法 各版本</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%CB%D1%B9%B7%CA%D6%BB%FA%CA%E4%C8%EB%B7%A8" target="_blank">搜狗手机输入法</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%C0%B4%B5%E7%CD%A8" target="_blank">来电通 各版本下载</a></li><li><a href="http://www.skycn.com/search.php?sf=soft&ss_name=KD+player" target="_blank">KDPlayer音乐播放器</a></li><li><a href="http://www.skycn.com/search.php?sf=index&ss_name=%D5%C6%C9%CF%B0%D9%B6%C8" target="_blank">掌上百度 全版本</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%B0%D9%D4%C4%B5%E7%D7%D3%CA%E9" target="_blank">百阅电子书 最新版</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%D0%C5%B0%B2%D2%D7%CE%C0%CA%BF" target="_blank">信安易卫士 全部软件</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%B1%B4%B6%E0%C0%D7%B4%EF%B6%A8%CE%BB" target="_blank">贝多雷达定位</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=UC%D7%C0%C3%E6" target="_blank">UC桌面 各版本</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=SmartMovie&aq=t" target="_blank">SmartMovie智能影院</a></li><li><a href="http://www.skycn.com/soft/59662.html" target="_blank">搜吃搜玩　java版</a></li><li><a href="http://www.skycn.com/search.php?sf=search&ss_name=%CC%EC%CC%EC%B6%AF%CC%FD&aq=t" target="_blank">天天动听 最新版</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col2">
+		<!-- 软件知道 -->
+		<div id="zhidao" class="mod2">
+			<h2><a href="http://zhidao.skycn.com/" target="_blank">软件知道</a><!--<p><a href="http://zhidao.skycn.com/" target="_blank">更多&gt;&gt;</a></p>--></h2>
+			<div class="boxBody">
+				<iframe marginwidth="0" marginheight="0" scrolling="no" framespacing="0" vspace="0" hspace="0" frameborder="0" width="380" height="270" src="http://ikcode.baidu.com/iknow.html?&host=iknow.skycn.com&width=450&height=270&type=1&pt=skycnsoft_ik&showType=956&className=&cid=864&resultNum=10&showClassName=&bgColor=ffffff&boxPos=after&inputWidth=155&inputHeight=20&lineHeight=10&color=0000cc&fontSize=12&m=left&showLogo=false&columnNum=1"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 合作网站 -->
+<div id="concert" class="mass">
+	<div id="cct" class="mod2">
+		<h2>
+			<a href="mirror.php" target="_blank">带宽提供</a>
+			<script language="javascript" src="js/index_hz_1_v4.js"></script>
+		</h2>
+		<div class="boxBody">
+			按字母排列：
+			<a href="word/A_1.html" target="_blank">A</a>
+			<a href="word/B_1.html" target="_blank">B</a>
+			<a href="word/C_1.html" target="_blank">C</a>
+			<a href="word/D_1.html" target="_blank">D</a>
+			<a href="word/E_1.html" target="_blank">E</a>
+			<a href="word/F_1.html" target="_blank">F</a>
+			<a href="word/G_1.html" target="_blank">G</a>
+			<a href="word/H_1.html" target="_blank">H</a>
+			<a href="word/I_1.html" target="_blank">I</a>
+			<a href="word/J_1.html" target="_blank">J</a>
+			<a href="word/K_1.html" target="_blank">K</a>
+			<a href="word/L_1.html" target="_blank">L</a>
+			<a href="word/M_1.html" target="_blank">M</a>
+			<a href="word/N_1.html" target="_blank">N</a>
+			<a href="word/O_1.html" target="_blank">O</a>
+			<a href="word/P_1.html" target="_blank">P</a>
+			<a href="word/Q_1.html" target="_blank">Q</a>
+			<a href="word/R_1.html" target="_blank">R</a>
+			<a href="word/S_1.html" target="_blank">S</a>
+			<a href="word/T_1.html" target="_blank">T</a>
+			<a href="word/U_1.html" target="_blank">U</a>
+			<a href="word/V_1.html" target="_blank">V</a>
+			<a href="word/W_1.html" target="_blank">W</a>
+			<a href="word/X_1.html" target="_blank">X</a>
+			<a href="word/Y_1.html" target="_blank">Y</a>
+			<a href="word/Z_1.html" target="_blank">Z</a>
+		</div>
+	</div>
+</div>
+
+<!-- 通用尾 -->
+<div id="ft" class="mass">
+	<table width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+		<tr>
+			<td align="center">
+				<a href="ads.php" target="_blank">广告联系</a><i>|</i><a href="announce.php" target="_blank">版权声明</a><i>|</i><a href="downloadsoft.php" target="_blank">下载帮助</a><i>|</i><a href="http://author.skycn.com/" target="_blank">软件发布</a><i>|</i><a href="mirror.php" target="_blank">镜像合作</a><br>
+				<span>Copyright &copy; 1998 - 2011 <a href="http://www.skycn.com/" target="_blank" class="skylink">Skycn.com</a> All Rights Reserved</span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证060522号</a>
+			</td>
+			<td width="20%"><a href="http://ulic.baidu.com/client/clientDetailCerInfo.do?id=360" target="_blank"><img src="img/2424_demond.gif"></a>&nbsp;&nbsp;<a href="http://adm.baidu.com/" target="_blank"><img src="img/adm_vip_3.gif"></a></td>
+		</tr>
+	</table>
+</div>
+<div style="display:none"><script language="javascript" src="js/skycn-count.js"></script></div>
+</body>
+</html>

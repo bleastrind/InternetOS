@@ -1,14 +1,14 @@
 Generated File. Do not edit.
 
 [HEADER]
-Version|0.14|$
+Version|0.15|$
 Arch|x86-msvc|$
 
 [PLUGINS]
 nppdf32.dll|$
 C:\Program Files (x86)\Adobe\Reader 9.0\Reader\browser\nppdf32.dll|$
 9.4.0.195|$
-1285150252000|1|5|$
+1285150252000|1|1|$
 Adobe PDF Plug-In For Firefox and Netscape "9.4.0"|$
 Adobe Acrobat|$
 7
@@ -31,7 +31,7 @@ Silverlight Plug-In|$
 npgeplugin.dll|$
 C:\Program Files (x86)\Google\Google Earth\plugin\npgeplugin.dll|$
 1.0.0.1|$
-1292051970000|1|5|$
+1292051970000|1|1|$
 GEPlugin|$
 Google Earth Plugin|$
 1
@@ -39,7 +39,7 @@ Google Earth Plugin|$
 NPSWF32.dll|$
 C:\Windows\SysWOW64\Macromed\Flash\NPSWF32.dll|$
 10.1.102.64|$
-1293945413874|1|5|$
+1293945413874|1|1|$
 Shockwave Flash 10.1 r102|$
 Shockwave Flash|$
 2
@@ -48,7 +48,7 @@ Shockwave Flash|$
 npGoogleOneClick8.dll|$
 C:\Users\Bleastrind\AppData\Local\Google\Update\1.2.183.39\npGoogleOneClick8.dll|$
 1.2.183.39|$
-1299555014226|1|5|$
+1299555014226|1|1|$
 Google Update|$
 Google Update|$
 1
@@ -63,24 +63,24 @@ Alipay security control|$
 0|application/aliedit|npaliedit| |$
 npgoogletalk.dll|$
 C:\Users\Bleastrind\AppData\Roaming\Mozilla\plugins\npgoogletalk.dll|$
-1.9.2.0|$
-1295949620000|1|5|$
-Version 1.9.2.0|$
+2.0.7.0|$
+1303802800000|1|1|$
+Version 2.0.7.0|$
 Google Talk Plugin|$
 1
 0|application/googletalk|Google voice and video chat|googletalk|$
 npgtpo3dautoplugin.dll|$
 C:\Users\Bleastrind\AppData\Roaming\Mozilla\plugins\npgtpo3dautoplugin.dll|$
-0.1.43.5|$
-1295949552000|1|5|$
-Google Talk Plugin Video Accelerator version:0.1.43.5|$
+0.1.43.7|$
+1303802726000|1|1|$
+Google Talk Plugin Video Accelerator version:0.1.43.7|$
 Google Talk Plugin Video Accelerator|$
 1
 0|application/vnd.gtpo3d.auto|||$
 npGoogleOneClick8.dll|$
 C:\Program Files (x86)\Google\Update\1.2.183.39\npGoogleOneClick8.dll|$
 1.2.183.39|$
-1299555014226|1|13|$
+1299555014226|1|9|$
 Google Update|$
 Google Update|$
 1

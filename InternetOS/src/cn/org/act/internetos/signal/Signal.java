@@ -58,7 +58,7 @@ public abstract class Signal {
 	public String getMethod() {
 		return method;
 	}
-	public void setData(InputStream data) throws IOException {
+	public void setData(InputStream data){
 		this.data = data;
 	}
 	public InputStream getData() throws IOException {

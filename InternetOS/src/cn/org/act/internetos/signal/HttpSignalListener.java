@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -19,17 +21,27 @@ import cn.org.act.tools.WebClient;
 
 public class HttpSignalListener extends SignalListener {
 
-	private String urlString;
+	private String baseUrlString;
 	public HttpSignalListener(String url, MatchRule rule) {
 		super(rule);
 		
-		urlString = url;
+		baseUrlString = url;
 	}
 
 	@Override
 	public void accept(Signal signal, OutputStream resultStream)
 			throws IOException {
 
+		String urlString = baseUrlString;
+		
+		try {
+			URI uri = new URI(signal.getUrl());
+			urlString += uri.getQuery() == null ? "" : "?"+uri.getQuery();
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		HttpURLConnection conn = createHttpConnection(urlString);
 
 		// Method

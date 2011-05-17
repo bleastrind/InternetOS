@@ -52,8 +52,9 @@ public class addApp extends HttpServlet {
 		else{
 		
 			ModuleConstructor.getAppDAO().addApp(new Application(user,config));
-			System.out.println("Register success,goto demo");
-			response.sendRedirect("http://localhost:8080/DemoApp/Init");
+			response.getWriter().println("Register success");
+			//System.out.println("Register success");
+			//response.sendRedirect("http://localhost:8080/DemoApp/Init");
 		}
 	}
 

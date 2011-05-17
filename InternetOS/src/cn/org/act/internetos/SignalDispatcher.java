@@ -49,7 +49,21 @@ public class SignalDispatcher extends UserIdentifiedServlet{
 			res = new SyncSignal();
 		}
 		
-		res.setUrl(request.getRequestURL().toString());
+		//make the query string
+		String query = "";
+		Enumeration<String> names = request.getParameterNames();
+			
+		while(names.hasMoreElements()){
+			String key = names.nextElement();
+			query += key +"=" + request.getParameter(key) + "&";
+		}
+		String url = request.getRequestURL().toString();
+		if(!"".equals(query))
+			url += "?" + query;
+		res.setUrl( url );
+		
+		
+		
 		
 		//data
 		res.setData(request.getInputStream());

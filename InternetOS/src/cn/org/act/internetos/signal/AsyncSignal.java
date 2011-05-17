@@ -105,9 +105,14 @@ public class AsyncSignal extends Signal {
 	 * AsyncSignal has to store the inputstream as it may expire
 	 */
 	@Override
-	public void setData(InputStream stream) throws IOException{
+	public void setData(InputStream stream) {
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
-		StreamHelper.copyStream(stream, bout);
+		try {
+			StreamHelper.copyStream(stream, bout);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		super.setData(new ByteArrayInputStream(bout.toByteArray()));
 	}
 	

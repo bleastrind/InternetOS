@@ -12,4 +12,7 @@
 <fullyQualifiedTypeName name="cn.org.act.internetos.ModuleConstructor"/>
 <fullyQualifiedTypeName name="cn.org.act.internetos.UserSpace"/>
 <fullyQualifiedTypeName name="cn.org.act.internetos.persist.Application"/>
+<fullyQualifiedTypeName name="org.codehaus.jettison.json.JSONArray"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
 </qualifiedTypeNameHistroy>

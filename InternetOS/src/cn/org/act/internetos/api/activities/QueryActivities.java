@@ -56,7 +56,7 @@ public class QueryActivities extends UserIdentifiedServlet {
 			XStream xstream = new XStream(jsondriver);
 			xstream.setMode(XStream.NO_REFERENCES);
 		String output = xstream.toXML(result);
-		
+		System.out.println(output);
 		response.getWriter().print(output);
 	}
 
