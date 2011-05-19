@@ -25,6 +25,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.org.act.internetos.activities.Activity;
+import cn.org.act.internetos.toolkit.QueryInterface;
 
 /**
  * Servlet implementation class ShareLinkServlet
@@ -32,18 +33,10 @@ import cn.org.act.internetos.activities.Activity;
 @WebServlet("/ShareLinkServlet")
 public class ShareLinkServlet extends HttpServlet {
 	private static int max_app = 50; // The maximum number of apps
-	private static String queryUrl = "http://localhost:8080/InternetOS/QueryActivities"; // The
+	private static final String baseUrl = "http://localhost:8080/InternetOS"; // The
 																							// url
-																							// for
-																							// searching
-																							// the
-																							// apps
-																							// given
-																							// a
-																							// user
-																							// name,
-																							// set
-																							// at
+	private QueryInterface queryInterface;																						// for
+																						// at
 																							// init()
 	// private String userID; // The user who requests
 	// private String urlRef; // The url for sharing
@@ -99,19 +92,34 @@ public class ShareLinkServlet extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		this.initArrays();
 
 		String userToken = checkUser(request);
 
 		String urlRef = request.getParameter("shareUrl");
 		System.out.println("User Token: " + userToken);
 		System.out.println("Share URL: " + urlRef);
-		// Do some initial work
+		// Prepare the data
 		ArrayList<String> appNamesArray = getAppNamesArray(userToken);
 		ArrayList<String> redirectUrlArray = getRedirectUrlArray(appNamesArray,
 				urlRef);
 		// Then make the return page
 		PrintWriter out = response.getWriter();
+		render(redirectUrlArray, out);
+		// Just for debugging
+		System.out.println();
+		System.out.println("Application Names: ");
+
+		for (int i = 0; i < appNamesArray.size(); i++) {
+			System.out.println(i + ": " + appNamesArray.get(i));
+		}
+		System.out.println();
+		System.out.println("Redirect Urls: ");
+		for (int i = 0; i < redirectUrlArray.size(); i++) {
+			System.out.println(i + ": " + redirectUrlArray.get(i));
+		}
+	}
+
+	private void render(ArrayList<String> redirectUrlArray, PrintWriter out) {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("\t<script type=\"text/javascript\">");
@@ -128,18 +136,14 @@ public class ShareLinkServlet extends HttpServlet {
 		out.println("\t</script>");
 		out.println("</head>");
 		out.println("</html>");
-		// Just for debugging
-		System.out.println();
-		System.out.println("Application Names: ");
+	}
 
-		for (int i = 0; i < appNamesArray.size(); i++) {
-			System.out.println(i + ": " + appNamesArray.get(i));
+	private ArrayList<String> getAppNamesArray(String userToken) {
+		ArrayList<String> res = new ArrayList<String>();
+		for (Activity activity : queryInterface.queryAllActivities(userToken)) {
+			res.add(activity.getName());
 		}
-		System.out.println();
-		System.out.println("Redirect Urls: ");
-		for (int i = 0; i < redirectUrlArray.size(); i++) {
-			System.out.println(i + ": " + redirectUrlArray.get(i));
-		}
+		return res;
 	}
 
 	private String checkUser(HttpServletRequest request) {
@@ -177,6 +181,7 @@ public class ShareLinkServlet extends HttpServlet {
 	 */
 	public void init() throws ServletException {
 
+		this.queryInterface = new QueryInterface(baseUrl);
 		// this.urlRef = "";
 		// this.userID = "";
 		this.shareLinkArray = new ArrayList<ShareLink>();
@@ -196,74 +201,7 @@ public class ShareLinkServlet extends HttpServlet {
 		this.shareLinkArray.add(new ShareLink("baidu", ibaidu));
 	}
 
-	/* Request to the queryURL and get the app names by userID */
-	private ArrayList<String> getAppNamesArray(String userID) {
-		HttpClient client = new DefaultHttpClient();
-		String queryString = queryUrl;
-		HttpGet request = new HttpGet(queryString);
-		request.addHeader("token", userID);
-		try {
-			HttpResponse response = client.execute(request);
-			HttpEntity entity = response.getEntity();
-			if (entity != null) {
-				InputStream is = entity.getContent();
-				
-				return getAppNamesByString(readStream(is,"utf-8"));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-	
-	private static String readStream(InputStream stream,String charset) throws IOException
-	{
-		if(stream == null)
-			return null;
-		
-		BufferedReader reader = new BufferedReader(new InputStreamReader(
-				stream, charset));
-		String line = "";
-		line +=reader.readLine();
-		StringBuffer sb = new StringBuffer(line);
-		while ((line = reader.readLine()) != null) {
-			sb.append("\n").append(line);
-		}
-		if (reader != null) {
-			reader.close();
-		}
-		return sb.toString();
-	}
 
-	private ArrayList<String> getAppNamesByString(String dataString) {
-		ArrayList<String> res = new ArrayList<String>();
-		for (Activity activity : getActivities(dataString)) {
-			res.add(activity.getName());
-		}
-		return res;
-	}
-
-	@SuppressWarnings("unchecked")
-	private Collection<Activity> getActivities(String dataString) {
-		ArrayList<Activity> res = new ArrayList<Activity>();
-
-		try {
-			JSONArray list = new JSONArray(dataString);
-			JSONArray list2 = list.getJSONArray(0);
-			for (int i = 0; i < list2.length(); i++) {
-				JSONArray innerarray = list2.getJSONArray(i);
-				JSONObject activityJSON = innerarray.getJSONObject(1);
-				String name = activityJSON.optString("name");
-				String type = activityJSON.optString("type");
-				String state = activityJSON.optString("state");
-				
-				res.add( new Activity(name,type,state) );
-			}
-		} catch (JSONException e) {
-			e.printStackTrace();
-		}
-		return res;
-	}
 
 	/*
 	 * Given the app names, get the redirect url from the data structures The
@@ -309,11 +247,5 @@ public class ShareLinkServlet extends HttpServlet {
 	// this.appNamesArray.add(s.substring(tail, s.length()));
 	// }
 
-	/* Init the arrays */
-	private void initArrays() {
-		// this.appNamesArray = null;
-		// this.redirectUrlArray = null;
-		// this.appNamesArray = new ArrayList<String>();
-		// this.redirectUrlArray = new ArrayList<String>();
-	}
+
 }

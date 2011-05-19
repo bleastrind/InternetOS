@@ -44,3 +44,6 @@
 127.0.0.1 - - [17/May/2011:00:18:11 +0800] "GET /InternetOS/QueryActivities HTTP/1.1" 200 640
 127.0.0.1 - - [17/May/2011:00:18:17 +0800] "GET /ShareOnce/ShareLinkServlet?userID=&shareUrl=http://test& HTTP/1.1" 200 172
 0:0:0:0:0:0:0:1 - - [17/May/2011:00:18:17 +0800] "GET /InternetOS/signal/share?userID=&shareUrl=http%3A%2F%2Ftest HTTP/1.1" 200 172
+127.0.0.1 - - [17/May/2011:22:09:00 +0800] "GET / HTTP/1.1" 404 955
+0:0:0:0:0:0:0:1 - - [17/May/2011:22:09:21 +0800] "GET /InternetOS/appmarket.html HTTP/1.1" 200 349
+0:0:0:0:0:0:0:1 - - [17/May/2011:22:09:43 +0800] "GET /InternetOS/installshareonce.jsp HTTP/1.1" 200 699
