@@ -21,6 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  bookmarklet:javascript:window.open('http://localhost:8080/InternetOS/signal/share?shareUrl='+document.location)
     <form action="http://localhost:8080/InternetOS/signal/share" target="_blank">
     <!-- User ID <input type="text" name="userID"/> -->
     Share URL <input type="text" name="shareUrl"/>

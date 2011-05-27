@@ -78,6 +78,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("  </head>\r\n");
       out.write("  \r\n");
       out.write("  <body>\r\n");
+      out.write("  bookmarklet:javascript:window.open('http://localhost:8080/InternetOS/signal/share?shareUrl='+document.location)\r\n");
       out.write("    <form action=\"http://localhost:8080/InternetOS/signal/share\" target=\"_blank\">\r\n");
       out.write("    <!-- User ID <input type=\"text\" name=\"userID\"/> -->\r\n");
       out.write("    Share URL <input type=\"text\" name=\"shareUrl\"/>\r\n");
