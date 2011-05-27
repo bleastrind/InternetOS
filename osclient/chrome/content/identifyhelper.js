@@ -1,4 +1,4 @@
-alert("initializing identifyhelper");
+//DEBUG alert("initializing identifyhelper");
 function IdentifyHelper(username,password,baseurl){
 
 	function getResult(url){
@@ -22,7 +22,7 @@ function IdentifyHelper(username,password,baseurl){
 
 var gIdentifyHelper = new IdentifyHelper(gConfig.username,gConfig.password,gConfig.baseurl);
 
-alert("get accessToken:" + gIdentifyHelper.accessToken);
+//DEBUG alert("get accessToken:" + gIdentifyHelper.accessToken);
 
 var accessTokenAppender =
 {
@@ -50,6 +50,6 @@ var accessTokenAppender =
   }
 };
 accessTokenAppender.register();
-alert("accessTokenAppender added");
+//DEBUG alert("accessTokenAppender added");
 
-alert(gChannel);
+//DEBUG alert(gChannel);

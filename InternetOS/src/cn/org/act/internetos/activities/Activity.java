@@ -1,39 +1,55 @@
 package cn.org.act.internetos.activities;
 
+import java.util.ArrayList;
 
-public class Activity {
+import cn.org.act.tools.Observable;
+
+
+public class Activity extends Observable{
 	private String name;
 	private String type;
 	private String state;
+	private int count;
 	
 	public static final String Actived = "actived";
 	public static final String Stopped = "stopped"; 
 	public static final String Killed = "killed";
 	
+
 	public Activity(String name,String type,String state)
 	{
-		this.setName(name);
-		this.setType(type);
-		this.setState(state);
-	}
-	public void setName(String name) {
 		this.name = name;
+		this.type = type;
+		this.setState(state);
+		this.count = 1;
 	}
+	
+	public void increaseCount(){
+		this.count++;
+		if(this.count > 0)
+			setState(Actived);
+	}
+	
+	public void decreaseCount(){
+		this.count--;
+		if(this.count <= 0)
+			setState(Stopped);
+	}
+	
 	public String getName() {
 		return name;
 	}
-	public void setType(String type) {
-		this.type = type;
-	}
+
 	public String getType() {
 		return type;
-	}
-	public void setState(String state) {
-		this.state = state;
 	}
 	public String getState() {
 		return state;
 	}
 	
-
+	public void setState(String state) {
+		String oldstate = state;
+		this.state = state;
+		super.onChanged(oldstate);
+	}
 }

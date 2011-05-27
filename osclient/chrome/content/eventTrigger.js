@@ -1,4 +1,4 @@
-alert("Initializing eventrigger");
+//DEBUG alert("Initializing eventrigger");
 
 //-------------------------------------Tab Removed-------------------------------------------------
 function exampleTabRemoved(event) {
@@ -17,7 +17,7 @@ function examplePageLoad(event) {
     if (win.frameElement) {
 		return;
 	}
-	alert(event.originalTarget.location);
+	//DEBUG alert(event.originalTarget.location);
 	var url = ''+event.originalTarget.location;
 	Tool.ayncPostData(gConfig.baseurl + "/signal/clientsignal/pageload",url);
   }
@@ -33,4 +33,4 @@ window.addEventListener("load", function () {
 }, false);
 
 
-alert("event Trigger inited");
+//DEBUG alert("event Trigger inited");

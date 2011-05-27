@@ -79,7 +79,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("  \r\n");
       out.write("  <body>\r\n");
       out.write("    <form action=\"http://localhost:8080/InternetOS/signal/share\" target=\"_blank\">\r\n");
-      out.write("    User ID <input type=\"text\" name=\"userID\"/>\r\n");
+      out.write("    <!-- User ID <input type=\"text\" name=\"userID\"/> -->\r\n");
       out.write("    Share URL <input type=\"text\" name=\"shareUrl\"/>\r\n");
       out.write("    <input type=\"submit\" value=\"share\"/>\r\n");
       out.write("    </form>\r\n");

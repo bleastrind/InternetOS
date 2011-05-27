@@ -22,7 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <form action="http://localhost:8080/InternetOS/signal/share" target="_blank">
-    User ID <input type="text" name="userID"/>
+    <!-- User ID <input type="text" name="userID"/> -->
     Share URL <input type="text" name="shareUrl"/>
     <input type="submit" value="share"/>
     </form>

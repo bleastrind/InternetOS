@@ -11,7 +11,7 @@ import cn.org.act.tools.StreamHelper;
 
 public class SyncSignal extends Signal{
 
-	private boolean hasMultiListeners = false;
+	private boolean reReadable = false;
 	@Override
 	public void sendTo(List<SignalListener> listeners, OutputStream result) throws IOException {
 
@@ -21,7 +21,7 @@ public class SyncSignal extends Signal{
 		for(SignalListener listener:listeners){
 			listener.accept(this, result);
 			
-			if(hasMultiListeners)
+			if(reReadable)
 				this.getData().reset();
 		}
 	}
@@ -29,14 +29,19 @@ public class SyncSignal extends Signal{
 	@Override
 	public InputStream getData() throws IOException{
 		InputStream data = super.getData();
-		if(hasMultiListeners)
+		if(reReadable)
 			data.reset();
 		return data;
 		
 	}
+	
+	@Override
 	public void makeDataRereadable(){
-		hasMultiListeners = true;
+
+		if(reReadable)
+			return;
 		
+		reReadable = true;
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 		
 		try {

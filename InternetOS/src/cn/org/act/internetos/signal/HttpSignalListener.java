@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import cn.org.act.internetos.UserSpace;
+import cn.org.act.internetos.activities.Activity;
+import cn.org.act.tools.HttpHelper;
 import cn.org.act.tools.WebClient;
 
 public class HttpSignalListener extends SignalListener {
@@ -131,6 +134,16 @@ public class HttpSignalListener extends SignalListener {
 			e.printStackTrace();
 			System.out.println("The stream is not avaliable!");
 		}
+	}
+
+	@Override
+	public boolean isEventRecieveReady(UserSpace userspace) {
+		String appname = HttpHelper.getHostApplication(baseUrlString);
+		Activity activity = userspace.getActivityManager().getActivity(appname);
+		if(null != activity)
+			return activity.getState() == Activity.Actived;
+		else
+			return false;
 	}
 
 }

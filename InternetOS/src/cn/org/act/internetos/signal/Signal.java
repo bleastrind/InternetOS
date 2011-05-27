@@ -70,6 +70,23 @@ public abstract class Signal {
 	public String getUrl() {
 		return url;
 	}
+	public void makeDataRereadable() {		
+	}
+	
+	public String toString(){
+		JsonHierarchicalStreamDriver jsondriver = new JsonHierarchicalStreamDriver(){
+			public HierarchicalStreamWriter createWriter(Writer writer) {
+		        return new JsonWriter(writer, JsonWriter.DROP_ROOT_MODE);
+		    }
+		};
+		
+		XStream xstream = new XStream(jsondriver);
+		xstream.autodetectAnnotations(true);
+		xstream.setMode(XStream.NO_REFERENCES);
+		xstream.aliasSystemAttribute(null, "class"); // Remove xml
+		return xstream.toXML(this);
+	}
+	
 	public static class HeadersConvertor implements Converter{
 
 		@Override
@@ -131,20 +148,6 @@ public abstract class Signal {
 	
 	public abstract void sendTo(List<SignalListener> listener,OutputStream result) throws IOException;
 	
-	public String toString(){
-		JsonHierarchicalStreamDriver jsondriver = new JsonHierarchicalStreamDriver(){
-			public HierarchicalStreamWriter createWriter(Writer writer) {
-		        return new JsonWriter(writer, JsonWriter.DROP_ROOT_MODE);
-		    }
-		};
-		
-		XStream xstream = new XStream(jsondriver);
-		xstream.autodetectAnnotations(true);
-		xstream.setMode(XStream.NO_REFERENCES);
-		xstream.aliasSystemAttribute(null, "class"); // Remove xml
-		return xstream.toXML(this);
-	}
-	
 	public static void main(String[] args){
 		Signal s = new AsyncSignal("callback", "usertoken");
 		s.setUrl("url");
@@ -163,6 +166,7 @@ public abstract class Signal {
 		
 		System.out.println(s.toString());
 	}
+
 }
 
 

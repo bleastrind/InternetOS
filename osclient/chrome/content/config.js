@@ -5,6 +5,6 @@ function Config(){
 	this.password = prefs.getCharPref('extensions.osclient.password')||'';
 	this.baseurl = prefs.getCharPref('extensions.osclient.baseurl')||'';
 	
-	alert("loading config");
+	//DEBUG alert("loading config");
 }
 gConfig = new Config();

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import cn.org.act.internetos.activities.Activity;
 import cn.org.act.internetos.activities.ActivityManager;
 import cn.org.act.internetos.activities.ClientPageListener;
 import cn.org.act.internetos.persist.Application;
@@ -16,8 +17,9 @@ import cn.org.act.internetos.signal.HttpSignalListener;
 import cn.org.act.internetos.signal.MatchRule;
 import cn.org.act.internetos.signal.Signal;
 import cn.org.act.internetos.signal.SignalListener;
+import cn.org.act.tools.Observable;
 
-public class UserSpace {
+public class UserSpace extends Observable{
 	private static HashMap<String, UserSpace> toeknSpaceMap = new HashMap<String, UserSpace>();
 
 	public static UserSpace getUserSpace(String token) {
@@ -66,7 +68,8 @@ public class UserSpace {
 				app.init(this); //TODO  init a app
 			
 			//TODO activeListeners
-			this.activityManager.createActivity(app.getName(), "listener");
+			Activity activity = new Activity(app.getName(),"listener",Activity.Stopped);
+			this.activityManager.setActivity(activity);
 			
 			for (SignalListener listener : app
 					.getListeners()) {
@@ -88,9 +91,34 @@ public class UserSpace {
 	
 
 	public ActivityManager getActivityManager() {
+		return activityManager;		
+	}
 
-		return activityManager;
-		
+	private boolean clientAlive = false;
+	
+	public boolean isClientActived() {
+		return clientAlive;
+	}
+
+	public void clientTick() {
+		clientAlive = true;
+		super.onChanged("clientAlive");
+	}
+
+	public void waitingClient() {
+		clientAlive = true;
+		new Thread(new Runnable(){
+
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				clientAlive = false;
+			}}).run();
 	}
 	
 }

@@ -2,7 +2,7 @@
 function Listeners(){
 	this.allListeners = [];
 	this.onSignalRecieved = function(signalstring){
-		alert(signalstring);
+		//DEBUG alert(signalstring);
 		try{
 			var signal = eval("("+signalstring+")");
 
@@ -10,7 +10,7 @@ function Listeners(){
 				this.allListeners[i].recieve(signal);
 			}
 		}catch(err){
-			alert(err);
+			//DEBUG alert(err);
 		}
 	}
 }
@@ -18,7 +18,7 @@ function Listeners(){
 function AlertListener(){}
 
 AlertListener.prototype.recieve = function(signal){
-	alert(signal.headers[0].clienttype);
+	//DEBUG alert(signal.headers[0].clienttype);
 	if(signal.headers[0].clienttype == "cn.org.act.internetos.clientsignal.alert")
 		alert(signal.data);
 }
@@ -47,4 +47,4 @@ gListeners.allListeners.push(new AlertListener());
 gListeners.allListeners.push(new ScriptLoadListener());
 gListeners.allListeners.push(new TabControlListener());
 
-alert("Listeners registered!");
+//DEBUG alert("Listeners registered!");

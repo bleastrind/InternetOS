@@ -1,5 +1,5 @@
 <!ENTITY osclient.label "Your localized menuitem">
-<!ENTITY osclientContext.label "Your Menuitem">
+<!ENTITY osclientContext.label "Start OS Client Push">
 <!ENTITY osclientContext.accesskey "Y">
 <!ENTITY osclientToolbarButton.label "Your Toolbar Button">
 <!ENTITY osclientToolbarButton.tooltip "This is your toolbar button!">

@@ -8,8 +8,7 @@ var osclient = {
   onMenuItemCommand: function(e) {
     var promptService = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
                                   .getService(Components.interfaces.nsIPromptService);
-    promptService.alert(window, this.strings.getString("helloMessageTitle"),
-                                this.strings.getString("helloMessage"));
+    //DEBUG promptService.alert(window, this.strings.getString("helloMessageTitle"), this.strings.getString("helloMessage"));
 								
 	try{
 		
@@ -21,7 +20,7 @@ var osclient = {
 		window.alert(err);
 	}
 	
-	window.alert("end");
+	//window.alert("end");
   },
 
   onToolbarButtonCommand: function(e) {

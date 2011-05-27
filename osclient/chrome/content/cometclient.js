@@ -1,9 +1,9 @@
 var myURLString = gConfig.baseurl + "/clientevent?token="+gIdentifyHelper.accessToken;
-alert(myURLString);
+//DEBUG alert(myURLString);
 var callbackFunc= function (data){
 	gListeners.onSignalRecieved(data);//function(d){window.alert(d)};
 }
-alert("Initializing comet");
+//DEBUG alert("Initializing comet");
 
 function CometClient(url,callback){
 	

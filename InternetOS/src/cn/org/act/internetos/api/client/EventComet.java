@@ -72,7 +72,7 @@ public class EventComet extends UserIdentifiedServlet {
 		
 		final AsyncContext aCtx = request.startAsync(request, response);
 
-		final Future<?> task = executorService.submit(new AsyncRequest(aCtx,space.getMessageQueue()));
+		final Future<?> task = executorService.submit(new AsyncRequest(aCtx,space));
 		aCtx.addListener(new AsyncListener(){
 
 			@Override
@@ -98,6 +98,8 @@ public class EventComet extends UserIdentifiedServlet {
 //				asyncContextQueue.remove(aCtx);
 			}
 			});
+		space.clientTick();
+		
 	}
 	
 	@Override  
@@ -111,10 +113,11 @@ class AsyncRequest implements Runnable{
 
 	private AsyncContext aCtx;
 	private BlockingQueue<String> messageQueue;
-	public AsyncRequest(AsyncContext aCtx,BlockingQueue<String> messageQueue) {
+	private UserSpace userspace;
+	public AsyncRequest(AsyncContext aCtx,UserSpace space) {
 		this.aCtx = aCtx;
-		this.messageQueue = messageQueue;
-		
+		this.messageQueue = space.getMessageQueue();
+		this.userspace = space;
 	}
 
 	@Override
@@ -145,6 +148,8 @@ class AsyncRequest implements Runnable{
         		}
             System.out.println(iex);  
         }  
+        
+        userspace.waitingClient();
 		
 	}
 	

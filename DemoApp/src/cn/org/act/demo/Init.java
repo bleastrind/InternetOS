@@ -23,7 +23,12 @@ public class Init extends HttpServlet {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	private String checkUser(HttpServletRequest request) {
+		String userToken = request.getHeader("token");
+		userToken = userToken == null ? request.getParameter("token")
+				: userToken;
+		return userToken;
+	}
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -31,15 +36,17 @@ public class Init extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		if (null != request.getParameter(Setting.AUTHTOKEN)){
+		if (null != checkUser(request)){
+
+			request.getSession().setAttribute(Setting.TOKEN, checkUser(request));
+			
+			response.sendRedirect("control.html");
+		}else if(null != request.getParameter(Setting.AUTHTOKEN)){
 			WebClient client = new WebClient();
 			String accesstoken = client
 					.getWebContentByGet(Setting.INTERNETOS + "/identifyservice/token?authtoken="+request.getParameter(Setting.AUTHTOKEN));
 			System.out.println("Done "+accesstoken);
 			
-			request.getSession().setAttribute(Setting.TOKEN, accesstoken);
-			
-			response.sendRedirect("signaltest");
 		}
 		else {
 

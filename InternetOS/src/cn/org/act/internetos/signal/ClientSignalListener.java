@@ -24,5 +24,10 @@ public class ClientSignalListener extends SignalListener{
 		userSpace.notify(signal.toString());
 		
 	}
+	@Override
+	public boolean isEventRecieveReady(UserSpace userspace) {
+		// TODO Auto-generated method stub
+		return userspace.isClientActived();
+	}
 
 }

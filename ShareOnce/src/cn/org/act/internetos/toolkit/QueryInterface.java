@@ -50,10 +50,9 @@ public class QueryInterface {
 
 		try {
 			JSONArray list = new JSONArray(dataString);
-			JSONArray list2 = list.getJSONArray(0);
-			for (int i = 0; i < list2.length(); i++) {
-				JSONArray innerarray = list2.getJSONArray(i);
-				JSONObject activityJSON = innerarray.getJSONObject(1);
+
+			for (int i = 0; i < list.length(); i++) {
+				JSONObject activityJSON = list.getJSONObject(i);
 				String name = activityJSON.optString("name");
 				String type = activityJSON.optString("type");
 				String state = activityJSON.optString("state");

@@ -32,20 +32,42 @@ public class signaltest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String accesstoken = (String)request.getSession().getAttribute(Setting.TOKEN);
-		
+		if(accesstoken == null){
+			response.sendRedirect("Init");
+			return;
+		}
+		System.out.println(accesstoken);
 		//test synchronous
 		//response.getWriter().write(new WebClient().getWebContentByGet(Setting.INTERNETOS+"/signal/send?token="+accesstoken));
 		
 		//test asynchronous
-		new WebClient(new IHttpModify(){
-
-			@Override
-			public void handle(HttpURLConnection conn) {
-				conn.addRequestProperty("client-signal", "");
-				conn.addRequestProperty("clienttype","cn.org.act.internetos.clientsignal.alert");
-				conn.addRequestProperty("async", "true");
-				conn.addRequestProperty("callback", "http://localhost:8080/DemoApp/callback");
-			}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?callback=http://localhost:8080/DemoApp/callback&token="+accesstoken,"event");
+		String cases = request.getParameter("case");
+		if(cases.equals( "asyncalert")){
+			new WebClient(new IHttpModify(){
+	
+				@Override
+				public void handle(HttpURLConnection conn) {
+					conn.addRequestProperty("client-signal", "");
+					conn.addRequestProperty("clienttype","cn.org.act.internetos.clientsignal.alert");
+					conn.addRequestProperty("async", "true");
+					//conn.addRequestProperty("token", accesstoken);
+					conn.addRequestProperty("callback", "http://localhost:8080/DemoApp/callback");
+				}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?callback=http://localhost:8080/DemoApp/callback&token="+accesstoken,"This is an alert sent by DemoApp");
+		}else if(cases.equals( "delayalert")){
+			new WebClient(new IHttpModify(){
+				
+				@Override
+				public void handle(HttpURLConnection conn) {
+					conn.addRequestProperty("client-signal", "");
+					conn.addRequestProperty("clienttype","cn.org.act.internetos.clientsignal.alert");
+					conn.addRequestProperty("async", "true");
+					conn.addRequestProperty("delay", "true");
+					//conn.addRequestProperty("token", accesstoken);
+					conn.addRequestProperty("callback", "http://localhost:8080/DemoApp/callback");
+				}}).getWebContentByPost(Setting.INTERNETOS+"/signal/send?callback=http://localhost:8080/DemoApp/callback&token="+accesstoken,"This is an alert sent by DemoApp");
+		
+		}
+		
 	}
 
 	/**
