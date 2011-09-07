@@ -1,8 +1,4 @@
-INDEX VERSION 1.122+C:\Users\Bleastrind\j2eeworkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-88663478.index
-2765260196.index
-293908984.index
-2203274743.index
-3233601625.index
-794467645.index
-57938424.index
+INDEX VERSION 1.122+E:\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+561977719.index
+1071460962.index
+3088741775.index

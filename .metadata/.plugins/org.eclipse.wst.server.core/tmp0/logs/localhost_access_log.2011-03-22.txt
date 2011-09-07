@@ -1,2 +1,0 @@
-127.0.0.1 - - [22/Mar/2011:10:28:57 +0800] "GET / HTTP/1.1" 404 955
-0:0:0:0:0:0:0:1 - - [22/Mar/2011:10:29:09 +0800] "GET /InternetOS/WEB-INF/classes/cn/org/act/internetos/SignalDispatcher.java HTTP/1.1" 404 952
