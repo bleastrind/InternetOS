@@ -5,11 +5,45 @@ Version|0.15|$
 Arch|x86-msvc|$
 
 [PLUGINS]
+npctrl.dll|$
+C:\Program Files (x86)\Microsoft Silverlight\4.0.60310.0\npctrl.dll|$
+4.0.60310.0|$
+1299682162000|1|5|$
+4.0.60310.0|$
+Silverlight Plug-In|$
+2
+0|application/x-silverlight|npctrl|scr|$
+1|application/x-silverlight-2|||$
+npgeplugin.dll|$
+C:\Program Files (x86)\Google\Google Earth\plugin\npgeplugin.dll|$
+1.0.0.1|$
+1305625389000|1|5|$
+GEPlugin|$
+Google Earth Plugin|$
+1
+0|application/geplugin|GEPlugin||$
+NPSWF32.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32.dll|$
+10.1.102.64|$
+1293945413874|1|5|$
+Shockwave Flash 10.1 r102|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+npGoogleOneClick8.dll|$
+C:\Users\Bleastrind\AppData\Local\Google\Update\1.2.183.39\npGoogleOneClick8.dll|$
+1.2.183.39|$
+1299555014226|1|5|$
+Google Update|$
+Google Update|$
+1
+0|application/x-vnd.google.oneclickctrl.8|||$
 nppdf32.dll|$
-C:\Program Files (x86)\Adobe\Reader 9.0\Reader\browser\nppdf32.dll|$
-9.4.0.195|$
-1285150252000|1|1|$
-Adobe PDF Plug-In For Firefox and Netscape "9.4.0"|$
+C:\Program Files (x86)\Mozilla Firefox\plugins\nppdf32.dll|$
+9.4.5.236|$
+1307421334000|1|5|$
+Adobe PDF Plug-In For Firefox and Netscape "9.4.5"|$
 Adobe Acrobat|$
 7
 0|application/pdf|Acrobat Portable Document Format|pdf|$
@@ -19,68 +53,62 @@ Adobe Acrobat|$
 4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
 5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
 6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
-npctrl.dll|$
-C:\Program Files (x86)\Microsoft Silverlight\4.0.60310.0\npctrl.dll|$
-4.0.60310.0|$
-1299682162000|1|1|$
-4.0.60310.0|$
-Silverlight Plug-In|$
-2
-0|application/x-silverlight|npctrl|scr|$
-1|application/x-silverlight-2|||$
-npgeplugin.dll|$
-C:\Program Files (x86)\Google\Google Earth\plugin\npgeplugin.dll|$
-1.0.0.1|$
-1292051970000|1|1|$
-GEPlugin|$
-Google Earth Plugin|$
-1
-0|application/geplugin|GEPlugin||$
-NPSWF32.dll|$
-C:\Windows\SysWOW64\Macromed\Flash\NPSWF32.dll|$
-10.1.102.64|$
-1293945413874|1|1|$
-Shockwave Flash 10.1 r102|$
-Shockwave Flash|$
-2
-0|application/x-shockwave-flash|Adobe Flash movie|swf|$
-1|application/futuresplash|FutureSplash movie|spl|$
-npGoogleOneClick8.dll|$
-C:\Users\Bleastrind\AppData\Local\Google\Update\1.2.183.39\npGoogleOneClick8.dll|$
-1.2.183.39|$
-1299555014226|1|1|$
-Google Update|$
-Google Update|$
-1
-0|application/x-vnd.google.oneclickctrl.8|||$
 npaliedit.dll|$
 C:\Program Files (x86)\Mozilla Firefox\plugins\npaliedit.dll|$
 1.3.0.2|$
-1297416924000|1|1|$
+1297416924000|1|5|$
 npaliedit|$
 Alipay security control|$
 1
 0|application/aliedit|npaliedit| |$
 npgoogletalk.dll|$
 C:\Users\Bleastrind\AppData\Roaming\Mozilla\plugins\npgoogletalk.dll|$
-2.0.7.0|$
-1303802800000|1|1|$
-Version 2.0.7.0|$
+2.1.8.0|$
+1309139004000|1|1|$
+Version 2.1.8.0|$
 Google Talk Plugin|$
 1
 0|application/googletalk|Google voice and video chat|googletalk|$
 npgtpo3dautoplugin.dll|$
 C:\Users\Bleastrind\AppData\Roaming\Mozilla\plugins\npgtpo3dautoplugin.dll|$
-0.1.43.7|$
-1303802726000|1|1|$
-Google Talk Plugin Video Accelerator version:0.1.43.7|$
+0.1.44.5|$
+1309138934000|1|1|$
+Google Talk Plugin Video Accelerator version:0.1.44.5|$
 Google Talk Plugin Video Accelerator|$
 1
 0|application/vnd.gtpo3d.auto|||$
+nppdf32.dll|$
+C:\Program Files (x86)\Adobe\Reader 9.0\Reader\browser\nppdf32.dll|$
+9.4.5.236|$
+1307421334000|1|13|$
+Adobe PDF Plug-In For Firefox and Netscape "9.4.5"|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+nppdf32.dll|$
+C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AIR\nppdf32.dll|$
+9.4.5.236|$
+1307421334000|1|13|$
+Adobe PDF Plug-In For Firefox and Netscape "9.4.5"|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
 npGoogleOneClick8.dll|$
 C:\Program Files (x86)\Google\Update\1.2.183.39\npGoogleOneClick8.dll|$
 1.2.183.39|$
-1299555014226|1|9|$
+1299555014226|1|13|$
 Google Update|$
 Google Update|$
 1

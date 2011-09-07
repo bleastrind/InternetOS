@@ -60,7 +60,8 @@ public final class appinstall_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("\t<form action=\"addApp\" method=\"POST\">\r\n");
-      out.write("\t\tinstall info:<textarea name=\"config\"><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
+      out.write("\t\tinstall info:<textarea name=\"config\">\r\n");
+      out.write("\t\t<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
       out.write("\t\t<Application>\r\n");
       out.write("\t\t<Name>Test</Name>\r\n");
       out.write("\t\t<Listeners>\r\n");
@@ -71,7 +72,7 @@ public final class appinstall_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t</MatchRule>\r\n");
       out.write("\t\t\t</HttpListener>\r\n");
       out.write("\t\t</Listeners>\r\n");
-      out.write("\t</Application>\r\n");
+      out.write("\t\t</Application>\r\n");
       out.write("\t\t\r\n");
       out.write("\t\t</textarea>\r\n");
       out.write("\t\t<input type=\"submit\"/>\r\n");

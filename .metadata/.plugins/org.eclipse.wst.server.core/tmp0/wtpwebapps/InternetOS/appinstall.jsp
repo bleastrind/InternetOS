@@ -8,7 +8,8 @@
 </head>
 <body>
 	<form action="addApp" method="POST">
-		install info:<textarea name="config"><?xml version="1.0" encoding="UTF-8"?>
+		install info:<textarea name="config">
+		<?xml version="1.0" encoding="UTF-8"?>
 		<Application>
 		<Name>Test</Name>
 		<Listeners>
@@ -19,7 +20,7 @@
 					</MatchRule>
 			</HttpListener>
 		</Listeners>
-	</Application>
+		</Application>
 		
 		</textarea>
 		<input type="submit"/>

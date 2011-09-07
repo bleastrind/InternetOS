@@ -19,7 +19,7 @@ import cn.org.act.internetos.toolkit.QueryInterface;
 @WebServlet("/ShareLinkServlet")
 public class ShareLinkServlet extends HttpServlet {
 	private static final String baseUrl = "http://localhost:8080/InternetOS"; // The
-	
+
 	private static final String sina = "http://v.t.sina.com.cn/share/share.php?url=";
 	private static final String renren = "http://share.renren.com/share/buttonshare.do?link=";
 	private static final String qq = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=";
@@ -35,9 +35,9 @@ public class ShareLinkServlet extends HttpServlet {
 	private static final String ibaidu = "http://tieba.baidu.com/i/app/open_share_api?link=";
 
 	// The toolkit of interface to access internetOS
-	private QueryInterface queryInterface;																						
-	
-	// All the share links												
+	private QueryInterface queryInterface;
+
+	// All the share links
 	private ArrayList<ShareLink> shareLinkArray;
 
 	/**
@@ -66,7 +66,7 @@ public class ShareLinkServlet extends HttpServlet {
 				urlRef);
 		// Then make the return page
 		render(redirectUrlArray, response.getWriter());
-		
+
 	}
 
 	private void render(ArrayList<String> redirectUrlArray, PrintWriter out) {
@@ -91,7 +91,8 @@ public class ShareLinkServlet extends HttpServlet {
 	private ArrayList<String> getAppNamesArray(String userToken) {
 		ArrayList<String> res = new ArrayList<String>();
 		for (Activity activity : queryInterface.queryAllActivities(userToken)) {
-			res.add(activity.getName());
+			if (!res.contains(activity.getName()))
+				res.add(activity.getName());
 		}
 		return res;
 	}
@@ -103,7 +104,6 @@ public class ShareLinkServlet extends HttpServlet {
 		return userToken;
 	}
 
-
 	/*
 	 * Given the app names, get the redirect url from the data structures The
 	 * given app names might be like www.renren.com Thus we need to compare
@@ -114,14 +114,16 @@ public class ShareLinkServlet extends HttpServlet {
 		for (String appName : appNamesArray) {
 			for (ShareLink link : this.shareLinkArray) {
 				if (appName.contains(link.getName())) {
-					redirectUrlArray.add(link.getFullLink(urlRef));
+					String linkstr = link.getFullLink(urlRef);
+					if(!redirectUrlArray.contains(linkstr))
+						redirectUrlArray.add(linkstr);
 					break;
 				}
 			}
 		}
 		return redirectUrlArray;
-	}	
-	
+	}
+
 	/**
 	 * Initialisation of the servlet. <br>
 	 * 
